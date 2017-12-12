@@ -168,6 +168,7 @@
      <None Include="Assets\Tiled2Unity\License.txt" />
      <None Include="Assets\Troll Bridge Studios\2D Starter Kit\Documentation\Documentation Link.txt" />
      <None Include="Assets\Tiled2Unity\Imported\_ReadMe.txt" />
+     <None Include="Assets\Troll Bridge Studios\2D Starter Kit\Art\EnvironmentTiles\submission_daneeklu\readme.txt" />
      <None Include="Assets\Troll Bridge Studios\2D Starter Kit\Fonts\Kottke Silkscreen License.txt" />
      <None Include="Assets\Tiled2Unity\Meshes\_ReadMe.txt" />
  <Reference Include="UnityEngine.UI">
