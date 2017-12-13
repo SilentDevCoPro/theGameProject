@@ -263,6 +263,11 @@
    </object>
   </objectgroup>
  </tile>
+ <tile id="155">
+  <objectgroup draworder="index">
+   <object id="1" x="9" y="6" width="13" height="23"/>
+  </objectgroup>
+ </tile>
  <tile id="156">
   <objectgroup draworder="index">
    <object id="1" x="1" y="6" width="31" height="26"/>
@@ -339,6 +344,7 @@
    <object id="2" x="32" y="21">
     <polyline points="0,0 -12,0 -14,1 -17,3 -20,5 -21,7 -22,11 0,11 0,0"/>
    </object>
+   <object id="3" x="26" y="10" width="7" height="11"/>
   </objectgroup>
  </tile>
  <tile id="184">
@@ -346,6 +352,8 @@
    <object id="1" x="0" y="22">
     <polyline points="0,0 22,0 22,10 0,10 0,0"/>
    </object>
+   <object id="2" x="0" y="7" width="14" height="15"/>
+   <object id="3" x="14" y="9" width="6" height="13"/>
   </objectgroup>
  </tile>
  <tile id="185">
