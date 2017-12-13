@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset name="farming_fishing" tilewidth="32" tileheight="32" tilecount="400" columns="20">
  <image source="../../Assets/Troll Bridge Studios/2D Starter Kit/Art/EnvironmentTiles/submission_daneeklu/tilesets/farming_fishing.png" width="640" height="640"/>
+ <tile id="40">
+  <objectgroup draworder="index">
+   <object id="1" x="1" y="18" width="31" height="14"/>
+  </objectgroup>
+ </tile>
+ <tile id="41">
+  <objectgroup draworder="index">
+   <object id="1" x="18" y="1" width="14" height="29"/>
+  </objectgroup>
+ </tile>
+ <tile id="42">
+  <objectgroup draworder="index">
+   <object id="2" x="0" y="1" width="16" height="29"/>
+  </objectgroup>
+ </tile>
  <tile id="43">
   <objectgroup draworder="index">
    <object id="1" x="33" y="1">
@@ -13,6 +28,11 @@
    <object id="1" x="0" y="1">
     <polyline points="0,0 10,2 17,9 25,13 31,19 31,28 31,31 0,31 0,0"/>
    </object>
+  </objectgroup>
+ </tile>
+ <tile id="60">
+  <objectgroup draworder="index">
+   <object id="1" x="1" y="0" width="31" height="16"/>
   </objectgroup>
  </tile>
  <tile id="61">
@@ -32,6 +52,16 @@
    <object id="2" x="0" y="0">
     <polyline points="0,0 0,28 18,28 25,32 25,17 26,16 27,11 31,12 31,0 0,0"/>
    </object>
+  </objectgroup>
+ </tile>
+ <tile id="81">
+  <objectgroup draworder="index">
+   <object id="1" x="20" y="7" width="12" height="25"/>
+  </objectgroup>
+ </tile>
+ <tile id="82">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="7" width="13" height="24"/>
   </objectgroup>
  </tile>
  <tile id="83">
