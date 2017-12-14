@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset name="farming_fishing" tilewidth="32" tileheight="32" tilecount="400" columns="20">
  <image source="../../Assets/Troll Bridge Studios/2D Starter Kit/Art/EnvironmentTiles/submission_daneeklu/tilesets/farming_fishing.png" width="640" height="640"/>
+ <tile id="3">
+  <objectgroup draworder="index">
+   <object id="2" x="10" y="32">
+    <polyline points="0,0 12,-11 22,-24 22,0 0,0"/>
+   </object>
+  </objectgroup>
+ </tile>
+ <tile id="4">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="8">
+    <polyline points="0,0 9,-3 19,3 23,13 22,24 0,24 0,0"/>
+   </object>
+  </objectgroup>
+ </tile>
+ <tile id="5">
+  <objectgroup draworder="index">
+   <object id="1" x="12" y="4" width="8" height="22"/>
+  </objectgroup>
+ </tile>
+ <tile id="23">
+  <objectgroup draworder="index">
+   <object id="1" x="8" y="0" width="24" height="20"/>
+  </objectgroup>
+ </tile>
+ <tile id="24">
+  <objectgroup draworder="index">
+   <object id="1" x="-1" y="0" width="25" height="26"/>
+  </objectgroup>
+ </tile>
+ <tile id="25">
+  <objectgroup draworder="index">
+   <object id="1" x="8" y="3" width="16" height="26"/>
+  </objectgroup>
+ </tile>
  <tile id="40">
   <objectgroup draworder="index">
    <object id="1" x="1" y="18" width="31" height="14"/>
