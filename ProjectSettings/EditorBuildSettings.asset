@@ -41,3 +41,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Troll Bridge Studios/2D Starter Kit/Scenes/Map Part 1/Map1.unity
     guid: c0dbd73b4d9e2dc4688ee60c75c0124c
+  - enabled: 1
+    path: Assets/Troll Bridge Studios/2D Starter Kit/Scenes/Map Part 1/Fishing House.unity
+    guid: 68f691b6620b20f499f24f8ef0924f27
+  - enabled: 1
+    path: Assets/Troll Bridge Studios/2D Starter Kit/Scenes/Map Part 1/Inn.unity
+    guid: 5a8e874be2e42444891cf75ece3308fc
+  - enabled: 1
+    path: Assets/Troll Bridge Studios/2D Starter Kit/Scenes/Map Part 1/Spawn House.unity
+    guid: b6d162026091ea845a672eb6b5e635db

@@ -153,6 +153,7 @@
      <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\_Scripts\UI\Continue_Game.cs" />
      <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\_Scripts\UI\Quit_Game.cs" />
      <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\_Scripts\UI\Start_Game.cs" />
+     <None Include="Assets\Tiled2Unity\Imported\Fishing House.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDefault.shader" />
      <None Include="Assets\Tiled2Unity\Prefabs\_ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Shaders\shaTiledMap.shader" />
@@ -166,8 +167,10 @@
      <None Include="Assets\Tiled2Unity\Shaders\shaColorKey.shader" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDepthColorKey.shader" />
      <None Include="Assets\Tiled2Unity\License.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Spawn House.tiled2unity.xml" />
      <None Include="Assets\Troll Bridge Studios\2D Starter Kit\Documentation\Documentation Link.txt" />
      <None Include="Assets\Tiled2Unity\Imported\_ReadMe.txt" />
+     <None Include="Assets\Tiled2Unity\Imported\Inn House.tiled2unity.xml" />
      <None Include="Assets\Troll Bridge Studios\2D Starter Kit\Art\EnvironmentTiles\submission_daneeklu\readme.txt" />
      <None Include="Assets\Troll Bridge Studios\2D Starter Kit\Fonts\Kottke Silkscreen License.txt" />
      <None Include="Assets\Tiled2Unity\Meshes\_ReadMe.txt" />
