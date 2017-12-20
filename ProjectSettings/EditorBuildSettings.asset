@@ -50,3 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Troll Bridge Studios/2D Starter Kit/Scenes/Map Part 1/Spawn House.unity
     guid: b6d162026091ea845a672eb6b5e635db
+  - enabled: 1
+    path: Assets/Troll Bridge Studios/2D Starter Kit/Scenes/Map Part 1/Underground
+      Cavern.unity
+    guid: f708798f117363642be704ae5e25730c
