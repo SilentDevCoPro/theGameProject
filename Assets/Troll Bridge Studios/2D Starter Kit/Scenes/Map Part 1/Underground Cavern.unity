@@ -159,7 +159,7 @@ Transform:
   - {fileID: 185881358}
   - {fileID: 1871222245}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &185881357
 GameObject:
@@ -220,6 +220,52 @@ Transform:
   m_Father: {fileID: 1871222245}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &454082649
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 39.831398
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -20.377647
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 167804, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_Name
+      value: Grey Bat Manager (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &473306781
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,6 +392,89 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8082752, y: 0.5398569}
   m_EdgeRadius: 0
+--- !u!1001 &570733659
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 32.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -39.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 167804, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_Name
+      value: Grey Bat Manager (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011719722864, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: JoltAmount
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400326, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: HitAnimationTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011719722864, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: amplifyDamage
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013113554116, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: DefaultMaxHealth
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013113554116, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: DefaultHealth
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013113554116, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: DefaultMoveSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &767959740
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,6 +615,98 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7254486, y: 0.78513336}
   m_EdgeRadius: 0
+--- !u!1001 &807030058
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5.5393543
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -35.6959
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 167804, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_Name
+      value: Grey Bat Manager (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &872527247
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 16.590727
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -14.559048
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 167804, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_Name
+      value: Grey Bat Manager (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &989498301
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,6 +805,98 @@ Transform:
   m_Father: {fileID: 45800065}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1390851592
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 9.3606205
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -38.620064
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 167804, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_Name
+      value: Grey Bat Manager (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1439135331
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5.007695
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -43.504642
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 167804, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_Name
+      value: Grey Bat Manager (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1599043761
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,8 +1002,142 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1627415506
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 43.903095
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -13.3360405
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 167804, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_Name
+      value: Grey Bat Manager (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1736275234
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 20.299536
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -13.030573
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1834540862
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 17.842747
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -18.868498
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 167804, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_Name
+      value: Grey Bat Manager (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1871222244
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,3 +1167,49 @@ Transform:
   m_Father: {fileID: 45800065}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1986438181
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 38.478226
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -10.306961
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 167804, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+      propertyPath: m_Name
+      value: Grey Bat Manager (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+  m_IsPrefabParent: 0
