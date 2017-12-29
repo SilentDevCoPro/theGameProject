@@ -1,4 +1,13 @@
 WindowsStandalone
+SceneListBegin?
+Assets/Troll Bridge Studios/2D Starter Kit/Scenes/Start.unity
+Assets/Troll Bridge Studios/2D Starter Kit/Scenes/Navigate.unity
+Assets/Troll Bridge Studios/2D Starter Kit/Scenes/Map Part 1/Map1.unity
+Assets/Troll Bridge Studios/2D Starter Kit/Scenes/Map Part 1/Fishing House.unity
+Assets/Troll Bridge Studios/2D Starter Kit/Scenes/Map Part 1/Inn.unity
+Assets/Troll Bridge Studios/2D Starter Kit/Scenes/Map Part 1/Spawn House.unity
+Assets/Troll Bridge Studios/2D Starter Kit/Scenes/Map Part 1/Underground Cavern.unity
+SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TrollBridge.Show_DeathCanvas
 4b6a1494e31171a570baeb59cab00998 Assembly-CSharp.dll:TrollBridge.Update_Keys
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -12,7 +21,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 6af7378a45ad6da4992a71ef50ddc2eb UnityEngine.Timeline.dll:UnityEngine.Timeline.ControlTrack
 6af7378a45ad6da4992a71ef50ddc2eb UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 6af7378a45ad6da4992a71ef50ddc2eb UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
-af723155c251fcfa0e66530a75f3ea4c UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+9ca6347af5ceb6b0d1c105af31b6722e UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 fdf513582c19ca52500fba9ae74e6b18 Assembly-CSharp.dll:TrollBridge.Item_GameObject
 76b67c157fc78f887e635d573c3b4839 Assembly-CSharp.dll:Tiled2Unity.GPUInstancing
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TrollBridge.Item_Database
@@ -92,6 +101,7 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 0a77f139fbba3c66f36ced321db8d128 Assembly-CSharp.dll:TrollBridge.Scene_Locations
 45238aa8980abef83d8112603acc6cd3 Assembly-CSharp.dll:TrollBridge.NPC_Manager
 0541ce1b04b19eb25fd97400a82f6a73 Assembly-CSharp.dll:TrollBridge.Sound_Manager
+05524b8f659e7bfe5756d1335fec24ba Firebase.Platform.dll:Firebase.Platform.FirebaseMonoBehaviour
 ecf072ba99c78f0b513173e61d1d57f3 Assembly-CSharp.dll:TrollBridge.Update_Money
 99749067d9af88b01596359779714f19 Assembly-CSharp.dll:TrollBridge.Change_Layers
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -105,7 +115,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 6af7378a45ad6da4992a71ef50ddc2eb UnityEngine.Timeline.dll:UnityEngine.Timeline.ControlTrack
 6af7378a45ad6da4992a71ef50ddc2eb UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 6af7378a45ad6da4992a71ef50ddc2eb UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
-af723155c251fcfa0e66530a75f3ea4c UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+9ca6347af5ceb6b0d1c105af31b6722e UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 0a959c28cb07f12506fbf0480e7d4935 Assembly-CSharp.dll:TrollBridge.Damage_OnCollision
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -129,6 +139,7 @@ dd97c144672a0438817942ffe033ccb8 Assembly-CSharp.dll:TrollBridge.Move_GameObject
 fab3f48bb6484a76cde2b81e3201be7e Assembly-CSharp.dll:Tiled2Unity.TileObject
 1ac45e65362b8990ca8bc05364d4581e Assembly-CSharp.dll:Tiled2Unity.ImportBehaviour
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TrollBridge.Display_Settings
+322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 acf4a0d1c4e6b56bd76f6bc4abce7281 Assembly-CSharp.dll:TrollBridge.Money
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TrollBridge.State_Manager
@@ -150,6 +161,8 @@ c5b77decb97ffc0c36e810b155d27dde Assembly-CSharp.dll:Tiled2Unity.TiledMap
 fa519d9f65cca73722e08004134f641e Assembly-CSharp.dll:TrollBridge.Change_Music
 6738a751df6be19a54783cb628faabd9 Assembly-CSharp.dll:TrollBridge.Tooltip
 e5d2ab09a0790b487a838c76b85afdd4 Assembly-CSharp.dll:TrollBridge.State_Transform
+05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
+05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TrollBridge.Continue_Game
 84f3b3a747167c8c7f6122150309915c Assembly-CSharp.dll:TrollBridge.SetActive_Exit_Collision
 e7c56b7f3e38b7e6f48132d02c71db62 Assembly-CSharp.dll:TrollBridge.Camera_Follow_Player
@@ -185,7 +198,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TrollBridge.Scene_Change_Button
 329bcbf88b3c0197d230f5b9ceb88333 Assembly-CSharp.dll:Tiled2Unity.CircleObject
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
-2a56361227def9f56c2cf57a88b32f4d UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
+96d0fbde9fd209878a0a291f82c9bcdd UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TrollBridge.Update_OrderInLayer_NotMoving

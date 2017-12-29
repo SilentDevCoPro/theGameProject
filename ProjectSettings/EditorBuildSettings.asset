@@ -54,3 +54,6 @@ EditorBuildSettings:
     path: Assets/Troll Bridge Studios/2D Starter Kit/Scenes/Map Part 1/Underground
       Cavern.unity
     guid: f708798f117363642be704ae5e25730c
+  - enabled: 0
+    path: Assets/Troll Bridge Studios/2D Starter Kit/Scenes/Login.unity
+    guid: 161cf2146a6317648924bfa424527ca5
