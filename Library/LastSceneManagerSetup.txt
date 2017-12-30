@@ -1,5 +1,4 @@
 sceneSetups:
-- path: Assets/Troll Bridge Studios/2D Starter Kit/_Scenes/Additional Scenes (Do not
-    run)/MainWorld.unity
+- path: Assets/Troll Bridge Studios/2D Starter Kit/Scenes/Map Part 1/Inn.unity
   isLoaded: 1
   isActive: 1
