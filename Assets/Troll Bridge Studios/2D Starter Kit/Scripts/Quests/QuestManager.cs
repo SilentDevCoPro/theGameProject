@@ -36,7 +36,49 @@ public class QuestManager : MonoBehaviour {
             }
         }
     }
+
     //REMOVE ITEMS - User inventory system
+
+    public void QuestRequest(QuestObject NPCQuestObject)
+    {
+        //Checking for avaliable quests
+        if (NPCQuestObject.avaliableQuestIDs.Count > 0)
+        {
+            for (int i = 0; i < questList.Count; i++)
+            {
+                for (int j = 0; j < NPCQuestObject.avaliableQuestIDs.Count; j++)
+                {
+                    if (questList[i].id == NPCQuestObject.avaliableQuestIDs[j] &&
+                        questList[i].progress == Quest.QuestProgress.AVALIABLE)
+                    {
+                        Debug.Log("Quest ID: " + NPCQuestObject.avaliableQuestIDs[j] + " " +
+                            questList[i].progress);
+                        //TESTING
+                        AcceptQuest(NPCQuestObject.avaliableQuestIDs[j]);
+                        //pass quest UI
+                    }
+                }
+            }
+        }
+        //Chech for active quests
+        for (int i = 0; i < currentQuestList.Count; i++)
+        {
+            for (int j = 0; j < NPCQuestObject.recievableQuestIDs.Count; j++)
+            {
+                if (currentQuestList[i].id == NPCQuestObject.recievableQuestIDs[j] &&
+                    currentQuestList[i].progress == Quest.QuestProgress.ACCEPTED ||
+                    currentQuestList[i].progress == Quest.QuestProgress.COMPLETE)
+                {
+                    Debug.Log("Quest ID: " + NPCQuestObject.recievableQuestIDs[j] + " is " +
+                        currentQuestList[i].progress);
+
+                    CompleteQuest(NPCQuestObject.recievableQuestIDs[j]);
+                    //Quest UI Manager
+
+                }
+            }
+        }
+    }
 
     //ACCEPT QUEST
     public void AcceptQuest(int questID)
@@ -50,7 +92,7 @@ public class QuestManager : MonoBehaviour {
         }
     }
 
-    //COMPLETED
+    //COMPLETE
     public void CompleteQuest(int questID)
     {
         for (int i = 0; i < questList.Count; i++)
@@ -59,10 +101,38 @@ public class QuestManager : MonoBehaviour {
             {
                 currentQuestList[i].progress = Quest.QuestProgress.DONE;
                 currentQuestList.Remove(currentQuestList[i]);
+
+                //REWARDS FOR COMPLETION
             }
         }
-        
+        //Check for chain quest
+        CheckChainQuest(questID);
     }
+
+    //CHECK CHAIN QUEST
+    void CheckChainQuest(int questID)
+    {
+        int tempID = 0;
+        for(int i = 0; i < questList.Count; i++)
+        {
+            if (questList[i].id == questID && questList[i].nextQuest > 0)
+            {
+                tempID = questList[i].nextQuest;
+            }
+        }
+
+        if (tempID > 0)
+        {
+            for (int i = 0; i < questList.Count; i++)
+            {
+                if(questList[i].id == tempID && questList[i].progress == Quest.QuestProgress.NOT_AVALIABLE)
+                {
+                    questList[i].progress = Quest.QuestProgress.AVALIABLE;
+                }
+            }
+        }
+    }
+
     //BOOLS
     public bool RequestAvaliableQuest(int questID)
     {
@@ -93,4 +163,52 @@ public class QuestManager : MonoBehaviour {
         return false;
     }
 
+    //BOOLS 2
+    public bool CheckAvaliableQuests(QuestObject NPCQuestObject)
+    {
+        for(int i = 0; i < questList.Count; i++)
+        {
+            for (int j = 0; j < NPCQuestObject.avaliableQuestIDs.Count; j++)
+            {
+                if (questList[i].id == NPCQuestObject.avaliableQuestIDs[j] &&
+                   questList[i].progress == Quest.QuestProgress.AVALIABLE)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public bool CheckAcceptedQuests(QuestObject NPCQuestObject)
+    {
+        for (int i = 0; i < questList.Count; i++)
+        {
+            for (int j = 0; j < NPCQuestObject.recievableQuestIDs.Count; j++)
+            {
+                if (questList[i].id == NPCQuestObject.recievableQuestIDs[j] &&
+                   questList[i].progress == Quest.QuestProgress.ACCEPTED)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public bool CheckCompleteQuests(QuestObject NPCQuestObject)
+    {
+        for (int i = 0; i < questList.Count; i++)
+        {
+            for (int j = 0; j < NPCQuestObject.recievableQuestIDs.Count; j++)
+            {
+                if (questList[i].id == NPCQuestObject.recievableQuestIDs[j] &&
+                   questList[i].progress == Quest.QuestProgress.COMPLETE)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

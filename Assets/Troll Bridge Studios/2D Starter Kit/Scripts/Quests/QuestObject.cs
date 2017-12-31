@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class QuestObject : MonoBehaviour {
 
@@ -10,28 +10,62 @@ public class QuestObject : MonoBehaviour {
     public List<int> avaliableQuestIDs = new List<int>();
     public List<int> recievableQuestIDs = new List<int>();
 
+    public GameObject questMarker;
+    public Image theImage;
+
+    public Sprite questAvaliableSprite;
+    public Sprite questReceivableSprite;
+
     // Use this for initialization
     void Start () {
-		
+        SetQuestMarker();
 	}
+
+    void SetQuestMarker()
+    {
+        if (QuestManager.questManager.CheckCompleteQuests(this))
+        {
+            questMarker.SetActive(true);
+            theImage.sprite = questReceivableSprite;
+            theImage.color = Color.blue;
+        }
+        else if (QuestManager.questManager.CheckAvaliableQuests(this))
+        {
+            questMarker.SetActive(true);
+            theImage.sprite = questAvaliableSprite;
+            theImage.color = Color.cyan;
+        }
+        else if (QuestManager.questManager.CheckAcceptedQuests(this))
+        {
+            questMarker.SetActive(true);
+            theImage.sprite = questReceivableSprite;
+            theImage.color = Color.gray;
+        }
+        else
+        {
+            questMarker.SetActive(false);
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
+        SetQuestMarker();
         if (inTrigger)
         {
             //UI
+            QuestManager.questManager.QuestRequest(this);
         }
 	}
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.tag == "Player")
+        if (collision.tag == "Player")
         {
             inTrigger = true;
         }
     }
 
-    void OnTriggerExit(Collider other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
