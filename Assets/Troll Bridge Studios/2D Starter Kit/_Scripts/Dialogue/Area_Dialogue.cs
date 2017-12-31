@@ -6,8 +6,9 @@ namespace TrollBridge {
 
 	public class Area_Dialogue : MonoBehaviour {
 
-		/// Set to 'true' if you want to see the area that the Player can interact with the NPC
-		public bool showAreaInScene = false;
+        public bool isDialogueCompleted = false;
+        /// Set to 'true' if you want to see the area that the Player can interact with the NPC
+        public bool showAreaInScene = false;
 		/// The Collider2D that represents the range for the Interaction to happen.
 		public Collider2D rangeCollider;
 		/// Sets the color of the Collider2D
@@ -54,8 +55,10 @@ namespace TrollBridge {
 		[Multiline]
 		public string[] dialogue;
 
-		// The index in the dialogue.
-		private int dialogueIndex = 0;
+        
+
+        // The index in the dialogue.
+        private int dialogueIndex = 0;
 		// The dialogue component.
 		private Dialogue dialogueComponent;
 		// Get the manager of this gameobject.
@@ -64,6 +67,8 @@ namespace TrollBridge {
 		private Player_Manager _playerManager;
 		// The boolean that lets us know when the timer is finished.
 		private bool isFinished = true;
+
+        
 
 
 		void Awake(){
@@ -194,6 +199,7 @@ namespace TrollBridge {
 			yield return StartCoroutine(DialogueOut());
 			// Set the dialogue box inactive.
 			dialogueBox.SetActive(false);
+            isDialogueCompleted = true;
 			// Suspend the coroutine for 'inactiveTime' seconds.
 			yield return new WaitForSeconds(inactiveTime);
 			// Boolean to let us know we are done waiting.
