@@ -438,6 +438,7 @@
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Quests\Quest.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Quests\QuestManager.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Quests\QuestObject.cs" />
+    <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Quests\QuestUIManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Firebase\Editor\AnalyticsDependencies.xml" />
