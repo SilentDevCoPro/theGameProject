@@ -3146,6 +3146,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114160244218215208, guid: fdb1ccaa40d213b4286d251bb693ed8e,
+        type: 2}
+      propertyPath: questList.Array.data[0].questObjectivesCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114160244218215208, guid: fdb1ccaa40d213b4286d251bb693ed8e,
+        type: 2}
+      propertyPath: questList.Array.data[0].questObjectiveRequirement
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fdb1ccaa40d213b4286d251bb693ed8e, type: 2}
   m_IsPrefabParent: 0

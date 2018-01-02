@@ -300,7 +300,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1432925202037026
 GameObject:
   m_ObjectHideFlags: 1
@@ -1654,6 +1654,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c0944a1fac559a4aa5fb2a26a3ea465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questAvaliable: 0
+  questRunning: 0
+  questPanel: {fileID: 1432925202037026}
+  questLogPanel: {fileID: 1379486830261688}
+  currentQuestObject: {fileID: 0}
+  avaliableQuests: []
+  runningQuests: []
+  qButton: {fileID: 1920078746533110, guid: f8155fdc73efd1b44bc7ba6d79615b49, type: 2}
+  qLogButton: {fileID: 0}
+  qButtonSpacerAvaliable: {fileID: 224033145288410556}
+  qButtonSpacerRunning: {fileID: 224331571857157674}
+  qButtonSpacerLog: {fileID: 224036022585444414}
+  questTitle: {fileID: 114467578303194704}
+  questDescription: {fileID: 114751075731697492}
+  questSummary: {fileID: 114874467566932384}
+  questLogTitle: {fileID: 114666171233322400}
+  questLogDescription: {fileID: 114142813901775150}
+  questLogSummary: {fileID: 114301612644925454}
 --- !u!114 &114980990457824464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1932,7 +1950,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224340989713526844}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.028112821, y: 0.036658812}
   m_AnchorMax: {x: 0.9616692, y: 0.17}
@@ -2081,9 +2099,9 @@ RectTransform:
   m_Children:
   - {fileID: 224493109357227026}
   - {fileID: 224494784063083148}
+  - {fileID: 224687669143282400}
   - {fileID: 224064765095333206}
   - {fileID: 224783435302266898}
-  - {fileID: 224687669143282400}
   m_Father: {fileID: 224814441523859904}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2163,7 +2181,7 @@ RectTransform:
   m_Children:
   - {fileID: 224090587832349812}
   m_Father: {fileID: 224434282896565844}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.88621813, y: 0.8633362}
   m_AnchorMax: {x: 1, y: 1}
@@ -2182,10 +2200,10 @@ RectTransform:
   m_Children:
   - {fileID: 224778982909628398}
   - {fileID: 224369410036105804}
+  - {fileID: 224859569013864924}
   - {fileID: 224771694342462870}
   - {fileID: 224421229062006446}
   - {fileID: 224803361472644878}
-  - {fileID: 224859569013864924}
   m_Father: {fileID: 224298960628434396}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2299,7 +2317,7 @@ RectTransform:
   m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
   m_Children: []
   m_Father: {fileID: 224340989713526844}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.028112821, y: 0.19668241}
   m_AnchorMax: {x: 0.9693384, y: 0.32000002}
@@ -2354,7 +2372,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224434282896565844}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.03833846, y: 0.22000001}
   m_AnchorMax: {x: 0.9616692, y: 0.37}
@@ -2391,7 +2409,7 @@ RectTransform:
   m_Children:
   - {fileID: 224498069543767458}
   m_Father: {fileID: 224340989713526844}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.88621813, y: 0.8633362}
   m_AnchorMax: {x: 1, y: 1}
@@ -2429,7 +2447,7 @@ RectTransform:
   - {fileID: 224985201100063110}
   - {fileID: 224756019231083342}
   m_Father: {fileID: 224434282896565844}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -2467,7 +2485,7 @@ RectTransform:
   m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
   m_Children: []
   m_Father: {fileID: 224434282896565844}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.03833846, y: 0.4}
   m_AnchorMax: {x: 0.9693384, y: 0.51666236}
