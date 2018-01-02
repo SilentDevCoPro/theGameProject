@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 222395120739458314}
   - component: {fileID: 114592288222243194}
   - component: {fileID: 114475060629026714}
+  - component: {fileID: 114108500843670624}
   m_Layer: 5
   m_Name: Accept
   m_TagString: Untagged
@@ -225,7 +226,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224277980779218776}
-  - component: {fileID: 114980897812434876}
   m_Layer: 5
   m_Name: UIQuestManager
   m_TagString: Untagged
@@ -260,6 +260,7 @@ GameObject:
   - component: {fileID: 222073227509051698}
   - component: {fileID: 114619959218904552}
   - component: {fileID: 114403831534377766}
+  - component: {fileID: 114067922839572892}
   m_Layer: 5
   m_Name: Decline
   m_TagString: Untagged
@@ -345,7 +346,7 @@ GameObject:
   - component: {fileID: 224803361472644878}
   - component: {fileID: 114570635634634204}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: Buttons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -618,6 +619,19 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: ACCEPT
+--- !u!114 &114067922839572892
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1359752847110120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32f36c3d6686ae469c00aa86d876438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questID: 0
+  questTitle: {fileID: 0}
 --- !u!114 &114089521808425754
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -659,6 +673,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114108500843670624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1180817819716556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32f36c3d6686ae469c00aa86d876438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questID: 0
+  questTitle: {fileID: 0}
 --- !u!114 &114142813901775150
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1640,38 +1667,20 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114298480245076622}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114980897812434876
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1329631045077312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c0944a1fac559a4aa5fb2a26a3ea465, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questAvaliable: 0
-  questRunning: 0
-  questPanel: {fileID: 1432925202037026}
-  questLogPanel: {fileID: 1379486830261688}
-  currentQuestObject: {fileID: 0}
-  avaliableQuests: []
-  runningQuests: []
-  qButton: {fileID: 1920078746533110, guid: f8155fdc73efd1b44bc7ba6d79615b49, type: 2}
-  qLogButton: {fileID: 0}
-  qButtonSpacerAvaliable: {fileID: 224033145288410556}
-  qButtonSpacerRunning: {fileID: 224331571857157674}
-  qButtonSpacerLog: {fileID: 224036022585444414}
-  questTitle: {fileID: 114467578303194704}
-  questDescription: {fileID: 114751075731697492}
-  questSummary: {fileID: 114874467566932384}
-  questLogTitle: {fileID: 114666171233322400}
-  questLogDescription: {fileID: 114142813901775150}
-  questLogSummary: {fileID: 114301612644925454}
 --- !u!114 &114980990457824464
 MonoBehaviour:
   m_ObjectHideFlags: 1
