@@ -22,11 +22,13 @@ public class QuestManager : MonoBehaviour {
     //ADD ITEMS
     public void AddQuestItem(string questObjective, int itemAmount)
     {
+        Debug.Log("Adding Item Started");
         for (int i = 0; i < currentQuestList.Count; i++) {
             if (currentQuestList[i].questObjective == questObjective &&
                 currentQuestList[i].progress == Quest.QuestProgress.ACCEPTED)
             {
                 currentQuestList[i].questObjectivesCount += itemAmount;
+                Debug.Log("Adding Item Completed");
             }
 
             if (currentQuestList[i].questObjectivesCount >= currentQuestList[i].questObjectiveRequirement

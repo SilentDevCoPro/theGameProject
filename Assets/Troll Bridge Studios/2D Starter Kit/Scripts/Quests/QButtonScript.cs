@@ -50,8 +50,49 @@ public class QButtonScript : MonoBehaviour {
         }
     }
 
-    public void closeQuestPanel()
+    public void CloseQuestPanel()
     {
         QuestUIManager.questUIManager.HideQuestPanel();
+    }
+
+    public void AcceptQuest()
+    {
+        QuestManager.questManager.AcceptQuest(questID);
+        QuestUIManager.questUIManager.HideQuestPanel();
+
+        //Update all quest Objects
+
+        QuestObject[] currentQuestObjects = FindObjectsOfType(typeof(QuestObject)) as QuestObject[];
+        foreach (QuestObject qobj in currentQuestObjects)
+        {
+            qobj.SetQuestMarker();
+        }
+    }
+
+    public void DeclineQuest()
+    {
+        QuestUIManager.questUIManager.HideQuestPanel();
+
+        //Update all quest Objects
+
+        QuestObject[] currentQuestObjects = FindObjectsOfType(typeof(QuestObject)) as QuestObject[];
+        foreach(QuestObject qobj in currentQuestObjects)
+        {
+            qobj.SetQuestMarker();
+        }
+    }
+
+    public void CompleteQuest()
+    {
+        QuestManager.questManager.CompleteQuest(questID);
+        QuestUIManager.questUIManager.HideQuestPanel();
+
+        //Update all quest Objects
+
+        QuestObject[] currentQuestObjects = FindObjectsOfType(typeof(QuestObject)) as QuestObject[];
+        foreach (QuestObject qobj in currentQuestObjects)
+        {
+            qobj.SetQuestMarker();
+        }
     }
 }

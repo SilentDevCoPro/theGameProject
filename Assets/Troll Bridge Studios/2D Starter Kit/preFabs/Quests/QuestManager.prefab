@@ -63,8 +63,8 @@ MonoBehaviour:
     nextQuest: 0
     questObjective: Look around the town
     questObjectivesCount: 0
-    questObjectiveRequirement: 0
-    moneyReward: 0
+    questObjectiveRequirement: 1
+    moneyReward: 500
     itemReward: 0
   currentQuestList: []
 --- !u!114 &114534643452747680

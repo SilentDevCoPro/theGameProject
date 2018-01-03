@@ -21,7 +21,7 @@ public class QuestObject : MonoBehaviour {
         SetQuestMarker();
 	}
 
-    void SetQuestMarker()
+    public void SetQuestMarker()
     {
         if (QuestManager.questManager.CheckCompleteQuests(this))
         {
@@ -49,11 +49,9 @@ public class QuestObject : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        SetQuestMarker();
+
         if (inTrigger && Input.GetKeyDown(KeyCode.Space))
         {
-            //UI
-            // QuestManager.questManager.QuestRequest(this);
             QuestUIManager.questUIManager.CheckQuests(this);
         }
 	}
@@ -61,7 +59,7 @@ public class QuestObject : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
-        {
+        { 
             inTrigger = true;
         }
     }

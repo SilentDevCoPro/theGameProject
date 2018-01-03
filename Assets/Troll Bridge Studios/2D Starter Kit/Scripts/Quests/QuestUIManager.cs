@@ -104,7 +104,7 @@ public class QuestUIManager : MonoBehaviour {
 
         //Clear all text fields
         questTitle.text = "Quest Menu";
-        questDescription.text = "Select an avaliable quest from the left hand side panel to get started!";
+        questDescription.text = "Select an avaliable or running quest from the left hand side panel to get started!";
         questSummary.text = "";
         questRewards.text = "";
         
