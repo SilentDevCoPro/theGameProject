@@ -10,8 +10,8 @@ public class QuestUIManager : MonoBehaviour {
     //BOOLS
     public bool questAvaliable = false;
     public bool questRunning = false;
-    private bool questPanelActive = false;
-    private bool questLogPanelActive = false;
+    public bool questPanelActive = false;
+    public bool questLogPanelActive = false;
 
     //Panels
     public GameObject questPanel;
@@ -48,6 +48,7 @@ public class QuestUIManager : MonoBehaviour {
     public Text questLogTitle;
     public Text questLogDescription;
     public Text questLogSummary;
+    public Text questLogRewards;
 
     private void Awake()
     {
@@ -58,6 +59,7 @@ public class QuestUIManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
 
         HideQuestPanel();
+        HideQuestLogPanel();
     }
 	
 	// Update is called once per frame
@@ -65,7 +67,7 @@ public class QuestUIManager : MonoBehaviour {
 		if(Input.GetKeyDown(KeyCode.Q))
         {
             questLogPanelActive = !questLogPanelActive;
-            //Show Quest Log Panel
+            ShowQuestLogPanel();  
         }
 	}
 
@@ -89,16 +91,58 @@ public class QuestUIManager : MonoBehaviour {
     {
         questPanelActive = true;
         questPanel.SetActive(true);
-
         FillQuestButtons();
-
     }
 
-    //Quest log
+    //Show quest log panel
+    public void ShowQuestLogPanel()
+    {
+        questLogPanel.SetActive(true);
+        Debug.Log("Showing Quest Panel");
+        Debug.Log(questLogPanelActive + " " + questPanelActive);
+        if (questLogPanelActive && !questPanelActive)
+        {
+            Debug.Log("Locating all current quests");
+            foreach(Quest currentQuest in QuestManager.questManager.currentQuestList)
+            {
+                Debug.Log("Adding Buttons...");
+                GameObject questButton = Instantiate(qLogButton);
+                QLogButtonScipt qButton = questButton.GetComponent<QLogButtonScipt>();
 
+                
+                qButton.questID = currentQuest.id;
+                qButton.questTitle.text = currentQuest.title;
+                questButton.transform.SetParent(qButtonSpacerLog, false);
+                qButtons.Add(questButton);
+            }
+        }
+        else if(!questLogPanelActive && !questLogPanelActive)
+        {
+            HideQuestLogPanel();
+        }
+    }
+
+    //Show quest log
+    public void ShowQuestLog(Quest runningQuest)
+    {
+        questLogTitle.text = runningQuest.title;
+        if(runningQuest.progress == Quest.QuestProgress.ACCEPTED)
+        {
+            questLogDescription.text = runningQuest.hint;
+            questLogSummary.text = runningQuest.questObjective + ": " + runningQuest.questObjectivesCount + " / " + runningQuest.questObjectiveRequirement;
+        }
+        else if (runningQuest.progress == Quest.QuestProgress.COMPLETE)
+        {
+            questLogDescription.text = runningQuest.congratulations;
+            questLogSummary.text = runningQuest.questObjective + ": " + runningQuest.questObjectivesCount + " / " + runningQuest.questObjectiveRequirement;
+
+        }
+    }
+
+    //Hides quest log
     public void HideQuestPanel()
     {
-        questLogPanelActive = false;
+        questPanelActive = false;
         questAvaliable = false;
         questRunning = false;
 
@@ -122,11 +166,30 @@ public class QuestUIManager : MonoBehaviour {
         qButtons.Clear();
 
         //Hide panel
-        questPanel.SetActive(questLogPanelActive);
+        questPanel.SetActive(false);
+    }
+
+    //Hide quest log panel
+    public void HideQuestLogPanel()
+    {
+        questLogPanelActive = false;
+
+        questLogTitle.text = "Quest Log Menu";
+        questLogDescription.text = "Select a quest from the left hand side panel to view your progress!";
+        questLogSummary.text = "";
+        questLogRewards.text = "";
+
+        //Clear buttons
+        for(int i = 0; i < qButtons.Count; i++)
+        {
+            Destroy(qButtons[i]);
+        }
+        qButtons.Clear();
+        questLogPanel.SetActive(false);
     }
 
     //Fill buttons for quest panel
-    void FillQuestButtons()
+    void FillQuestButtons()  
     {
         foreach(Quest avaliableQuest in avaliableQuests)
         {

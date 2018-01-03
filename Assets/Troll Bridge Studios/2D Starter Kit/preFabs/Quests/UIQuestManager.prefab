@@ -515,6 +515,7 @@ GameObject:
   - component: {fileID: 222823043011543778}
   - component: {fileID: 114298480245076622}
   - component: {fileID: 114952228161832742}
+  - component: {fileID: 114720674113755350}
   m_Layer: 5
   m_Name: CloseButton
   m_TagString: Untagged
@@ -631,7 +632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questID: 0
-  questTitle: {fileID: 0}
+  questTitle: {fileID: 114467578303194704}
 --- !u!114 &114089521808425754
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -685,7 +686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questID: 0
-  questTitle: {fileID: 0}
+  questTitle: {fileID: 114467578303194704}
 --- !u!114 &114142813901775150
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1037,7 +1038,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.46323532, g: 0.46323532, b: 0.46323532, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1054,7 +1055,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114619959218904552}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114067922839572892}
+        m_MethodName: DeclineQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114440353399885590
@@ -1127,7 +1139,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.46323532, g: 0.46323532, b: 0.46323532, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1144,7 +1156,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114592288222243194}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114108500843670624}
+        m_MethodName: AcceptQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114538630345220240
@@ -1503,6 +1526,19 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
+--- !u!114 &114720674113755350
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1806036196257822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32f36c3d6686ae469c00aa86d876438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questID: 0
+  questTitle: {fileID: 114467578303194704}
 --- !u!114 &114745626063445574
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1668,12 +1704,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 114720674113755350}
+        m_MethodName: CloseQuestPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2330,7 +2366,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.028112821, y: 0.19668241}
   m_AnchorMax: {x: 0.9693384, y: 0.32000002}
-  m_AnchoredPosition: {x: 2.000021, y: -1}
+  m_AnchoredPosition: {x: 2.000021, y: -1.0000076}
   m_SizeDelta: {x: 0.29999924, y: -1.0299988}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224749620308849756
