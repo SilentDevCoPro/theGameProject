@@ -62,15 +62,6 @@ public class QuestUIManager : MonoBehaviour {
         HideQuestLogPanel();
     }
 	
-	// Update is called once per frame
-	void Update () {
-		if(Input.GetKeyDown(KeyCode.Q))
-        {
-            questLogPanelActive = !questLogPanelActive;
-            ShowQuestLogPanel();  
-        }
-	}
-
     //Called from the Quest Object
     public void CheckQuests(QuestObject questObject)
     {
@@ -126,6 +117,8 @@ public class QuestUIManager : MonoBehaviour {
     public void ShowQuestLog(Quest runningQuest)
     {
         questLogTitle.text = runningQuest.title;
+        Debug.Log("QUEST PROGRESS: " + runningQuest.progress);
+
         if(runningQuest.progress == Quest.QuestProgress.ACCEPTED)
         {
             questLogDescription.text = runningQuest.hint;

@@ -26,6 +26,7 @@ fdf513582c19ca52500fba9ae74e6b18 Assembly-CSharp.dll:TrollBridge.Item_GameObject
 76b67c157fc78f887e635d573c3b4839 Assembly-CSharp.dll:Tiled2Unity.GPUInstancing
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TrollBridge.Item_Database
 ebc6eb69df6d3b8e948d136b2affe86d Assembly-CSharp.dll:TrollBridge.Play_SoundOnActivation
+3914f9df990da4f596236c77e497c2e1 Assembly-CSharp.dll:.QuestUIManager
 267968fd67ca81505917d76f622af9e5 Assembly-CSharp.dll:TrollBridge.Point_To_Point_Movement
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -59,6 +60,7 @@ c63db43c730fa2cbb8ca07de15898cb6 UnityEngine.UI.dll:UnityEngine.UI.Toggle
 f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BITStart
 bbe57505bd36d18ff747aeca3e202487 Assembly-CSharp.dll:TrollBridge.Icon_Display
 8ff8e4f2fdfb53cf0cef85f24f6f7740 Assembly-CSharp.dll:Tiled2Unity.GroupLayer
 329bcbf88b3c0197d230f5b9ceb88333 Assembly-CSharp.dll:Tiled2Unity.RectangleObject
@@ -131,6 +133,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
+f209369978d14f4ca1fcf39082c440e0 Assembly-CSharp.dll:.QButtonScript
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 2853494119c8101c6939624580459d57 Assembly-CSharp.dll:TrollBridge.Animation_Direction
 171a67811a3d97e53ca38147016df25d Assembly-CSharp.dll:TrollBridge.End_Of_Animation_Destroy
@@ -149,8 +152,9 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TrollBridge.Multi_Direction_Movement
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.EndQuest
 9aac4c00d0b122427f535b308c767ae4 Assembly-CSharp.dll:TrollBridge.Bombs
-18bbe47eccb31638791ac4c282ecd0cb Assembly-CSharp.dll:TrollBridge.Area_Dialogue
+ba49c42a0881703e10bd9b5a00eba8d6 Assembly-CSharp.dll:TrollBridge.Area_Dialogue
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TrollBridge.Explodable
 45388a9b75d3107492997c686d35146f Assembly-CSharp.dll:TrollBridge.Key
 c5b77decb97ffc0c36e810b155d27dde Assembly-CSharp.dll:Tiled2Unity.TiledMap
@@ -159,6 +163,7 @@ c5b77decb97ffc0c36e810b155d27dde Assembly-CSharp.dll:Tiled2Unity.TiledMap
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TrollBridge.Bomb_Explode
 153d54bb046270af4b344f85c34d9fea Assembly-CSharp.dll:TrollBridge.Weapon_Attack
 fa519d9f65cca73722e08004134f641e Assembly-CSharp.dll:TrollBridge.Change_Music
+f209369978d14f4ca1fcf39082c440e0 Assembly-CSharp.dll:.QLogButtonScipt
 6738a751df6be19a54783cb628faabd9 Assembly-CSharp.dll:TrollBridge.Tooltip
 e5d2ab09a0790b487a838c76b85afdd4 Assembly-CSharp.dll:TrollBridge.State_Transform
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
@@ -220,6 +225,7 @@ b6a4e0f46582e1b4ea27adb53405c4c7 Assembly-CSharp.dll:Tiled2Unity.SpriteDepthInMa
 da51d078e4de039808ddb47ccb950b57 Assembly-CSharp.dll:TrollBridge.Character_Stats
 6f3568b07f1c51f23c12ebee075e5a86 Assembly-CSharp.dll:TrollBridge.Inventory
 d290070ecf091336e70150a7db25d112 Assembly-CSharp.dll:Tiled2Unity.ObjectLayer
+8f98e6ea4a453c509647378bc08fd9d1 Assembly-CSharp.dll:.QuestObject
 63476c3cd723e567416f94104be571f7 Assembly-CSharp.dll:TrollBridge.Scene_Change_Instant
 89195b360fff8c48cd445aa912d24f0c Assembly-CSharp.dll:TrollBridge.Terrain_Sound_By_Distance
 56f05435941a4c20675f7413a5cc2e9d Assembly-CSharp.dll:TrollBridge.Update_Health_Icon
@@ -227,6 +233,7 @@ e11f30ae37053ec1bd20cb2c632d0f78 Assembly-CSharp.dll:TrollBridge.Immunity_Time
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TrollBridge.Equipment
 a3f8c76de52ff0fd239d286d51eb76aa Assembly-CSharp.dll:TrollBridge.Loot
 b5b1c639222325e1e07a3f69806348ed Assembly-CSharp.dll:TrollBridge.SetActive_Enter_Collision
+339b8ed92650f2e7883456e066217865 Assembly-CSharp.dll:.QuestManager
 329bcbf88b3c0197d230f5b9ceb88333 Assembly-CSharp.dll:Tiled2Unity.TmxObject
 d619d605d602982bbc0c3924ec4462f4 Assembly-CSharp.dll:TrollBridge.Start_Game
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TrollBridge.Inventory_Button
@@ -234,3 +241,4 @@ d619d605d602982bbc0c3924ec4462f4 Assembly-CSharp.dll:TrollBridge.Start_Game
 862a75c1877e7757d1a44847296effe9 Assembly-CSharp.dll:TrollBridge.Setup
 8413554523da3e320890f5fc876c289f Assembly-CSharp.dll:TrollBridge.Terrain_Collision_Effect
 2b31c1cab7233df8c4895400bf09054c Assembly-CSharp.dll:TrollBridge.Camera_Static_Slide
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.EndQuest1

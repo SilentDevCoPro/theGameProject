@@ -100,7 +100,7 @@ public class QuestManager : MonoBehaviour {
     //COMPLETE
     public void CompleteQuest(int questID)
     {
-        for (int i = 0; i < questList.Count; i++)
+        for (int i = 0; i < currentQuestList.Count; i++)
         {
             if (currentQuestList[i].id == questID && currentQuestList[i].progress == Quest.QuestProgress.COMPLETE)
             {
@@ -111,6 +111,7 @@ public class QuestManager : MonoBehaviour {
             }
         }
         //Check for chain quest
+        Debug.Log("Looking for chain quests");
         CheckChainQuest(questID);
     }
 

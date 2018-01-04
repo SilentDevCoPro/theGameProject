@@ -31,6 +31,13 @@ public class QButtonScript : MonoBehaviour {
         declineButton.interactable = false;
     }
 
+    //Quest UI
+    public void OpenQuestInterface()
+    {
+        QuestUIManager.questUIManager.questLogPanelActive = !QuestUIManager.questUIManager.questLogPanelActive;
+        QuestUIManager.questUIManager.ShowQuestLogPanel();
+    }
+
     //Show all information
     public void ShowAllInformation()
     {
