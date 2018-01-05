@@ -22,7 +22,7 @@ public class QuestManager : MonoBehaviour {
     //ADD ITEMS
     public void AddQuestItem(string questObjective, int itemAmount)
     {
-        Debug.Log("Adding Item Started");
+        Debug.Log("Adding Item Started: " + questObjective);
         for (int i = 0; i < currentQuestList.Count; i++) {
             if (currentQuestList[i].questObjective == questObjective &&
                 currentQuestList[i].progress == Quest.QuestProgress.ACCEPTED)

@@ -23,6 +23,12 @@ namespace TrollBridge {
 			Grid.stateManager.ClearList();
 			// Load the first scene that starts your game.
 			SceneManager.LoadScene (NewGameSceneName);
-		}
+
+            //QuestManager.questManager.currentQuestList.Clear();
+           // Destroy(GameObject.Find("QuestManager").gameObject);
+           // Instantiate(QuestManager.questManager);
+        }
+
+
 	}
 }
