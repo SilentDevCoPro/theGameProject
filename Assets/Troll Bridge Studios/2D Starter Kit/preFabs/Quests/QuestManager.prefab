@@ -781,18 +781,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questList:
-  - title: BIT 1
+  - title: Battle of Iris and Than
     id: 1
     progress: 1
-    description: Test Description
-    hint: Look around the city
-    congratulations: Walk a bit further to get the next quest informaton
+    description: I have felt a dark presence over the city. The stress are not what
+      they used to be, only a few straglers are left.
+    hint: I think George, the city blacksmith will be the best person to talk to,
+      the old bugger should remember an old friend!
+    congratulations: 
     sumary: 
     nextQuest: 2
-    questObjective: Look around the town
+    questObjective: 
     questObjectivesCount: 0
     questObjectiveRequirement: 1
-    moneyReward: 500
+    moneyReward: 0
     itemReward: 0
   - title: BIT 2
     id: 2

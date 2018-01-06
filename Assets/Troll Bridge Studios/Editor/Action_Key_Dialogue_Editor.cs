@@ -8,7 +8,8 @@ namespace TrollBridge {
 	[CustomEditor(typeof(Action_Key_Dialogue))]
 	public class Action_Key_Dialogue_Editor : Editor {
 
-		SerializedProperty showAreaInScene;
+        SerializedProperty dialogueComplete;
+        SerializedProperty showAreaInScene;
 		SerializedProperty rangeCollider;
 		SerializedProperty areaColor;
 
@@ -33,7 +34,9 @@ namespace TrollBridge {
 
 
 		void OnEnable(){
-			showAreaInScene = serializedObject.FindProperty ("showAreaInScene");
+            dialogueComplete = serializedObject.FindProperty("dialogueComplete");
+
+            showAreaInScene = serializedObject.FindProperty ("showAreaInScene");
 			rangeCollider = serializedObject.FindProperty ("rangeCollider");
 			areaColor = serializedObject.FindProperty ("areaColor");
 
@@ -66,9 +69,9 @@ namespace TrollBridge {
 			// Scene View title.
 			EditorGUILayout.LabelField("Scene View", EditorStyles.boldLabel);
 			// Increase the indent.
-			EditorGUI.indentLevel++;
-			// Get the togglegroup used to display the Collider2D area in the Scene View.
-			showAreaInScene.boolValue = EditorGUILayout.BeginToggleGroup(new GUIContent("Show Area In Scene", "Set to 'true' if you want to see the area that the Player can interact with in the scene view."), showAreaInScene.boolValue);
+            EditorGUI.indentLevel++;
+            // Get the togglegroup used to display the Collider2D area in the Scene View.
+            showAreaInScene.boolValue = EditorGUILayout.BeginToggleGroup(new GUIContent("Show Area In Scene", "Set to 'true' if you want to see the area that the Player can interact with in the scene view."), showAreaInScene.boolValue);
 			// Increase the Indent.
 			EditorGUI.indentLevel++;
 			// Get and Set the Collider2D used for the Interaction range.

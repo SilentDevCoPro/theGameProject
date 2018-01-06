@@ -5,9 +5,9 @@ using System.Collections.Generic;
 namespace TrollBridge {
 
 	public class Action_Key_Dialogue : MonoBehaviour {
-
-		/// Set to true if you want to see the area that the Player can interact with the NPC
-		public bool showAreaInScene = false;
+        public bool completed = false;
+        /// Set to true if you want to see the area that the Player can interact with the NPC
+        public bool showAreaInScene = false;
 		/// The Collider2D that represents the range for the Interaction to happen.
 		public Collider2D rangeCollider;
 		/// Sets the color of the Collider2D
@@ -193,8 +193,11 @@ namespace TrollBridge {
 				yield return StartCoroutine (DialogueOut ());
 				// Reset the Dialogue.
 				ResetDialogue ();
-				// Break out we are done.
-				yield break;
+                // Break out we are done.
+
+                completed = true;
+                Debug.Log("Completed: " + completed);
+                yield break;
 			} else {
 				// IF we want multiple dialogue transitions,
 				// ELSE we just want the text to be changed.
@@ -214,7 +217,7 @@ namespace TrollBridge {
 			isInTransition = false;
 			// Increase the dialogueIndex.
 			dialogueIndex++;
-		}
+        }
 		
 		private IEnumerator DialogueIn(){
 			// Based on the transition, Set the start variables.
