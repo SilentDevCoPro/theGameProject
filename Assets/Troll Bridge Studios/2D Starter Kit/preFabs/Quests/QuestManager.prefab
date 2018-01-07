@@ -784,31 +784,32 @@ MonoBehaviour:
   - title: Battle of Iris and Than
     id: 1
     progress: 1
-    description: I have felt a dark presence over the city. The stress are not what
+    description: I have felt a dark presence over the market The stress are not what
       they used to be, only a few straglers are left.
     hint: I think George, the city blacksmith will be the best person to talk to,
       the old bugger should remember an old friend!
     congratulations: 
     sumary: 
     nextQuest: 2
-    questObjective: 
+    questObjective: Talk to George, the market blacksmith.
     questObjectivesCount: 0
     questObjectiveRequirement: 1
     moneyReward: 0
     itemReward: 0
-  - title: BIT 2
+  - title: Battle of Iris and Than
     id: 2
     progress: 0
-    description: Test Description
-    hint: Walk a little further to get more information
-    congratulations: Congradulations you have completed the quest!
+    description: I have felt a dark presence over the city. The stress are not what
+      they used to be, only a few straglers are left.
+    hint: George suggested that I should talk to the remaining people in the market.
+    congratulations: 
     sumary: 
-    nextQuest: 0
-    questObjective: This Looks suspicous
+    nextQuest: 3
+    questObjective: 
     questObjectivesCount: 0
-    questObjectiveRequirement: 1
-    moneyReward: 500
-    itemReward: 5000000
+    questObjectiveRequirement: 5
+    moneyReward: 0
+    itemReward: 0
   currentQuestList: []
 --- !u!114 &114168347588243062
 MonoBehaviour:
@@ -2449,7 +2450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.028112821, y: 0.19668241}
   m_AnchorMax: {x: 0.9693384, y: 0.32000002}
-  m_AnchoredPosition: {x: 2.000021, y: -1}
+  m_AnchoredPosition: {x: 2.000021, y: -1.0000076}
   m_SizeDelta: {x: 0.29999924, y: -1.0299988}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224790004502506182

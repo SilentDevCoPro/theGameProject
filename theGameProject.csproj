@@ -432,9 +432,10 @@
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\_Scripts\UI\Continue_Game.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\_Scripts\UI\Quit_Game.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\_Scripts\UI\Start_Game.cs" />
-    <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\BIT Quest\BITStart.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\BIT Quest\EndQuest.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Firebase Script.cs" />
+    <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Quests\DialogueManager.cs" />
+    <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Quests\ObjectiveStarter.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Quests\QButtonScript.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Quests\QLogButtonScipt.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Quests\Quest.cs" />
