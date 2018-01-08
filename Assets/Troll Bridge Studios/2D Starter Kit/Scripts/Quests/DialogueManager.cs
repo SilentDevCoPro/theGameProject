@@ -15,7 +15,7 @@ namespace TrollBridge
         void Start()
         {
             if(dialogueToDisable != null)
-            action_Key_dialogue = dialogueToDisable.GetComponent<Action_Key_Dialogue>();
+                action_Key_dialogue = dialogueToDisable.GetComponent<Action_Key_Dialogue>();
         }
 
         // Update is called once per frame

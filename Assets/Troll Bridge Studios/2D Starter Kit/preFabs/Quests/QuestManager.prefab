@@ -805,7 +805,7 @@ MonoBehaviour:
     congratulations: 
     sumary: 
     nextQuest: 3
-    questObjective: 
+    questObjective: Find information about what is plaguing the market
     questObjectivesCount: 0
     questObjectiveRequirement: 5
     moneyReward: 0
@@ -2450,7 +2450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.028112821, y: 0.19668241}
   m_AnchorMax: {x: 0.9693384, y: 0.32000002}
-  m_AnchoredPosition: {x: 2.000021, y: -1.0000076}
+  m_AnchoredPosition: {x: 2.000021, y: -1}
   m_SizeDelta: {x: 0.29999924, y: -1.0299988}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224790004502506182
