@@ -774,6 +774,21 @@ MonoBehaviour:
     questObjectiveRequirement: 1
     moneyReward: 0
     itemReward: 0
+  - title: Battle of Iris and Than
+    id: 4
+    progress: 0
+    description: 
+    hint: Max says that George the back smith is withholding information about the
+      darkness that is plaguing the market. The scroll that Max has given me should
+      persuade George to help
+    congratulations: 
+    sumary: 
+    nextQuest: 4
+    questObjective: Talk to George
+    questObjectivesCount: 0
+    questObjectiveRequirement: 1
+    moneyReward: 0
+    itemReward: 0
   currentQuestList: []
 --- !u!114 &114168347588243062
 MonoBehaviour:

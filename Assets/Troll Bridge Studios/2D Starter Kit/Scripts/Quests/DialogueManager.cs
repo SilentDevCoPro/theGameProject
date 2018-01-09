@@ -9,7 +9,7 @@ namespace TrollBridge
 
         Action_Key_Dialogue action_Key_dialogue;
         public GameObject dialogueToDisable;
-        public GameObject gameObjectToEnable;
+        public GameObject[] gameObjectToEnable;
 
         // Use this for initialization
         void Start()
@@ -21,10 +21,16 @@ namespace TrollBridge
         // Update is called once per frame
         void Update()
         {
-            if(action_Key_dialogue.completed == true)
+            if (dialogueToDisable != null)
             {
-                gameObjectToEnable.SetActive(true);
-                dialogueToDisable.SetActive(false);
+                if (action_Key_dialogue.completed == true)
+                {
+                    foreach (GameObject obj in gameObjectToEnable)
+                    {
+                        obj.SetActive(true);
+                    }
+                    dialogueToDisable.SetActive(false);
+                }
             }
         }
     }

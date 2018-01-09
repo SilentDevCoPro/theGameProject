@@ -790,7 +790,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 178560, guid: 6b99df7fee0c20b4a9901621edd332eb, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b99df7fee0c20b4a9901621edd332eb, type: 2}
@@ -915,7 +915,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 410964, guid: e9a17e72f8b2a2441b102eb1dfe5502a, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4000011513399748, guid: e9a17e72f8b2a2441b102eb1dfe5502a, type: 2}
       propertyPath: m_RootOrder
@@ -1039,7 +1039,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 178560, guid: 6b99df7fee0c20b4a9901621edd332eb, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b99df7fee0c20b4a9901621edd332eb, type: 2}
@@ -1216,7 +1216,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueToDisable: {fileID: 757723236}
-  gameObjectToEnable: {fileID: 2096058026}
+  gameObjectToEnable:
+  - {fileID: 2096058026}
 --- !u!1 &248242242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1518,7 +1519,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &354558906
 Transform:
   m_ObjectHideFlags: 0
@@ -1532,7 +1533,7 @@ Transform:
   m_Children:
   - {fileID: 714770683}
   m_Father: {fileID: 757275025}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &354558907
 MonoBehaviour:
@@ -1742,7 +1743,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueToDisable: {fileID: 1817861293}
-  gameObjectToEnable: {fileID: 1238698759}
+  gameObjectToEnable:
+  - {fileID: 1238698759}
 --- !u!1 &469032116
 GameObject:
   m_ObjectHideFlags: 0
@@ -2029,7 +2031,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &531218364
 Transform:
   m_ObjectHideFlags: 0
@@ -2519,7 +2521,7 @@ Transform:
   - {fileID: 2114352577}
   - {fileID: 657355342}
   m_Father: {fileID: 1378487043}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &742377616
 MonoBehaviour:
@@ -2569,7 +2571,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &746158493
 Transform:
   m_ObjectHideFlags: 0
@@ -2674,7 +2676,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueToDisable: {fileID: 746158492}
-  gameObjectToEnable: {fileID: 732044664}
+  gameObjectToEnable:
+  - {fileID: 732044664}
 --- !u!1001 &757275022
 Prefab:
   m_ObjectHideFlags: 0
@@ -2826,6 +2829,14 @@ Prefab:
       propertyPath: m_Name
       value: BIT Dialogue
       objectReference: {fileID: 0}
+    - target: {fileID: 4000011312451978, guid: cfdd47c441d343340b09c529bd81c15d, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011696230670, guid: cfdd47c441d343340b09c529bd81c15d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cfdd47c441d343340b09c529bd81c15d, type: 2}
   m_IsPrefabParent: 0
@@ -2860,7 +2871,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &757723237
 Transform:
   m_ObjectHideFlags: 0
@@ -2901,10 +2912,10 @@ MonoBehaviour:
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85
   dialogueTextColor: {r: 1, g: 1, b: 1, a: 1}
-  instantText: 0
+  instantText: 1
   fadeText: 0
   textFadeTime: 0.6
-  typedText: 1
+  typedText: 0
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
@@ -3426,7 +3437,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueToDisable: {fileID: 1166948441}
-  gameObjectToEnable: {fileID: 1169806035}
+  gameObjectToEnable:
+  - {fileID: 1169806035}
 --- !u!1 &1113099846
 GameObject:
   m_ObjectHideFlags: 0
@@ -3468,7 +3480,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueToDisable: {fileID: 1777682769}
-  gameObjectToEnable: {fileID: 706955709}
+  gameObjectToEnable:
+  - {fileID: 706955709}
 --- !u!1 &1123147171
 GameObject:
   m_ObjectHideFlags: 0
@@ -3750,7 +3763,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1166948442
 Transform:
   m_ObjectHideFlags: 0
@@ -3927,7 +3940,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueToDisable: {fileID: 757275024}
-  gameObjectToEnable: {fileID: 719095798}
+  gameObjectToEnable:
+  - {fileID: 719095798}
+  - {fileID: 1166948441}
+  - {fileID: 1817861293}
+  - {fileID: 1777682769}
+  - {fileID: 757723236}
+  - {fileID: 746158492}
 --- !u!1 &1214873200
 GameObject:
   m_ObjectHideFlags: 0
@@ -4465,12 +4484,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 757275023}
-  - {fileID: 2110450186}
   - {fileID: 147534633}
-  - {fileID: 1905495757}
   - {fileID: 1827456116}
   - {fileID: 1721533153}
   - {fileID: 742377615}
+  - {fileID: 1905495757}
+  - {fileID: 2110450186}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5125,7 +5144,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 178560, guid: 6b99df7fee0c20b4a9901621edd332eb, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b99df7fee0c20b4a9901621edd332eb, type: 2}
@@ -5597,7 +5616,7 @@ Transform:
   - {fileID: 427247283}
   - {fileID: 1313907175}
   m_Father: {fileID: 1378487043}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1721533154
 MonoBehaviour:
@@ -5679,7 +5698,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1777682770
 Transform:
   m_ObjectHideFlags: 0
@@ -5761,7 +5780,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1817861294
 Transform:
   m_ObjectHideFlags: 0
@@ -5950,7 +5969,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 410964, guid: e9a17e72f8b2a2441b102eb1dfe5502a, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 136328, guid: e9a17e72f8b2a2441b102eb1dfe5502a, type: 2}
       propertyPath: m_Name
@@ -6146,7 +6165,7 @@ Transform:
   - {fileID: 1622777498}
   - {fileID: 2039281420}
   m_Father: {fileID: 1378487043}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1924311695
 Prefab:
@@ -6353,7 +6372,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2023283807
 Transform:
   m_ObjectHideFlags: 0
@@ -6881,7 +6900,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 496260, guid: b82bcb5b7dd3c4443be3aa18e4f8608d, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 148640, guid: b82bcb5b7dd3c4443be3aa18e4f8608d, type: 2}
       propertyPath: m_Name
