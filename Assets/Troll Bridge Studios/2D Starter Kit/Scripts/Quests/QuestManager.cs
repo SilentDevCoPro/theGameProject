@@ -22,13 +22,11 @@ public class QuestManager : MonoBehaviour {
     //ADD ITEMS
     public void AddQuestItem(string questObjective, int itemAmount)
     {
-        Debug.Log("Adding Item Started: " + questObjective);
         for (int i = 0; i < currentQuestList.Count; i++) {
             if (currentQuestList[i].questObjective == questObjective &&
                 currentQuestList[i].progress == Quest.QuestProgress.ACCEPTED)
             {
                 currentQuestList[i].questObjectivesCount += itemAmount;
-                Debug.Log("Adding Item Completed");
             }
 
             if (currentQuestList[i].questObjectivesCount >= currentQuestList[i].questObjectiveRequirement
@@ -53,11 +51,6 @@ public class QuestManager : MonoBehaviour {
                     if (questList[i].id == NPCQuestObject.avaliableQuestIDs[j] &&
                         questList[i].progress == Quest.QuestProgress.AVALIABLE)
                     {
-                        Debug.Log("Quest ID: " + NPCQuestObject.avaliableQuestIDs[j] + " " +
-                            questList[i].progress);
-                        //TESTING
-                        //AcceptQuest(NPCQuestObject.avaliableQuestIDs[j]);
-                        //pass quest UI
                         QuestUIManager.questUIManager.questAvaliable = true;
                         QuestUIManager.questUIManager.avaliableQuests.Add(questList[i]);
                     }
@@ -110,8 +103,6 @@ public class QuestManager : MonoBehaviour {
                 //REWARDS FOR COMPLETION
             }
         }
-        //Check for chain quest
-        Debug.Log("Looking for chain quests");
         CheckChainQuest(questID);
     }
 

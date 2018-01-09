@@ -89,14 +89,10 @@ public class QuestUIManager : MonoBehaviour {
     public void ShowQuestLogPanel()
     {
         questLogPanel.SetActive(true);
-        Debug.Log("Showing Quest Panel");
-        Debug.Log(questLogPanelActive + " " + questPanelActive);
         if (questLogPanelActive && !questPanelActive)
         {
-            Debug.Log("Locating all current quests");
             foreach(Quest currentQuest in QuestManager.questManager.currentQuestList)
             {
-                Debug.Log("Adding Buttons...");
                 GameObject questButton = Instantiate(qLogButton);
                 QLogButtonScipt qButton = questButton.GetComponent<QLogButtonScipt>();
 
@@ -117,7 +113,6 @@ public class QuestUIManager : MonoBehaviour {
     public void ShowQuestLog(Quest runningQuest)
     {
         questLogTitle.text = runningQuest.title;
-        Debug.Log("QUEST PROGRESS: " + runningQuest.progress);
 
         if(runningQuest.progress == Quest.QuestProgress.ACCEPTED)
         {

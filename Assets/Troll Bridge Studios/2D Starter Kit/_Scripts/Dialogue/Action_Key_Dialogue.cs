@@ -196,7 +196,6 @@ namespace TrollBridge {
                 // Break out we are done.
 
                 completed = true;
-                Debug.Log("Completed: " + completed);
                 yield break;
 			} else {
 				// IF we want multiple dialogue transitions,
