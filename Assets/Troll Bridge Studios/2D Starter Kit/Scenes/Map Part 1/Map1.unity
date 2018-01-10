@@ -800,6 +800,10 @@ RectTransform:
   m_PrefabParentObject: {fileID: 22493032, guid: 6b99df7fee0c20b4a9901621edd332eb,
     type: 2}
   m_PrefabInternal: {fileID: 108656829}
+--- !u!1 &108656831 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 178560, guid: 6b99df7fee0c20b4a9901621edd332eb, type: 2}
+  m_PrefabInternal: {fileID: 108656829}
 --- !u!1 &140510408
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,6 +1053,10 @@ RectTransform:
   m_PrefabParentObject: {fileID: 22493032, guid: 6b99df7fee0c20b4a9901621edd332eb,
     type: 2}
   m_PrefabInternal: {fileID: 158630904}
+--- !u!1 &158630906 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 178560, guid: 6b99df7fee0c20b4a9901621edd332eb, type: 2}
+  m_PrefabInternal: {fileID: 158630904}
 --- !u!1 &191880477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,9 +1223,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc6390e804985f419ea1c128b8033eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueToDisable: {fileID: 757723236}
-  gameObjectToEnable:
+  questDialogue: {fileID: 757723236}
+  dialoguesToChangeState:
   - {fileID: 2096058026}
+  - {fileID: 531218363}
 --- !u!1 &248242242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,6 +1267,7 @@ GameObject:
   - component: {fileID: 269049775}
   - component: {fileID: 269049774}
   - component: {fileID: 269049773}
+  - component: {fileID: 269049777}
   m_Layer: 0
   m_Name: Battle of Iris and Than Start
   m_TagString: Untagged
@@ -1342,6 +1352,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &269049777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 269049772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed67d367a0ca26b45927ca4df41178f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questID: 1
+  gameObjectsToChangeState:
+  - {fileID: 354558905}
+  - {fileID: 757275024}
 --- !u!1 &298941401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1742,9 +1767,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc6390e804985f419ea1c128b8033eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueToDisable: {fileID: 1817861293}
-  gameObjectToEnable:
+  questDialogue: {fileID: 1817861293}
+  dialoguesToChangeState:
   - {fileID: 1238698759}
+  - {fileID: 158630906}
 --- !u!1 &469032116
 GameObject:
   m_ObjectHideFlags: 0
@@ -2675,9 +2701,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc6390e804985f419ea1c128b8033eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueToDisable: {fileID: 746158492}
-  gameObjectToEnable:
+  questDialogue: {fileID: 746158492}
+  dialoguesToChangeState:
   - {fileID: 732044664}
+  - {fileID: 1587876210}
 --- !u!1001 &757275022
 Prefab:
   m_ObjectHideFlags: 0
@@ -2835,7 +2862,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000011696230670, guid: cfdd47c441d343340b09c529bd81c15d, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cfdd47c441d343340b09c529bd81c15d, type: 2}
@@ -3436,9 +3463,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc6390e804985f419ea1c128b8033eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueToDisable: {fileID: 1166948441}
-  gameObjectToEnable:
+  questDialogue: {fileID: 1166948441}
+  dialoguesToChangeState:
   - {fileID: 1169806035}
+  - {fileID: 108656831}
 --- !u!1 &1113099846
 GameObject:
   m_ObjectHideFlags: 0
@@ -3479,9 +3507,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc6390e804985f419ea1c128b8033eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueToDisable: {fileID: 1777682769}
-  gameObjectToEnable:
+  questDialogue: {fileID: 1777682769}
+  dialoguesToChangeState:
   - {fileID: 706955709}
+  - {fileID: 2023283806}
 --- !u!1 &1123147171
 GameObject:
   m_ObjectHideFlags: 0
@@ -3758,7 +3787,7 @@ GameObject:
   - component: {fileID: 1166948444}
   - component: {fileID: 1166948443}
   m_Layer: 8
-  m_Name: Bit Dialogue
+  m_Name: BIT Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3939,14 +3968,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc6390e804985f419ea1c128b8033eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueToDisable: {fileID: 757275024}
-  gameObjectToEnable:
-  - {fileID: 719095798}
+  questDialogue: {fileID: 757275024}
+  dialoguesToChangeState:
+  - {fileID: 108656831}
   - {fileID: 1166948441}
+  - {fileID: 158630906}
   - {fileID: 1817861293}
+  - {fileID: 2023283806}
   - {fileID: 1777682769}
+  - {fileID: 531218363}
   - {fileID: 757723236}
+  - {fileID: 1587876210}
   - {fileID: 746158492}
+  - {fileID: 719095798}
 --- !u!1 &1214873200
 GameObject:
   m_ObjectHideFlags: 0
@@ -5153,6 +5187,10 @@ Prefab:
 RectTransform:
   m_PrefabParentObject: {fileID: 22493032, guid: 6b99df7fee0c20b4a9901621edd332eb,
     type: 2}
+  m_PrefabInternal: {fileID: 1587876208}
+--- !u!1 &1587876210 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 178560, guid: 6b99df7fee0c20b4a9901621edd332eb, type: 2}
   m_PrefabInternal: {fileID: 1587876208}
 --- !u!1 &1595573121
 GameObject:
