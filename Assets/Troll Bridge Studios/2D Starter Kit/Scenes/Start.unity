@@ -6817,15 +6817,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224264682480979982, guid: fdb1ccaa40d213b4286d251bb693ed8e,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -3.085022
-      objectReference: {fileID: 0}
     - target: {fileID: 224497432113527064, guid: fdb1ccaa40d213b4286d251bb693ed8e,
         type: 2}
       propertyPath: m_AnchoredPosition.y
       value: -3.0783691
+      objectReference: {fileID: 0}
+    - target: {fileID: 224264682480979982, guid: fdb1ccaa40d213b4286d251bb693ed8e,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -3.085022
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fdb1ccaa40d213b4286d251bb693ed8e, type: 2}

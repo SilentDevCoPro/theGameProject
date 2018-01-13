@@ -733,7 +733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questList:
-  - title: Battle of Iris and Than
+  - title: BIT
     id: 1
     progress: 1
     description: I have felt a dark presence over the market The stress are not what
@@ -743,17 +743,17 @@ MonoBehaviour:
     congratulations: 
     sumary: 
     nextQuest: 2
-    questObjective: Talk to George, the market blacksmith.
+    questObjective: Talk to George, the market blacksmith
     questObjectivesCount: 0
     questObjectiveRequirement: 1
     moneyReward: 0
     itemReward: 0
-  - title: Battle of Iris and Than
+  - title: BIT
     id: 2
     progress: 0
     description: 
     hint: George suggested that I should talk to the remaining people in the market.
-    congratulations: STAGE 2 COMPLETED
+    congratulations: 
     sumary: 
     nextQuest: 3
     questObjective: Find information about what is plaguing the market
@@ -761,7 +761,7 @@ MonoBehaviour:
     questObjectiveRequirement: 5
     moneyReward: 0
     itemReward: 0
-  - title: Battle of Iris and Than
+  - title: BIT
     id: 3
     progress: 0
     description: 
@@ -774,7 +774,7 @@ MonoBehaviour:
     questObjectiveRequirement: 1
     moneyReward: 0
     itemReward: 0
-  - title: Battle of Iris and Than
+  - title: BIT
     id: 4
     progress: 0
     description: 
@@ -783,8 +783,64 @@ MonoBehaviour:
       persuade George to help
     congratulations: 
     sumary: 
-    nextQuest: 4
+    nextQuest: 5
     questObjective: Talk to George
+    questObjectivesCount: 0
+    questObjectiveRequirement: 1
+    moneyReward: 0
+    itemReward: 0
+  - title: BIT
+    id: 5
+    progress: 0
+    description: 
+    hint: Near Georges body I found an old diary called "Iris" which has her location
+      noted inside. The diary says that Iris is found where the river meets the sea
+    congratulations: 
+    sumary: 
+    nextQuest: 6
+    questObjective: Find Iris
+    questObjectivesCount: 0
+    questObjectiveRequirement: 1
+    moneyReward: 0
+    itemReward: 0
+  - title: BIT
+    id: 6
+    progress: 0
+    description: 
+    hint: Iris told me that the only way to defeat Than is by using her ancient sword,
+      unfotunately the sword has been lost for decades in the caverns bellow the the
+      land, I will have to find the sword if I want to put an end to Thans curse
+    congratulations: 
+    sumary: 
+    nextQuest: 7
+    questObjective: Locate the lost sword of Iris
+    questObjectivesCount: 0
+    questObjectiveRequirement: 1
+    moneyReward: 0
+    itemReward: 0
+  - title: BIT
+    id: 7
+    progress: 0
+    description: 
+    hint: I have found the sword of Iris, she wanted to see it before I faced Than
+    congratulations: 
+    sumary: 
+    nextQuest: 8
+    questObjective: Return the sword to Iris
+    questObjectivesCount: 0
+    questObjectiveRequirement: 1
+    moneyReward: 0
+    itemReward: 0
+  - title: BIT
+    id: 8
+    progress: 0
+    description: 
+    hint: Iris has embued her sword with the remainder of her powers, she said that
+      I'm not ready to face Than
+    congratulations: 
+    sumary: 
+    nextQuest: 9
+    questObjective: Locate Than in the caverns bellow
     questObjectivesCount: 0
     questObjectiveRequirement: 1
     moneyReward: 0

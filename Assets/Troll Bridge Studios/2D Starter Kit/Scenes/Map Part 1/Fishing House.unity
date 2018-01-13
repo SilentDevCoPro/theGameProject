@@ -217,7 +217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &463499848
 Transform:
   m_ObjectHideFlags: 0
@@ -231,7 +231,7 @@ Transform:
   m_Children:
   - {fileID: 488428373}
   m_Father: {fileID: 1553318133}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &463499849
 MonoBehaviour:
@@ -707,8 +707,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dc6390e804985f419ea1c128b8033eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueToDisable: {fileID: 1553318134}
-  gameObjectToEnable: {fileID: 1029298461}
+  questDialogue: {fileID: 1553318134}
+  dialoguesToChangeState:
+  - {fileID: 1029298461}
 --- !u!1 &1029298461
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,11 +1057,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011898494880, guid: b82bcb5b7dd3c4443be3aa18e4f8608d, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4000011105005668, guid: b82bcb5b7dd3c4443be3aa18e4f8608d, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4000010668977256, guid: b82bcb5b7dd3c4443be3aa18e4f8608d, type: 2}
       propertyPath: m_RootOrder
@@ -1068,11 +1069,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013299328362, guid: b82bcb5b7dd3c4443be3aa18e4f8608d, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1000011004679628, guid: b82bcb5b7dd3c4443be3aa18e4f8608d, type: 2}
       propertyPath: m_Name
       value: BIT Dialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013285006982, guid: b82bcb5b7dd3c4443be3aa18e4f8608d, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011004679628, guid: b82bcb5b7dd3c4443be3aa18e4f8608d, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b82bcb5b7dd3c4443be3aa18e4f8608d, type: 2}
@@ -1091,6 +1100,25 @@ GameObject:
   m_PrefabParentObject: {fileID: 1000011004679628, guid: b82bcb5b7dd3c4443be3aa18e4f8608d,
     type: 2}
   m_PrefabInternal: {fileID: 1553318131}
+--- !u!1 &1553318135 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 148640, guid: b82bcb5b7dd3c4443be3aa18e4f8608d, type: 2}
+  m_PrefabInternal: {fileID: 1553318131}
+--- !u!114 &1553318136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1553318135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed67d367a0ca26b45927ca4df41178f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questID: 3
+  gameObjectsToChangeState:
+  - {fileID: 1553318134}
+  - {fileID: 463499847}
 --- !u!1 &1567895339
 GameObject:
   m_ObjectHideFlags: 0

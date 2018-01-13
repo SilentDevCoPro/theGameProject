@@ -6,7 +6,6 @@ namespace TrollBridge
 {
     public class DialogueManager : MonoBehaviour
     {
-
         Action_Key_Dialogue action_Key_dialogue;
         public GameObject questDialogue;
         public GameObject[] dialoguesToChangeState;
