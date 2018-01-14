@@ -670,6 +670,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23575725523114046, guid: 37e96435c85d43341942178a5a2d746a,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37e96435c85d43341942178a5a2d746a, type: 2}
   m_IsPrefabParent: 0
@@ -1743,7 +1748,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &437912632
 Transform:
   m_ObjectHideFlags: 0
@@ -2546,7 +2551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25552412ec46968498c3425083b917b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questObjective: Talk to George, the market blacksmith.
+  questObjective: Talk to George, the market blacksmith
   amount: 1
   questIDToComplete: 1
   questIDToAccept: 2
@@ -2943,7 +2948,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 190314, guid: cfdd47c441d343340b09c529bd81c15d, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cfdd47c441d343340b09c529bd81c15d, type: 2}
@@ -2980,6 +2985,7 @@ MonoBehaviour:
   questID: 4
   gameObjectsToChangeState:
   - {fileID: 757275026}
+  - {fileID: 437912631}
 --- !u!1 &757723236
 GameObject:
   m_ObjectHideFlags: 0
@@ -6334,7 +6340,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1866478436
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6706,9 +6712,8 @@ GameObject:
   - component: {fileID: 1977639786}
   - component: {fileID: 1977639789}
   - component: {fileID: 1977639788}
-  - component: {fileID: 1977639787}
   m_Layer: 8
-  m_Name: Area_Dialogue
+  m_Name: BIT Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6728,18 +6733,6 @@ Transform:
   m_Father: {fileID: 1866478436}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1977639787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114954181016464130, guid: 20825aaa16377154e8cd3a96232c4f51,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1977639785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1977639788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6790,9 +6783,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.36899567, y: -1.2454038}
+  m_Offset: {x: 0, y: -0.28727436}
   serializedVersion: 2
-  m_Radius: 3.0114942
+  m_Radius: 1.1517792
 --- !u!1 &2016466230
 GameObject:
   m_ObjectHideFlags: 0
