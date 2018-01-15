@@ -1428,7 +1428,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2110450186}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &311111992
 GameObject:
@@ -1702,6 +1702,50 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 370889251}
+--- !u!1 &406252031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 406252032}
+  - component: {fileID: 406252033}
+  m_Layer: 0
+  m_Name: ObjectiveStarter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &406252032
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 406252031}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.13, y: -0.63, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 437912632}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &406252033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 406252031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25552412ec46968498c3425083b917b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questObjective: Talk to George
+  amount: 1
+  questIDToComplete: 4
+  questIDToAccept: 5
 --- !u!1 &427247282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1760,6 +1804,8 @@ Transform:
   m_LocalPosition: {x: 0.13, y: 0.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1328737682}
+  - {fileID: 406252032}
   - {fileID: 1866478436}
   m_Father: {fileID: 1378487043}
   m_RootOrder: 0
@@ -4173,6 +4219,50 @@ MonoBehaviour:
   - {fileID: 1587876210}
   - {fileID: 746158492}
   - {fileID: 719095798}
+--- !u!1 &1205288301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1205288302}
+  - component: {fileID: 1205288303}
+  m_Layer: 0
+  m_Name: ObjectiveStarter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1205288302
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1205288301}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -35.9, y: -13.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2110450186}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1205288303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1205288301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25552412ec46968498c3425083b917b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questObjective: Find Iris
+  amount: 1
+  questIDToComplete: 5
+  questIDToAccept: 6
 --- !u!1 &1214873200
 GameObject:
   m_ObjectHideFlags: 0
@@ -4225,20 +4315,20 @@ MonoBehaviour:
   dialogueBox: {fileID: 949228574}
   dialogueColor: {r: 1, g: 1, b: 1, a: 1}
   multipleTransitions: 0
-  isInstantDialogue: 0
-  isFadeDialogue: 1
+  isInstantDialogue: 1
+  isFadeDialogue: 0
   fadeTime: 0.7
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85
   dialogueTextColor: {r: 1, g: 1, b: 1, a: 1}
-  instantText: 0
+  instantText: 1
   fadeText: 0
   textFadeTime: 0.6
-  typedText: 1
+  typedText: 0
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - This just happened
+  - "\t\tGlenda\nHello there young traveller, what brings you to these parts?"
 --- !u!58 &1214873203
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4654,6 +4744,51 @@ Transform:
   m_Father: {fileID: 2016466232}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1328737681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1328737682}
+  - component: {fileID: 1328737683}
+  m_Layer: 0
+  m_Name: DialogueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1328737682
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1328737681}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.13, y: -0.63, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 437912632}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1328737683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1328737681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e51b2f3ce47f11145b85d7bc5f048bab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questDialogue: {fileID: 1977639785}
+  dialoguesToChangeState:
+  - {fileID: 406252031}
+  - {fileID: 2110450188}
+  - {fileID: 1214873200}
 --- !u!1 &1346944534
 GameObject:
   m_ObjectHideFlags: 0
@@ -5110,7 +5245,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2110450186}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1490606145
 GameObject:
@@ -5462,6 +5597,50 @@ RectTransform:
 GameObject:
   m_PrefabParentObject: {fileID: 178560, guid: 6b99df7fee0c20b4a9901621edd332eb, type: 2}
   m_PrefabInternal: {fileID: 1587876208}
+--- !u!1 &1595082722
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1595082723}
+  - component: {fileID: 1595082724}
+  m_Layer: 0
+  m_Name: DialogueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1595082723
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1595082722}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -35.9, y: -13.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2110450186}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1595082724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1595082722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dc6390e804985f419ea1c128b8033eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questDialogue: {fileID: 1214873200}
+  dialoguesToChangeState:
+  - {fileID: 203354634}
+  - {fileID: 1205288301}
 --- !u!1 &1595573121
 GameObject:
   m_ObjectHideFlags: 0
@@ -6354,7 +6533,7 @@ RectTransform:
   m_Children:
   - {fileID: 1977639786}
   m_Father: {fileID: 437912632}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6745,13 +6924,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a2f9835f7a342040ac0a22910b8666f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDialogueCompleted: 0
+  completed: 0
   showAreaInScene: 0
   rangeCollider: {fileID: 0}
   areaColor: {r: 0, g: 0, b: 0, a: 1}
   dialogueBox: {fileID: 878240369}
   dialogueColor: {r: 1, g: 1, b: 1, a: 1}
-  inactiveTime: 0
+  inactiveTime: 5
   multipleTransitions: 0
   chatDuration: 4.2
   isInstantDialogue: 1
@@ -6760,10 +6939,10 @@ MonoBehaviour:
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.6
   dialogueTextColor: {r: 1, g: 1, b: 1, a: 1}
-  instantText: 0
+  instantText: 1
   fadeText: 0
   textFadeTime: 0.8
-  typedText: 1
+  typedText: 0
   dialogueTextPause: 0.01
   typeSound: {fileID: 0}
   dialogue:
@@ -7120,7 +7299,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2110450186}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2088381343
 GameObject:
@@ -7489,11 +7668,27 @@ Prefab:
     - target: {fileID: 114000012261801226, guid: b82bcb5b7dd3c4443be3aa18e4f8608d,
         type: 2}
       propertyPath: dialogue.Array.data[0]
-      value: 
+      value: Default
       objectReference: {fileID: 0}
     - target: {fileID: 1000012067717252, guid: b82bcb5b7dd3c4443be3aa18e4f8608d, type: 2}
       propertyPath: m_Name
       value: Iris
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011898494880, guid: b82bcb5b7dd3c4443be3aa18e4f8608d, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010668977256, guid: b82bcb5b7dd3c4443be3aa18e4f8608d, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011105005668, guid: b82bcb5b7dd3c4443be3aa18e4f8608d, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013299328362, guid: b82bcb5b7dd3c4443be3aa18e4f8608d, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b82bcb5b7dd3c4443be3aa18e4f8608d, type: 2}
@@ -7505,6 +7700,11 @@ Transform:
 --- !u!224 &2110450187 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224000010870197744, guid: b82bcb5b7dd3c4443be3aa18e4f8608d,
+    type: 2}
+  m_PrefabInternal: {fileID: 2110450185}
+--- !u!1 &2110450188 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000011004679628, guid: b82bcb5b7dd3c4443be3aa18e4f8608d,
     type: 2}
   m_PrefabInternal: {fileID: 2110450185}
 --- !u!1 &2114352576

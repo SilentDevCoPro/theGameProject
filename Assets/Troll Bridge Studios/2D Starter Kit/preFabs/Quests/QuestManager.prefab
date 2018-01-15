@@ -793,8 +793,9 @@ MonoBehaviour:
     id: 5
     progress: 0
     description: 
-    hint: Near Georges body I found an old diary called "Iris" which has her location
-      noted inside. The diary says that Iris is found where the river meets the sea
+    hint: The book says that Iris is found where the river meets the seahich has her
+      location noted inside. The diary says that Iris is found where the river meets
+      the sea
     congratulations: 
     sumary: 
     nextQuest: 6

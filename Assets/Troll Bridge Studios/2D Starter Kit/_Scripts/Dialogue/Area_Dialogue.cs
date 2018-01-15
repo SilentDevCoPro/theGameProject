@@ -6,7 +6,7 @@ namespace TrollBridge {
 
 	public class Area_Dialogue : MonoBehaviour {
 
-        public bool isDialogueCompleted = false;
+        public bool completed = false;
         /// Set to 'true' if you want to see the area that the Player can interact with the NPC
         public bool showAreaInScene = false;
 		/// The Collider2D that represents the range for the Interaction to happen.
@@ -199,7 +199,6 @@ namespace TrollBridge {
 			yield return StartCoroutine(DialogueOut());
 			// Set the dialogue box inactive.
 			dialogueBox.SetActive(false);
-            isDialogueCompleted = true;
 			// Suspend the coroutine for 'inactiveTime' seconds.
 			yield return new WaitForSeconds(inactiveTime);
 			// Boolean to let us know we are done waiting.
@@ -236,8 +235,9 @@ namespace TrollBridge {
 				// Suspend the coroutine for 'chatDuration' seconds.
 				yield return new WaitForSeconds (chatDuration);
 			}
-			// Finish up the last transition, destroy and start the timer.
-			yield return StartCoroutine (EndDialogue());
+            // Finish up the last transition, destroy and start the timer.
+            completed = true;
+            yield return StartCoroutine (EndDialogue());
 			yield break;
 		}
 
