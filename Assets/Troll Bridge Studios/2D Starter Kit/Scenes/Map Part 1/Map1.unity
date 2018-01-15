@@ -1100,6 +1100,7 @@ GameObject:
   - component: {fileID: 203354635}
   - component: {fileID: 203354637}
   - component: {fileID: 203354636}
+  - component: {fileID: 203354638}
   m_Layer: 0
   m_Name: CaveEnt
   m_TagString: Untagged
@@ -1160,6 +1161,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.675521, y: 3.6011987}
   m_EdgeRadius: 0
+--- !u!114 &203354638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 203354634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75147f47328276e43ad864f6283de415, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultActiveState: 1
 --- !u!1 &206711192
 GameObject:
   m_ObjectHideFlags: 0
