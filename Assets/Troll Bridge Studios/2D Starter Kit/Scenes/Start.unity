@@ -6827,6 +6827,13 @@ Prefab:
       propertyPath: m_AnchoredPosition.y
       value: -3.085022
       objectReference: {fileID: 0}
+    - target: {fileID: 114160244218215208, guid: fdb1ccaa40d213b4286d251bb693ed8e,
+        type: 2}
+      propertyPath: questList.Array.data[4].hint
+      value: ' says that Iris is found where the river meets the seahich has her location
+        noted inside. The diary says that Iris is found where the river meets the
+        sea'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fdb1ccaa40d213b4286d251bb693ed8e, type: 2}
   m_IsPrefabParent: 0
