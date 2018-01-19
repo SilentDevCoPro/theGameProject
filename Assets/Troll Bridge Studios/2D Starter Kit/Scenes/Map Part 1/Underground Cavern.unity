@@ -194,6 +194,7 @@ RectTransform:
   m_Children:
   - {fileID: 1870590270}
   - {fileID: 1366786898}
+  - {fileID: 242858687}
   m_Father: {fileID: 951911739}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -292,6 +293,88 @@ Transform:
   - {fileID: 767959741}
   m_Father: {fileID: 45800065}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &242858684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1000011004679628, guid: b82bcb5b7dd3c4443be3aa18e4f8608d,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 242858687}
+  - component: {fileID: 242858686}
+  - component: {fileID: 242858685}
+  m_Layer: 8
+  m_Name: BIT Dialogue (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &242858685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114000012261801226, guid: b82bcb5b7dd3c4443be3aa18e4f8608d,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 242858684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e492aec992de43247af68de3ecd2f96a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  completed: 0
+  showAreaInScene: 0
+  rangeCollider: {fileID: 0}
+  areaColor: {r: 0, g: 0, b: 0, a: 1}
+  dialogueBox: {fileID: 679446106}
+  dialogueColor: {r: 1, g: 1, b: 1, a: 1}
+  multipleTransitions: 0
+  isInstantDialogue: 1
+  isFadeDialogue: 0
+  fadeTime: 0.7
+  isGrowShrinkDialogue: 0
+  growShrinkTime: 0.85
+  dialogueTextColor: {r: 1, g: 1, b: 1, a: 1}
+  instantText: 1
+  fadeText: 0
+  textFadeTime: 0.6
+  typedText: 0
+  dialogueTextPause: 0.015
+  typeSound: {fileID: 0}
+  dialogue:
+  - "\t\tThan\nMy power is fading but I shall return!"
+--- !u!58 &242858686
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 58000012534386586, guid: b82bcb5b7dd3c4443be3aa18e4f8608d,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 242858684}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.24}
+  serializedVersion: 2
+  m_Radius: 1.27
+--- !u!4 &242858687
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4000013285006982, guid: b82bcb5b7dd3c4443be3aa18e4f8608d,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 242858684}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0000019073486, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 679446110}
+  m_Father: {fileID: 50236041}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &284418430
 GameObject:
@@ -783,6 +866,7 @@ GameObject:
   m_Component:
   - component: {fileID: 542306069}
   - component: {fileID: 542306070}
+  - component: {fileID: 542306071}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -816,9 +900,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questDialogue: {fileID: 1366786897}
   dialoguesToChangeState:
-  - {fileID: 1725806117}
-  - {fileID: 1870590269}
   - {fileID: 1366786897}
+  - {fileID: 1736275236}
+  - {fileID: 1323393647}
+--- !u!114 &542306071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 542306068}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e51b2f3ce47f11145b85d7bc5f048bab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questDialogue: {fileID: 242858684}
+  dialoguesToChangeState:
+  - {fileID: 1725806117}
 --- !u!1 &546882895
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,6 +1031,94 @@ MonoBehaviour:
   amount: 1
   questIDToComplete: 6
   questIDToAccept: 7
+--- !u!1 &679446106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1000011205340912, guid: b82bcb5b7dd3c4443be3aa18e4f8608d,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 679446110}
+  - component: {fileID: 679446109}
+  - component: {fileID: 679446108}
+  - component: {fileID: 679446107}
+  m_Layer: 5
+  m_Name: dialoguePanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &679446107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114000010450344738, guid: b82bcb5b7dd3c4443be3aa18e4f8608d,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 679446106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5abe10972c83f241b59944f7febf1d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueImage: {fileID: 679446108}
+  dialogueText: {fileID: 1300280028}
+--- !u!114 &679446108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114000010053005522, guid: b82bcb5b7dd3c4443be3aa18e4f8608d,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 679446106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300092, guid: 8136b2883c2811a48909fd87464b8f6c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &679446109
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222000014090990602, guid: b82bcb5b7dd3c4443be3aa18e4f8608d,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 679446106}
+--- !u!224 &679446110
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224000013255300152, guid: b82bcb5b7dd3c4443be3aa18e4f8608d,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 679446106}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1300280030}
+  m_Father: {fileID: 242858687}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 2}
+  m_SizeDelta: {x: 4.727, y: 1.5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &767959740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1502,7 +1688,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1054239260
 Transform:
   m_ObjectHideFlags: 0
@@ -1705,6 +1891,84 @@ Transform:
   m_Father: {fileID: 530642211}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1300280027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1000013426549678, guid: b82bcb5b7dd3c4443be3aa18e4f8608d,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1300280030}
+  - component: {fileID: 1300280029}
+  - component: {fileID: 1300280028}
+  m_Layer: 5
+  m_Name: dialogueText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1300280028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114000013542512676, guid: b82bcb5b7dd3c4443be3aa18e4f8608d,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1300280027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 2a70aa9e610717a49bb8a6a1083302d3, type: 3}
+    m_FontSize: 18
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &1300280029
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222000011674974914, guid: b82bcb5b7dd3c4443be3aa18e4f8608d,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1300280027}
+--- !u!224 &1300280030
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224000011445278132, guid: b82bcb5b7dd3c4443be3aa18e4f8608d,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1300280027}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_Children: []
+  m_Father: {fileID: 679446110}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.011009246, y: 0.011036955}
+  m_SizeDelta: {x: 435.208, y: 114.379}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1323393647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1714,6 +1978,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1323393648}
   - component: {fileID: 1323393649}
+  - component: {fileID: 1323393650}
   m_Layer: 0
   m_Name: Robert
   m_TagString: Untagged
@@ -1769,6 +2034,22 @@ MonoBehaviour:
   GetHitSound: {fileID: 0}
   DieSound: {fileID: 0}
   afterDeathVisual: {fileID: 0}
+  dead: 0
+--- !u!114 &1323393650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1323393647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed67d367a0ca26b45927ca4df41178f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questID: 9
+  gameObjectsToChangeState:
+  - {fileID: 1870590269}
+  - {fileID: 1366786897}
 --- !u!1 &1362628758
 GameObject:
   m_ObjectHideFlags: 0
@@ -2349,6 +2630,16 @@ Prefab:
       propertyPath: m_Name
       value: Than
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013113554116, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: DefaultHealth
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013113554116, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: DefaultMaxHealth
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
   m_IsPrefabParent: 0
@@ -2356,6 +2647,26 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 453554, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
   m_PrefabInternal: {fileID: 1736275234}
+--- !u!1 &1736275236 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 167804, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
+  m_PrefabInternal: {fileID: 1736275234}
+--- !u!114 &1736275237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1736275236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce47da3128ddadb47ab8aa744660ce2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcManagerObject: {fileID: 1736275236}
+  gameObjectsToChangeState:
+  - {fileID: 1323393647}
+  - {fileID: 242858684}
+  - {fileID: 1736275236}
 --- !u!1 &1804007761
 GameObject:
   m_ObjectHideFlags: 0
@@ -2548,8 +2859,8 @@ MonoBehaviour:
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\t\tScared Citizen\nTheres people following me in the night, small flickers
-    and shadows. I don't need you following me as well!"
+  - "\t\t\tRobert\nTheres people following me in the night, small flickers and shadows.
+    I don't need you following me as well!"
 --- !u!58 &1870590272
 CircleCollider2D:
   m_ObjectHideFlags: 0

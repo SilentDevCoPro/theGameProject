@@ -5,6 +5,8 @@ namespace TrollBridge {
 
 	public class NPC_Manager : Character, Can_Take_Damage, Can_Attack {
 
+        public bool dead = false;
+
 	//	public int Experience = 0;
 		private Character_Stats charStats;
 
@@ -39,6 +41,7 @@ namespace TrollBridge {
 		/// Everything you want to happen when the GameObject dies.
 		/// </summary>
 		private void Death(){
+            dead = true;
 			// Display health as 0.
 			charStats.CurrentHealth = 0f;
 			// Play the Die sound.

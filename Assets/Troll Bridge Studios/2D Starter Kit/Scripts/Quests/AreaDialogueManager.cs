@@ -14,7 +14,11 @@ namespace TrollBridge
         void Start()
         {
             if (questDialogue != null)
+            {
+                Debug.Log("=======QUEST DIALOGUE SET======");
                 area_dialogue = questDialogue.GetComponent<Area_Dialogue>();
+                
+            }
         }
 
         // Update is called once per frame
@@ -22,7 +26,7 @@ namespace TrollBridge
         {
             if (questDialogue != null)
             {
-                if (area_dialogue.completed == true)
+                if (area_dialogue.completed)
                 {
                     foreach (GameObject obj in dialoguesToChangeState)
                     {
