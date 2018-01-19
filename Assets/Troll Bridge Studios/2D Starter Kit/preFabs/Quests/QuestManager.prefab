@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 114181333276158654}
   m_Layer: 5
   m_Name: Decline
-  m_TagString: Untagged
+  m_TagString: DeclineButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -505,7 +505,7 @@ GameObject:
   - component: {fileID: 114168347588243062}
   m_Layer: 5
   m_Name: Accept
-  m_TagString: Untagged
+  m_TagString: AcceptButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -841,11 +841,26 @@ MonoBehaviour:
     congratulations: 
     sumary: 
     nextQuest: 9
-    questObjective: Locate Than in the caverns bellow
+    questObjective: Locate Than
     questObjectivesCount: 0
     questObjectiveRequirement: 1
     moneyReward: 0
     itemReward: 0
+  - title: BIT
+    id: 9
+    progress: 0
+    description: 
+    hint: Than has been defeated, you should tell Iris the good news. A portal has
+      opened up by the rift.
+    congratulations: The curse has been lifted from the maket. Constratulations you
+      have completed the Battle of Iris and Than!
+    sumary: 
+    nextQuest: 0
+    questObjective: Talk to Iris
+    questObjectivesCount: 0
+    questObjectiveRequirement: 1
+    moneyReward: 500
+    itemReward: 1
   currentQuestList: []
 --- !u!114 &114168347588243062
 MonoBehaviour:

@@ -437,6 +437,7 @@
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Quests\AreaDialogueManager.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Quests\DialogueManager.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Quests\OnQuestStart.cs" />
+    <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Quests\OpenQuestInterface.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Quests\QButtonScript.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Quests\QLogButtonScipt.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Quests\Quest.cs" />

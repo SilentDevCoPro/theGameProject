@@ -2619,11 +2619,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 816220084}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32f36c3d6686ae469c00aa86d876438, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f48c0169325d5a4ab7c39649978c224, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questID: 0
-  questTitle: {fileID: 0}
 --- !u!114 &816220087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2664,7 +2662,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 816220086}
-        m_MethodName: OpenQuestInterface
+        m_MethodName: Open
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3518,8 +3516,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 87.5, y: -13.976745}
-  m_SizeDelta: {x: 161, y: 13.953489}
+  m_AnchoredPosition: {x: 87.5, y: -13.525681}
+  m_SizeDelta: {x: 161, y: 13.051361}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &993021166
 MonoBehaviour:
@@ -5901,7 +5899,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 751, y: -430}
-  m_SizeDelta: {x: 175, y: 27.95349}
+  m_SizeDelta: {x: 175, y: 27.051361}
   m_Pivot: {x: -0.1, y: 0}
 --- !u!225 &1639702550
 CanvasGroup:
@@ -6817,15 +6815,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224497432113527064, guid: fdb1ccaa40d213b4286d251bb693ed8e,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -3.0783691
-      objectReference: {fileID: 0}
     - target: {fileID: 224264682480979982, guid: fdb1ccaa40d213b4286d251bb693ed8e,
         type: 2}
       propertyPath: m_AnchoredPosition.y
       value: -3.085022
+      objectReference: {fileID: 0}
+    - target: {fileID: 224497432113527064, guid: fdb1ccaa40d213b4286d251bb693ed8e,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -3.0783691
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fdb1ccaa40d213b4286d251bb693ed8e, type: 2}

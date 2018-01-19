@@ -8,7 +8,7 @@ namespace TrollBridge {
 	[CustomEditor(typeof(Action_Key_Dialogue))]
 	public class Action_Key_Dialogue_Editor : Editor {
 
-        SerializedProperty dialogueComplete;
+        //SerializedProperty dialogueComplete;
         SerializedProperty showAreaInScene;
 		SerializedProperty rangeCollider;
 		SerializedProperty areaColor;
@@ -34,7 +34,7 @@ namespace TrollBridge {
 
 
 		void OnEnable(){
-            dialogueComplete = serializedObject.FindProperty("dialogueComplete");
+            //dialogueComplete = serializedObject.FindProperty("dialogueComplete");
 
             showAreaInScene = serializedObject.FindProperty ("showAreaInScene");
 			rangeCollider = serializedObject.FindProperty ("rangeCollider");

@@ -1,0 +1,257 @@
+[33mcommit 1ac6d5ed1255ba007ab3f82a2f6a8122f6588834[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Fri Jan 19 12:24:56 2018 +1300
+
+    Quest Layout Completed
+
+[33mcommit 377f463dbb591b206d2779761d8aab44af56cff2[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Tue Jan 16 16:58:51 2018 +1300
+
+    Quest Updated
+
+[33mcommit 1380ff77a99e15db22c7310621c2fd8e1e1eb05a[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Tue Jan 16 09:32:45 2018 +1300
+
+    Major Bug Fixed
+
+[33mcommit ed83f69a373a4d023021e1e8bdfb67c01a44e9fc[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Mon Jan 15 21:37:04 2018 +1300
+
+    Quest Updated
+
+[33mcommit ce15ba80a1fa84acf716a95401c3d84a222e5f4f[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Mon Jan 15 19:05:40 2018 +1300
+
+    Quest Updated
+
+[33mcommit ce00340b24fa52a1c7742daa9cb2b628475d8cc2[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Mon Jan 15 18:16:26 2018 +1300
+
+    Quest System Update
+
+[33mcommit a1fe708ecb1e5ac4d3047bb576ef8c9cf413e5e3[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Mon Jan 15 11:05:47 2018 +1300
+
+    Major Quest System Bug Fixed
+
+[33mcommit 1973d2ea6a28914555eece8b50eeee184524a745[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Sun Jan 14 09:47:56 2018 +1300
+
+    Quest Updated 70% Complete
+
+[33mcommit 2be08a7e3ef4369b242f410b0e130e637df636ed[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Wed Jan 10 14:38:35 2018 +1300
+
+    Quest System Update - Start quest activates objects
+
+[33mcommit 82bbf182e40db702e3b30033172d263de22ac2df[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Wed Jan 10 11:00:41 2018 +1300
+
+    Quest System Update - Dialogue Manager can enable multiple objects
+
+[33mcommit d3c976ab16ff93ec5c1ccbcd7d7ea143c06787e0[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Tue Jan 9 21:43:41 2018 +1300
+
+    Quest System Update - Multi-part objectives
+
+[33mcommit ab31595b64d86127a8553241cae4f113fd35e264[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Mon Jan 8 20:05:46 2018 +1300
+
+    Started Writing BIT
+
+[33mcommit d76c8173414636de73bae5d026c331c5788b4706[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Sun Jan 7 14:09:39 2018 +1300
+
+    Started Creating Quest
+
+[33mcommit 49efe731585455fab5cd6936dffc48e21f2e6a0b[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Sat Jan 6 22:04:04 2018 +1300
+
+    Quest System Bug Fixes
+
+[33mcommit f9a61857130b5adde9428a9052827613fe128ede[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Sat Jan 6 10:24:56 2018 +1300
+
+    Quest System Bug Fixes
+
+[33mcommit 17673c71be70abd097c28919b74e8b7deb559070[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Thu Jan 4 17:47:53 2018 +1300
+
+    Chain Quests Complete
+
+[33mcommit 0282edb9dcff8078f6553da72c1a0b15151d675a[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Thu Jan 4 09:14:02 2018 +1300
+
+    Quest GUI Completed
+
+[33mcommit c3b6337f3df3013bafae57f873b02ed40f21d3f3[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Wed Jan 3 21:30:57 2018 +1300
+
+    Quest GUI Updated
+
+[33mcommit 12fbc228bddbd841fde170674a1e6b6d004a2e48[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Wed Jan 3 20:34:24 2018 +1300
+
+    Quest GUI Updated
+
+[33mcommit 043e902dbad84326c7792a4f2a978b07647c8078[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Wed Jan 3 12:42:05 2018 +1300
+
+    Quest GUI Buttons Update
+
+[33mcommit 092e39cf18fdadba7882b1eed83d9b7e30ecc037[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Tue Jan 2 21:36:40 2018 +1300
+
+    Quest GUI Updated
+
+[33mcommit eca699efb4e40dd734c3c30cd7c17cee9200eb96[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Mon Jan 1 20:04:29 2018 +1300
+
+    Quest Log and Quest UI
+
+[33mcommit 02b39f8161cb3d46edc8e10bf57a1b7e01d7d3c0[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Mon Jan 1 17:48:54 2018 +1300
+
+    Quest UI Deveopment
+
+[33mcommit 605aa40bec1d3c65f781dfbf3b6301aae8d2a179[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Mon Jan 1 10:21:21 2018 +1300
+
+    Quest system basics running
+
+[33mcommit ca10fd0bd22fe6673715bfde9fe6abbdd6555ea8[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Mon Jan 1 07:04:07 2018 +1300
+
+    Quest System Started
+
+[33mcommit 2605cb90ab49823db4805cf6125506cdf0e4828e[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Sat Dec 30 16:14:26 2017 +1300
+
+    Started NPC Development
+
+[33mcommit 0b0fba79f208af7ea2500ef8cbaeb424595a9056[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Fri Dec 29 19:47:40 2017 +1300
+
+    Updated GUI
+
+[33mcommit 29b2b3d7af557c58fc2d88b9f5ea343ad5194854[m
+Author: Max <editing4life@gmail.com>
+Date:   Thu Dec 21 23:00:16 2017 +1300
+
+    Start UI Changes
+
+[33mcommit 4963d6499ec7cb8ef47a8317769c54b542cb2fed[m
+Author: Max <editing4life@gmail.com>
+Date:   Wed Dec 20 21:41:19 2017 +1300
+
+    Character Combat and Enemies added
+
+[33mcommit b94da4a862332034ff1824c51db1f182caa475ff[m
+Author: Max <editing4life@gmail.com>
+Date:   Wed Dec 20 15:55:21 2017 +1300
+
+    All scenes are linked together
+
+[33mcommit cfafc7c874152a0009d229a81c6ecba12dda81d1[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Sat Dec 16 20:08:36 2017 +1300
+
+    Underground cavern added
+
+[33mcommit 642ecdb95ee7f021c74619e4b8e48c372d81cde4[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Thu Dec 14 18:31:05 2017 +1300
+
+    Spawn room added
+
+[33mcommit 41fe434b6d0e02aa41d8d3466e9d9ba6b5c0906d[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Thu Dec 14 17:27:24 2017 +1300
+
+    Spawn map completed
+
+[33mcommit a617753b4344cddf6aa123d220f44449e74e5dd3[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Thu Dec 14 12:54:59 2017 +1300
+
+    Build 0.0.0.0
+
+[33mcommit 0f3172b9ff0f72da1101afd0ae2b3038d26b5885[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Wed Dec 13 20:22:01 2017 +1300
+
+    Collisions modified
+
+[33mcommit 3c120908b9338d3cb89868590e521899ed39a2a8[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Tue Dec 12 21:30:58 2017 +1300
+
+    Collisions update to map
+
+[33mcommit d6174734bbd9849bbc84cff2e41f48454070dc56[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Tue Dec 12 19:01:02 2017 +1300
+
+    Farm updated, fishing village updated
+
+[33mcommit f0d10086ca0fb7686886cc74627b0be72c32abde[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Tue Dec 12 13:03:25 2017 +1300
+
+    Castle Map Updated
+
+[33mcommit 71099e9ee29c5f4d0bbf6289c83a96d6d809f90f[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Sun Dec 10 17:09:22 2017 +1300
+
+    10-12-17 Backup
+
+[33mcommit c4c176ec786483b28cfd01752ddd926160cd81db[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Sat Dec 9 23:41:15 2017 +1300
+
+    09-12-17 Commit
+
+[33mcommit b0499afd9168251475abf36c3d8174db42c2b1a6[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Sat Dec 9 15:45:20 2017 +1300
+
+    Map1 scene setup
+
+[33mcommit c86cda911fe3cd983db8bd7cc0faad42856eedca[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Thu Dec 7 18:52:40 2017 +1300
+
+    LPC Base pack added
+
+[33mcommit 3b2cd479cf9149a8d0f657e845dc4188c1b54aba[m
+Author: Max McGregor <editing4life@gmail.com>
+Date:   Thu Dec 7 09:28:09 2017 +1300
+
+    First commit

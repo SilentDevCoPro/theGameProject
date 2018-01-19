@@ -19,6 +19,7 @@ public class QButtonScript : MonoBehaviour {
 
     private void Start()
     {
+        Debug.Log("QButton Starting");
         findAcceptButton = GameObject.Find("Accept").gameObject;
         acceptButtonScript = findAcceptButton.GetComponent<QButtonScript>();
         acceptButton = findAcceptButton.GetComponent<Button>();
@@ -29,13 +30,6 @@ public class QButtonScript : MonoBehaviour {
 
         acceptButton.interactable = false;
         declineButton.interactable = false;
-    }
-
-    //Quest UI
-    public void OpenQuestInterface()
-    {
-        QuestUIManager.questUIManager.questLogPanelActive = !QuestUIManager.questUIManager.questLogPanelActive;
-        QuestUIManager.questUIManager.ShowQuestLogPanel();
     }
 
     //Show all information
