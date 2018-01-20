@@ -181,8 +181,9 @@ namespace TrollBridge {
 			}
 			// IF the dialogue box is not active.
 			if (!dialogueBox.activeInHierarchy) {
-				// Display the dialogue box.
-				dialogueBox.SetActive (true);
+                _playerManager.CanMove = false;
+                // Display the dialogue box.
+                dialogueBox.SetActive (true);
 				// Boolean to let us know we will have to wait till this is finished.
 				isFinished = false;
 				// Since we created a dialogue GameObject we go to the next part of the dialogue chat.
@@ -237,6 +238,7 @@ namespace TrollBridge {
 			}
             // Finish up the last transition, destroy and start the timer.
             completed = true;
+            _playerManager.CanMove = true;
             yield return StartCoroutine (EndDialogue());
 			yield break;
 		}
@@ -374,8 +376,8 @@ namespace TrollBridge {
 		}
 
 		public void ResetDialogue(){
-			// Stop the coroutines for resetting the dialogue.
-			StopAllCoroutines();
+            // Stop the coroutines for resetting the dialogue.
+            StopAllCoroutines();
 			// Immediatley set this dialogue inactive with DialogueOut results.
 			ShutDownDialogue();
 

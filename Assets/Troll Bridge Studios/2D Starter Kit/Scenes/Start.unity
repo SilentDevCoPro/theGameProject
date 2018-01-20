@@ -3516,8 +3516,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 87.5, y: -13.525681}
-  m_SizeDelta: {x: 161, y: 13.051361}
+  m_AnchoredPosition: {x: 87.5, y: -13.515837}
+  m_SizeDelta: {x: 161, y: 13.031673}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &993021166
 MonoBehaviour:
@@ -5899,7 +5899,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 751, y: -430}
-  m_SizeDelta: {x: 175, y: 27.051361}
+  m_SizeDelta: {x: 175, y: 27.031673}
   m_Pivot: {x: -0.1, y: 0}
 --- !u!225 &1639702550
 CanvasGroup:
@@ -6824,6 +6824,10 @@ Prefab:
         type: 2}
       propertyPath: m_AnchoredPosition.y
       value: -3.0783691
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831105162248584, guid: fdb1ccaa40d213b4286d251bb693ed8e, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fdb1ccaa40d213b4286d251bb693ed8e, type: 2}
