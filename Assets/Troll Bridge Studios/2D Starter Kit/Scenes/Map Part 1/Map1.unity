@@ -2505,7 +2505,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questObjective: Talk to Iris
   amount: 1
-  questIDToComplete: 10
+  questIDToComplete: 9
   questIDToAccept: 0
 --- !u!1 &657355341
 GameObject:
@@ -2988,6 +2988,7 @@ MonoBehaviour:
   DieSound: {fileID: 0}
   afterDeathVisual: {fileID: 0}
   dead: 0
+  objectsToChangeState: []
 --- !u!1 &746158492
 GameObject:
   m_ObjectHideFlags: 0
@@ -6090,6 +6091,7 @@ GameObject:
   - component: {fileID: 1595082723}
   - component: {fileID: 1595082724}
   - component: {fileID: 1595082725}
+  - component: {fileID: 1595082726}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -6144,6 +6146,20 @@ MonoBehaviour:
   questDialogue: {fileID: 865757396}
   dialoguesToChangeState:
   - {fileID: 1077980473}
+--- !u!114 &1595082726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1595082722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dc6390e804985f419ea1c128b8033eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questDialogue: {fileID: 462678527}
+  dialoguesToChangeState:
+  - {fileID: 645848693}
 --- !u!1 &1595573121
 GameObject:
   m_ObjectHideFlags: 0
@@ -6729,6 +6745,7 @@ MonoBehaviour:
   DieSound: {fileID: 0}
   afterDeathVisual: {fileID: 0}
   dead: 0
+  objectsToChangeState: []
 --- !u!1 &1736986936
 GameObject:
   m_ObjectHideFlags: 0
@@ -7748,6 +7765,7 @@ MonoBehaviour:
   DieSound: {fileID: 0}
   afterDeathVisual: {fileID: 0}
   dead: 0
+  objectsToChangeState: []
 --- !u!1 &2039281419
 GameObject:
   m_ObjectHideFlags: 0

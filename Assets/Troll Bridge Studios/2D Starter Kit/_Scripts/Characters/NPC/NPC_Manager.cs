@@ -2,8 +2,7 @@
 using System.Collections;
 
 namespace TrollBridge {
-
-	public class NPC_Manager : Character, Can_Take_Damage, Can_Attack {
+    public class NPC_Manager : Character, Can_Take_Damage, Can_Attack {
 
         public bool dead = false;
         public GameObject[] objectsToChangeState;
@@ -43,8 +42,15 @@ namespace TrollBridge {
 		/// Everything you want to happen when the GameObject dies.
 		/// </summary>
 		private void Death(){
-			// Display health as 0.
-			charStats.CurrentHealth = 0f;
+            foreach (GameObject obj in objectsToChangeState)
+            {
+                if (!obj.activeSelf)
+                    obj.SetActive(true);
+                else
+                    obj.SetActive(false);
+            }
+            // Display health as 0.
+            charStats.CurrentHealth = 0f;
 			// Play the Die sound.
 			Grid.soundManager.PlaySound (DieSound, transform.position, 1f, 1f);
 			// Drop loot if this has any.

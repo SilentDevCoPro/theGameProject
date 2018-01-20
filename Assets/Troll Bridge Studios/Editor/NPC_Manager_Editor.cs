@@ -8,7 +8,8 @@ namespace TrollBridge {
 	[CustomEditor(typeof(NPC_Manager))]
 	public class NPC_Manager_Editor : Editor {
 
-		SerializedProperty characterType;
+        //SerializedProperty objectsToChangeState;
+        SerializedProperty characterType;
 		SerializedProperty canBeJolted;
 		SerializedProperty hitAnimationTime;
 		SerializedProperty characterEntity;
@@ -39,7 +40,8 @@ namespace TrollBridge {
 
 
 		void OnEnable(){
-			characterType = serializedObject.FindProperty ("characterType");
+            //objectsToChangeState = serializedObject.FindProperty("objectsToChangeState");
+            characterType = serializedObject.FindProperty ("characterType");
 			canBeJolted = serializedObject.FindProperty ("CanBeJolted");
 			hitAnimationTime = serializedObject.FindProperty ("HitAnimationTime");
 			characterEntity = serializedObject.FindProperty ("characterEntity");
@@ -70,6 +72,7 @@ namespace TrollBridge {
 		}
 
 		public override void OnInspectorGUI(){
+            
 			// Set the indentLevel to 0 as default (no indent).
 			EditorGUI.indentLevel = 0;
 			// Update.
@@ -77,7 +80,8 @@ namespace TrollBridge {
 			// Set the label width.
 			EditorGUIUtility.labelWidth = 200f;
 
-			EditorGUILayout.PropertyField (characterType, new GUIContent ("Character Type", "What type of character do you want this GameObject to be?"));
+            //EditorGUILayout.PropertyField (objectsToChangeState, new GUIContent("Objects to change state on death", "All objects will change their current states when the NPC dies"));
+            EditorGUILayout.PropertyField (characterType, new GUIContent ("Character Type", "What type of character do you want this GameObject to be?"));
 			EditorGUILayout.PropertyField (canBeJolted, new GUIContent ("Can Be Knockedback", "Does this character suffer from a knockback when taking damage?"));
 			EditorGUILayout.PropertyField (characterEntity, new GUIContent ("Character GameObject", "The character that is associated to this Manager."));
 
@@ -123,6 +127,7 @@ namespace TrollBridge {
 
 			// Apply
 			serializedObject.ApplyModifiedProperties ();
+            base.OnInspectorGUI();
 		}
 	}
 }
