@@ -213,7 +213,8 @@ public class QuestUIManager : MonoBehaviour {
                 if(avaliableQuests[i].progress == Quest.QuestProgress.AVALIABLE)
                 {
                     questDescription.text = avaliableQuests[i].description;
-                    questSummary.text = avaliableQuests[i].questObjective + ": " + avaliableQuests[i].questObjectivesCount + " / " + avaliableQuests[i].questObjectiveRequirement;
+                    //THIS IS THE QUEST OBJECTIVE
+                    //questSummary.text = avaliableQuests[i].questObjective + ": " + avaliableQuests[i].questObjectivesCount + " / " + avaliableQuests[i].questObjectiveRequirement;
                 }
             }
         }
