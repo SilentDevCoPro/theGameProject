@@ -16,15 +16,10 @@ public class QuestObjective : MonoBehaviour {
 
         if (questIDToComplete > 0 && questIDToAccept > 0)
         {
-            Debug.Log("STEP 1 COMPLETED");
             for (int i = 0; i < QuestManager.questManager.currentQuestList.Count; i++)
             {
-                Debug.Log("Current Quest Count: " + i);
                 if (QuestManager.questManager.currentQuestList[i].questObjective == questObjective)
                 {
-                    Debug.Log("Current: " + QuestManager.questManager.currentQuestList[i].questObjectivesCount
-                        + "/Objective: " + QuestManager.questManager.currentQuestList[i].questObjectiveRequirement);
-
                     if (QuestManager.questManager.currentQuestList[i].questObjectivesCount == QuestManager.questManager.currentQuestList[i].questObjectiveRequirement)
                     {
                         QuestManager.questManager.CompleteQuest(questIDToComplete);

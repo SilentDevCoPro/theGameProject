@@ -6,6 +6,7 @@ namespace TrollBridge {
 	public class NPC_Manager : Character, Can_Take_Damage, Can_Attack {
 
         public bool dead = false;
+        public GameObject[] objectsToChangeState;
 
 	//	public int Experience = 0;
 		private Character_Stats charStats;
@@ -28,8 +29,9 @@ namespace TrollBridge {
 			charStats.CurrentHealth -= damage;
 			// IF the current health is 0 or below.
 			if(charStats.CurrentHealth <= 0f){
-				// Do all the stuff you want when this GameObject Dies.
-				Death ();
+                dead = true;
+                // Do all the stuff you want when this GameObject Dies.
+                Death ();
 				// GTFO.
 				return;
 			}
@@ -41,7 +43,6 @@ namespace TrollBridge {
 		/// Everything you want to happen when the GameObject dies.
 		/// </summary>
 		private void Death(){
-            dead = true;
 			// Display health as 0.
 			charStats.CurrentHealth = 0f;
 			// Play the Die sound.

@@ -11,11 +11,10 @@ namespace TrollBridge
         public GameObject[] dialoguesToChangeState;
 
         // Use this for initialization
-        void Start()
+        void Awake()
         {
             if (questDialogue != null)
             {
-                Debug.Log("=======QUEST DIALOGUE SET======");
                 area_dialogue = questDialogue.GetComponent<Area_Dialogue>();
                 
             }

@@ -700,7 +700,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 97256951}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.04, y: -4.86, z: 0}
+  m_LocalPosition: {x: -4.56, y: -7.76, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1000166875}
@@ -1138,6 +1138,10 @@ Prefab:
     - target: {fileID: 4786535714693946, guid: 79bad51f7f1934e468f669612106b943, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1765244885049648, guid: 79bad51f7f1934e468f669612106b943, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79bad51f7f1934e468f669612106b943, type: 2}
@@ -2983,6 +2987,7 @@ MonoBehaviour:
   GetHitSound: {fileID: 0}
   DieSound: {fileID: 0}
   afterDeathVisual: {fileID: 0}
+  dead: 0
 --- !u!1 &746158492
 GameObject:
   m_ObjectHideFlags: 0
@@ -6723,6 +6728,7 @@ MonoBehaviour:
   GetHitSound: {fileID: 0}
   DieSound: {fileID: 0}
   afterDeathVisual: {fileID: 0}
+  dead: 0
 --- !u!1 &1736986936
 GameObject:
   m_ObjectHideFlags: 0
@@ -7741,6 +7747,7 @@ MonoBehaviour:
   GetHitSound: {fileID: 0}
   DieSound: {fileID: 0}
   afterDeathVisual: {fileID: 0}
+  dead: 0
 --- !u!1 &2039281419
 GameObject:
   m_ObjectHideFlags: 0
@@ -8323,7 +8330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed67d367a0ca26b45927ca4df41178f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questID: 10
+  questID: 9
   gameObjectsToChangeState:
   - {fileID: 2110450188}
   - {fileID: 462678527}

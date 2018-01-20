@@ -19,7 +19,6 @@ public class QButtonScript : MonoBehaviour {
 
     private void Start()
     {
-        Debug.Log("QButton Starting");
         findAcceptButton = GameObject.Find("Accept").gameObject;
         acceptButtonScript = findAcceptButton.GetComponent<QButtonScript>();
         acceptButton = findAcceptButton.GetComponent<Button>();
