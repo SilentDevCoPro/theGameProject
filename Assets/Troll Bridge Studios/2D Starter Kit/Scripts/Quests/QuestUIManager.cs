@@ -117,12 +117,14 @@ public class QuestUIManager : MonoBehaviour {
         if(runningQuest.progress == Quest.QuestProgress.ACCEPTED)
         {
             questLogDescription.text = runningQuest.hint;
-            questLogSummary.text = runningQuest.questObjective + ": " + runningQuest.questObjectivesCount + " / " + runningQuest.questObjectiveRequirement;
+            //Quest Objective
+            //questLogSummary.text = runningQuest.questObjective + ": " + runningQuest.questObjectivesCount + " / " + runningQuest.questObjectiveRequirement;
         }
         else if (runningQuest.progress == Quest.QuestProgress.COMPLETE)
         {
             questLogDescription.text = runningQuest.congratulations;
-            questLogSummary.text = runningQuest.questObjective + ": " + runningQuest.questObjectivesCount + " / " + runningQuest.questObjectiveRequirement;
+            //Quest Objective
+            ///questLogSummary.text = runningQuest.questObjective + ": " + runningQuest.questObjectivesCount + " / " + runningQuest.questObjectiveRequirement;
 
         }
     }

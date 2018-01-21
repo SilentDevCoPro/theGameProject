@@ -5,12 +5,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22473794}
-  - 222: {fileID: 22207780}
-  - 114: {fileID: 11488574}
-  - 114: {fileID: 11431150}
+  - component: {fileID: 22473794}
+  - component: {fileID: 22207780}
+  - component: {fileID: 11488574}
+  - component: {fileID: 11431150}
   m_Layer: 5
   m_Name: dialoguePanel
   m_TagString: Untagged
@@ -23,11 +23,11 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 22441264}
-  - 222: {fileID: 22274312}
-  - 114: {fileID: 11439972}
+  - component: {fileID: 22441264}
+  - component: {fileID: 22274312}
+  - component: {fileID: 11439972}
   m_Layer: 5
   m_Name: dialogueText
   m_TagString: Untagged
@@ -132,6 +132,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22473794}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -150,6 +151,7 @@ RectTransform:
   - {fileID: 22441264}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 2}

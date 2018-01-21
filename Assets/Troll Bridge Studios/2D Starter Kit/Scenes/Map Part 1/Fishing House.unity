@@ -257,7 +257,7 @@ MonoBehaviour:
   fadeTime: 0.7
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85
-  dialogueTextColor: {r: 1, g: 1, b: 1, a: 1}
+  dialogueTextColor: {r: 0.5882353, g: 0.15686275, b: 0, a: 1}
   instantText: 1
   fadeText: 0
   textFadeTime: 0.6
@@ -1081,6 +1081,21 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000011004679628, guid: b82bcb5b7dd3c4443be3aa18e4f8608d, type: 2}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012261801226, guid: b82bcb5b7dd3c4443be3aa18e4f8608d,
+        type: 2}
+      propertyPath: dialogueTextColor.r
+      value: 0.5882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012261801226, guid: b82bcb5b7dd3c4443be3aa18e4f8608d,
+        type: 2}
+      propertyPath: dialogueTextColor.g
+      value: 0.15686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012261801226, guid: b82bcb5b7dd3c4443be3aa18e4f8608d,
+        type: 2}
+      propertyPath: dialogueTextColor.b
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

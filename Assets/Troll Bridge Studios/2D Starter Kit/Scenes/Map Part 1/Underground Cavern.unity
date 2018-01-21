@@ -336,7 +336,7 @@ MonoBehaviour:
   fadeTime: 0.7
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85
-  dialogueTextColor: {r: 1, g: 1, b: 1, a: 1}
+  dialogueTextColor: {r: 0.5882353, g: 0.15686275, b: 0, a: 1}
   instantText: 1
   fadeText: 0
   textFadeTime: 0.6
@@ -2108,7 +2108,7 @@ MonoBehaviour:
   fadeTime: 0.5
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.6
-  dialogueTextColor: {r: 1, g: 1, b: 1, a: 1}
+  dialogueTextColor: {r: 0.5882353, g: 0.15686275, b: 0, a: 1}
   instantText: 1
   fadeText: 0
   textFadeTime: 0.8
@@ -2190,7 +2190,7 @@ MonoBehaviour:
   fadeTime: 0.7
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85
-  dialogueTextColor: {r: 1, g: 1, b: 1, a: 1}
+  dialogueTextColor: {r: 0.5882353, g: 0.15686275, b: 0, a: 1}
   instantText: 1
   fadeText: 0
   textFadeTime: 0.6
@@ -2848,7 +2848,7 @@ MonoBehaviour:
   fadeTime: 0.7
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85
-  dialogueTextColor: {r: 1, g: 1, b: 1, a: 1}
+  dialogueTextColor: {r: 0.5882353, g: 0.15686275, b: 0, a: 1}
   instantText: 0
   fadeText: 0
   textFadeTime: 0.6
