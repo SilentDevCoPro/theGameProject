@@ -229,13 +229,13 @@ public class QuestUIManager : MonoBehaviour {
                 if(runningQuests[i].progress == Quest.QuestProgress.ACCEPTED)
                 {
                     questDescription.text = runningQuests[i].hint;
-                    questSummary.text = runningQuests[i].questObjective + ": " + runningQuests[i].questObjectivesCount + " / " + runningQuests[i].questObjectiveRequirement;
+                    //questSummary.text = runningQuests[i].questObjective + ": " + runningQuests[i].questObjectivesCount + " / " + runningQuests[i].questObjectiveRequirement;
 
                 }
                 else if(runningQuests[i].progress == Quest.QuestProgress.COMPLETE)
                 {
                     questDescription.text = runningQuests[i].congratulations;
-                    questSummary.text = runningQuests[i].questObjective + ": " + runningQuests[i].questObjectivesCount + " / " + runningQuests[i].questObjectiveRequirement;
+                    //questSummary.text = runningQuests[i].questObjective + ": " + runningQuests[i].questObjectivesCount + " / " + runningQuests[i].questObjectiveRequirement;
                 }
             }
         }

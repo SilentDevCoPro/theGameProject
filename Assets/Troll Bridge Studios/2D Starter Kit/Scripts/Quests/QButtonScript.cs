@@ -17,8 +17,22 @@ public class QButtonScript : MonoBehaviour {
     private QButtonScript acceptButtonScript;
     private QButtonScript declineButtonScript;
 
+    private GameObject textAccept;
+    private GameObject textDecline;
+
+    private Text textAcceptScript;
+    private Text textDeclineScript;
+
+
     private void Start()
     {
+
+        textAccept = GameObject.Find("TextButtonAccept");
+        textAcceptScript = textAccept.GetComponent<Text>();
+
+        textDecline = GameObject.Find("TextButtonDecline");
+        textDeclineScript = textDecline.GetComponent<Text>();
+
         findAcceptButton = GameObject.Find("Accept").gameObject;
         acceptButtonScript = findAcceptButton.GetComponent<QButtonScript>();
         acceptButton = findAcceptButton.GetComponent<Button>();
@@ -27,8 +41,12 @@ public class QButtonScript : MonoBehaviour {
         declineButtonScript = findDeclineButton.GetComponent<QButtonScript>();
         declineButton = findDeclineButton.GetComponent<Button>();
 
+        textAcceptScript.color = Color.clear;
+        textDeclineScript.color = Color.clear;
+
         acceptButton.interactable = false;
         declineButton.interactable = false;
+
     }
 
     //Show all information
@@ -39,6 +57,8 @@ public class QButtonScript : MonoBehaviour {
         //Accept button
         if(QuestManager.questManager.RequestAvaliableQuest(questID))
         {
+            textAcceptScript.color = Color.white;
+            textDeclineScript.color = Color.white;
             acceptButton.interactable = true;
             declineButton.interactable = true;
             acceptButtonScript.questID = questID;
