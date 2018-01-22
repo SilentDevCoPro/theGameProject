@@ -26,7 +26,6 @@ public class QButtonScript : MonoBehaviour {
 
     private void Start()
     {
-
         textAccept = GameObject.Find("TextButtonAccept");
         textAcceptScript = textAccept.GetComponent<Text>();
 
@@ -73,6 +72,8 @@ public class QButtonScript : MonoBehaviour {
     public void CloseQuestPanel()
     {
         QuestUIManager.questUIManager.HideQuestPanel();
+        acceptButton.interactable = false;
+        declineButton.interactable = false;
     }
 
     public void AcceptQuest()

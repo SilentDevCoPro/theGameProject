@@ -41,8 +41,8 @@ public class QuestUIManager : MonoBehaviour {
     //Info
     public Text questTitle;
     public Text questDescription;
-    public Text questSummary;
-    public Text questRewards;
+    //public Text questSummary;
+    //public Text questRewards;
 
     //Quest Log Info
     public Text questLogTitle;
@@ -156,8 +156,8 @@ public class QuestUIManager : MonoBehaviour {
         //Clear all text fields
         questTitle.text = "Quest Menu";
         questDescription.text = "Select an avaliable or running quest from the left hand side panel to get started!";
-        questSummary.text = "";
-        questRewards.text = "";
+        //questSummary.text = "";
+        //questRewards.text = "";
         
 
         //Clear lists
