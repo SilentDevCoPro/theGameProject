@@ -8,10 +8,11 @@ public class QLogButtonScipt : MonoBehaviour {
     public int questID;
     public Text questTitle;
 
+
+
     public void ShowAllInformation()
     {
         QuestManager.questManager.ShowQustLog(questID);
-
     }
 
     public void ClosePanel()

@@ -50,6 +50,10 @@ public class QuestUIManager : MonoBehaviour {
     public Text questLogSummary;
     public Text questLogRewards;
 
+    //Quest Log Scroll Bar
+    public GameObject scrollBar;
+    public ScrollRect scrollRect;
+
     private void Awake()
     {
         if (questUIManager == null)
@@ -109,32 +113,45 @@ public class QuestUIManager : MonoBehaviour {
         }
     }
 
+    IEnumerator ScrollToTop()
+    {
+        yield return new WaitForEndOfFrame();
+        scrollRect = scrollBar.GetComponent<ScrollRect>();
+        scrollRect.gameObject.SetActive(true);
+        scrollRect.verticalNormalizedPosition = 0f;
+    }
+
     //Show quest log
     public void ShowQuestLog(Quest runningQuest)
     {
         questLogTitle.text = runningQuest.title;
-
-        if(runningQuest.progress == Quest.QuestProgress.ACCEPTED)
+        
+        if (runningQuest.progress == Quest.QuestProgress.ACCEPTED)
         {
             questLogDescription.text = runningQuest.hint;
+            StartCoroutine(ScrollToTop());
             //Quest Objective
             //questLogSummary.text = runningQuest.questObjective + ": " + runningQuest.questObjectivesCount + " / " + runningQuest.questObjectiveRequirement;
         }
         else if (runningQuest.progress == Quest.QuestProgress.COMPLETE)
         {
             questLogDescription.text = runningQuest.congratulations;
+            StartCoroutine(ScrollToTop());
             //Quest Objective
             ///questLogSummary.text = runningQuest.questObjective + ": " + runningQuest.questObjectivesCount + " / " + runningQuest.questObjectiveRequirement;
 
         }
     }
 
+
     //Hides quest log
     public void HideQuestPanel()
     {
+        scrollRect.gameObject.SetActive(false);
         questPanelActive = false;
         questAvaliable = false;
         questRunning = false;
+
 
         //Clear all text fields
         questTitle.text = "Quest Menu";
