@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 222082776245873184}
   - component: {fileID: 114316226294280064}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Title Backer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1159,7 +1159,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 224994198832040202}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99999994
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1528,7 +1528,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: a3d7243f8f1f2fc4aad780c81efe481d, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -1540,7 +1540,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quest Description
+  m_Text: 'Quest Description
+
+    This is a test description to see how the fonts
+
+    Perform during this test of lines
+
+
+    Lines lines LinesSS'
 --- !u!114 &114753444505903704
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1722,7 +1729,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: ff0baf8aae612e94ab6a123514bc4481, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -2163,8 +2170,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000022769185, y: 110.53501}
-  m_SizeDelta: {x: -241.17, y: -258.67}
+  m_AnchoredPosition: {x: 0.6, y: 110.53501}
+  m_SizeDelta: {x: -187.2, y: -258.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224092068162791584
 RectTransform:
@@ -2258,8 +2265,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.8633362}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.5714788, y: -13.504639}
-  m_SizeDelta: {x: -112.22, y: -11}
+  m_AnchoredPosition: {x: -0.3, y: -13.504639}
+  m_SizeDelta: {x: -103.5, y: -11}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224367521921883192
 RectTransform:
@@ -2462,7 +2469,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.039}
   m_AnchorMin: {x: 0.025214657, y: 0}
   m_AnchorMax: {x: 0.919, y: 1}
-  m_AnchoredPosition: {x: 1.0100021, y: -0.08634949}
+  m_AnchoredPosition: {x: 1.0100021, y: -0.086364746}
   m_SizeDelta: {x: -44.24, y: 0}
   m_Pivot: {x: 0.5, y: 0.96}
 --- !u!224 &224685208440045484
