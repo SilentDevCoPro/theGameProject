@@ -47,8 +47,8 @@ public class QuestUIManager : MonoBehaviour {
     //Quest Log Info
     public Text questLogTitle;
     public Text questLogDescription;
-    public Text questLogSummary;
-    public Text questLogRewards;
+    //public Text questLogSummary;
+    //public Text questLogRewards;
 
     //Quest Log Scroll Bar
     public GameObject scrollBar;
@@ -183,8 +183,8 @@ public class QuestUIManager : MonoBehaviour {
 
         questLogTitle.text = "Quest Log Menu";
         questLogDescription.text = "Select a quest from the left hand side panel to view your progress!";
-        questLogSummary.text = "";
-        questLogRewards.text = "";
+        //questLogSummary.text = "";
+        //questLogRewards.text = "";
 
         //Clear buttons
         for(int i = 0; i < qButtons.Count; i++)
