@@ -16,7 +16,11 @@ public class Quest{
     public QuestProgress progress;
     //String for quest giver/reciever
     public string description;
+    //String for previous quest hits
+    [TextArea]
+    public string crossedOutHint;
     //String for quest giver/reciever
+    [TextArea]
     public string hint;
     //String for quest giver/reciever
     public string congratulations;

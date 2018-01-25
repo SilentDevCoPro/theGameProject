@@ -128,7 +128,15 @@ public class QuestUIManager : MonoBehaviour {
         
         if (runningQuest.progress == Quest.QuestProgress.ACCEPTED)
         {
-            questLogDescription.text = runningQuest.hint;
+            string strikethrough = "";
+            foreach (char c in runningQuest.crossedOutHint)
+            {
+                if(!c.Equals("\n"))
+                    strikethrough = strikethrough + c + '\u0336';
+            }
+            questLogDescription.text = strikethrough;
+            questLogDescription.text += "\n\n";
+            questLogDescription.text += runningQuest.hint;
             StartCoroutine(ScrollToTop());
             //Quest Objective
             //questLogSummary.text = runningQuest.questObjective + ": " + runningQuest.questObjectivesCount + " / " + runningQuest.questObjectiveRequirement;
