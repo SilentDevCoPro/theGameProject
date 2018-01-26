@@ -922,9 +922,10 @@ MonoBehaviour:
       the location of Iris is unknown, one of the locals did mention that Max the
       old fisherman may know the location of Iris as he has gained the most knowledge
       due to his travels.
-    hint: Max says that George the back smith is withholding information about the
-      darkness that is plaguing the market. The scroll that Max has given me should
-      persuade George to help
+    hint: Max said that Iris had taken a human form many decades ago as she had wanted
+      to learn what it felt like to be mortal. He also mentioned that George the back
+      smith is withholding information about the darkness that is plaguing the market.
+      The scroll that Max has given me should persuade George to help.
     congratulations: 
     sumary: 
     nextQuest: 5
@@ -938,13 +939,24 @@ MonoBehaviour:
     progress: 0
     description: 
     crossedOutHint:
-    - 
-    - 
-    - 
-    - 
-    hint: The book says that Iris is found where the river meets the seahich has her
-      location noted inside. The diary says that Iris is found where the river meets
-      the sea
+    - George the market blacksmith and an old friend of mine might be able to tell
+      me what has happened to the markt.
+    - George suggested that I should talk to the remaining people in the market and
+      that they should prodive me with information of the dark presence.
+    - The remaining people in the market have told a story of an ancient evil which
+      has laid a curse over the market, this curse has caused the deaths of many locals.
+      The ancient curse has been crated by the god of death "Than". Myth has it that
+      the only way to deafeat Than is by using the god of lights power "Iris". Unfortunately
+      the location of Iris is unknown, one of the locals did mention that Max the
+      old fisherman may know the location of Iris as he has gained the most knowledge
+      due to his travels.
+    - Max said that Iris had taken a human form many decades ago as she had wanted
+      to learn what it felt like to be mortal. He also mentioned that George the back
+      smith is withholding information about the darkness that is plaguing the market.
+      The scroll that Max has given me should persuade George to help.
+    hint: The scroll which was hidden within Georges belonging tells a story about
+      how he found Iris many years ago where the ocean meets the market river and
+      how he had sworn an oath to never reveal her location.
     congratulations: 
     sumary: 
     nextQuest: 6
@@ -958,14 +970,28 @@ MonoBehaviour:
     progress: 0
     description: 
     crossedOutHint:
-    - 
-    - 
-    - 
-    - 
-    - 
+    - George the market blacksmith and an old friend of mine might be able to tell
+      me what has happened to the markt.
+    - George suggested that I should talk to the remaining people in the market and
+      that they should prodive me with information of the dark presence.
+    - The remaining people in the market have told a story of an ancient evil which
+      has laid a curse over the market, this curse has caused the deaths of many locals.
+      The ancient curse has been crated by the god of death "Than". Myth has it that
+      the only way to deafeat Than is by using the god of lights power "Iris". Unfortunately
+      the location of Iris is unknown, one of the locals did mention that Max the
+      old fisherman may know the location of Iris as he has gained the most knowledge
+      due to his travels.
+    - Max said that Iris had taken a human form many decades ago as she had wanted
+      to learn what it felt like to be mortal. He also mentioned that George the back
+      smith is withholding information about the darkness that is plaguing the market.
+      The scroll that Max has given me should persuade George to help.
+    - The scroll which was hidden within Georges belonging tells a story about how
+      he found Iris many years ago where the ocean meets the market river and how
+      he had sworn an oath to never reveal her location.
     hint: Iris told me that the only way to defeat Than is by using her ancient sword,
       unfotunately the sword has been lost for decades in the caverns bellow the the
-      land, I will have to find the sword if I want to put an end to Thans curse
+      land, I will have to find the sword and return it to Iris if I want to put an
+      end to Thans curse.
     congratulations: 
     sumary: 
     nextQuest: 7
@@ -979,13 +1005,29 @@ MonoBehaviour:
     progress: 0
     description: 
     crossedOutHint:
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    hint: I have found the sword of Iris, she wanted to see it before I faced Than
+    - George the market blacksmith and an old friend of mine might be able to tell
+      me what has happened to the markt.
+    - George suggested that I should talk to the remaining people in the market and
+      that they should prodive me with information of the dark presence.
+    - The remaining people in the market have told a story of an ancient evil which
+      has laid a curse over the market, this curse has caused the deaths of many locals.
+      The ancient curse has been crated by the god of death "Than". Myth has it that
+      the only way to deafeat Than is by using the god of lights power "Iris". Unfortunately
+      the location of Iris is unknown, one of the locals did mention that Max the
+      old fisherman may know the location of Iris as he has gained the most knowledge
+      due to his travels.
+    - Max said that Iris had taken a human form many decades ago as she had wanted
+      to learn what it felt like to be mortal. He also mentioned that George the back
+      smith is withholding information about the darkness that is plaguing the market.
+      The scroll that Max has given me should persuade George to help.
+    - The scroll which was hidden within Georges belonging tells a story about how
+      he found Iris many years ago where the ocean meets the market river and how
+      he had sworn an oath to never reveal her location.
+    - Iris told me that the only way to defeat Than is by using her ancient sword,
+      unfotunately the sword has been lost for decades in the caverns bellow the the
+      land, I will have to find the sword and return it to Iris if I want to put an
+      end to Thans curse.
+    hint: I have found the sword of Iris, she wanted to see it before I faced Than.
     congratulations: 
     sumary: 
     nextQuest: 8
@@ -999,15 +1041,32 @@ MonoBehaviour:
     progress: 0
     description: 
     crossedOutHint:
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
+    - George the market blacksmith and an old friend of mine might be able to tell
+      me what has happened to the markt.
+    - George suggested that I should talk to the remaining people in the market and
+      that they should prodive me with information of the dark presence.
+    - The remaining people in the market have told a story of an ancient evil which
+      has laid a curse over the market, this curse has caused the deaths of many locals.
+      The ancient curse has been crated by the god of death "Than". Myth has it that
+      the only way to deafeat Than is by using the god of lights power "Iris". Unfortunately
+      the location of Iris is unknown, one of the locals did mention that Max the
+      old fisherman may know the location of Iris as he has gained the most knowledge
+      due to his travels.
+    - Max said that Iris had taken a human form many decades ago as she had wanted
+      to learn what it felt like to be mortal. He also mentioned that George the back
+      smith is withholding information about the darkness that is plaguing the market.
+      The scroll that Max has given me should persuade George to help.
+    - The scroll which was hidden within Georges belonging tells a story about how
+      he found Iris many years ago where the ocean meets the market river and how
+      he had sworn an oath to never reveal her location.
+    - Iris told me that the only way to defeat Than is by using her ancient sword,
+      unfotunately the sword has been lost for decades in the caverns bellow the the
+      land, I will have to find the sword and return it to Iris if I want to put an
+      end to Thans curse.
+    - I have found the sword of Iris, she wanted to see it before I faced Than.
     hint: Iris has embued her sword with the remainder of her powers, she said that
-      I'm not ready to face Than
+      I'm not ready to face Than and that he has been sighted in the caverns bellow...hiding
+      in the shadows.
     congratulations: 
     sumary: 
     nextQuest: 9
@@ -1021,16 +1080,34 @@ MonoBehaviour:
     progress: 0
     description: 
     crossedOutHint:
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    hint: Than has been defeated, you should tell Iris the good news. A portal has
-      opened up by the rift.
+    - George the market blacksmith and an old friend of mine might be able to tell
+      me what has happened to the markt.
+    - George suggested that I should talk to the remaining people in the market and
+      that they should prodive me with information of the dark presence.
+    - The remaining people in the market have told a story of an ancient evil which
+      has laid a curse over the market, this curse has caused the deaths of many locals.
+      The ancient curse has been crated by the god of death "Than". Myth has it that
+      the only way to deafeat Than is by using the god of lights power "Iris". Unfortunately
+      the location of Iris is unknown, one of the locals did mention that Max the
+      old fisherman may know the location of Iris as he has gained the most knowledge
+      due to his travels.
+    - Max said that Iris had taken a human form many decades ago as she had wanted
+      to learn what it felt like to be mortal. He also mentioned that George the back
+      smith is withholding information about the darkness that is plaguing the market.
+      The scroll that Max has given me should persuade George to help.
+    - The scroll which was hidden within Georges belonging tells a story about how
+      he found Iris many years ago where the ocean meets the market river and how
+      he had sworn an oath to never reveal her location.
+    - Iris told me that the only way to defeat Than is by using her ancient sword,
+      unfotunately the sword has been lost for decades in the caverns bellow the the
+      land, I will have to find the sword and return it to Iris if I want to put an
+      end to Thans curse.
+    - I have found the sword of Iris, she wanted to see it before I faced Than.
+    - Iris has embued her sword with the remainder of her powers, she said that I'm
+      not ready to face Than and that he has been sighted in the caverns bellow...hiding
+      in the shadows.
+    hint: Than has been defeated, I should tell Iris the good news. A portal has opened
+      up by the rift.
     congratulations: The curse has been lifted from the maket. Constratulations you
       have completed the Battle of Iris and Than!
     sumary: 
