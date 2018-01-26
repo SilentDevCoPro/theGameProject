@@ -15,10 +15,11 @@ public class Quest{
     //State of the current quest 
     public QuestProgress progress;
     //String for quest giver/reciever
+    [TextArea]
     public string description;
     //String for previous quest hits
     [TextArea]
-    public string crossedOutHint;
+    public string[] crossedOutHint;
     //String for quest giver/reciever
     [TextArea]
     public string hint;

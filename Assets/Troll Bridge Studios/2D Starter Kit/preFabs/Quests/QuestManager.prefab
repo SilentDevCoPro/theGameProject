@@ -376,6 +376,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1646635500115326
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224559238904144700}
+  - component: {fileID: 222976037813081870}
+  - component: {fileID: 114845003127909314}
+  - component: {fileID: 114496043641566964}
+  m_Layer: 5
+  m_Name: Scrollbar (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!1 &1650735872591964
 GameObject:
   m_ObjectHideFlags: 1
@@ -422,6 +440,23 @@ GameObject:
   - component: {fileID: 114837799143560376}
   m_Layer: 5
   m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1734235337813150
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224037012686308794}
+  - component: {fileID: 222396966542373760}
+  - component: {fileID: 114173927165284650}
+  m_Layer: 5
+  m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -542,6 +577,21 @@ GameObject:
   - component: {fileID: 114888607236654224}
   m_Layer: 5
   m_Name: QuestDescription
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1914186700251588
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 224511410176518854}
+  m_Layer: 5
+  m_Name: Sliding Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -802,16 +852,11 @@ MonoBehaviour:
   - title: BIT
     id: 1
     progress: 1
-    description: I have felt a dark presence over the market The stress are not what
-      they used to be, only a few straglers are left.
-    crossedOutHint: 'Quest Objetive #1
-
-
-      Quest Objective #2
-
-
-      Quest Objective #3'
-    hint: This is the current quest objective
+    description: I have felt a dark presence over the market. The streets are not
+      what they used to be, only a few straglers are left.
+    crossedOutHint: []
+    hint: George the market blacksmith and an old friend of mine might be able to
+      tell me what has happened to the markt.
     congratulations: 
     sumary: 
     nextQuest: 2
@@ -824,8 +869,11 @@ MonoBehaviour:
     id: 2
     progress: 0
     description: 
-    crossedOutHint: 
-    hint: George suggested that I should talk to the remaining people in the market.
+    crossedOutHint:
+    - George the market blacksmith and an old friend of mine might be able to tell
+      me what has happened to the markt.
+    hint: George suggested that I should talk to the remaining people in the market
+      and that they should prodive me with information of the dark presence.
     congratulations: 
     sumary: 
     nextQuest: 3
@@ -838,8 +886,18 @@ MonoBehaviour:
     id: 3
     progress: 0
     description: 
-    crossedOutHint: 
-    hint: The old fisherman named Max may know the location of Iris
+    crossedOutHint:
+    - George the market blacksmith and an old friend of mine might be able to tell
+      me what has happened to the markt.
+    - George suggested that I should talk to the remaining people in the market and
+      that they should prodive me with information of the dark presence.
+    hint: The remaining people in the market have told a story of an ancient evil
+      which has laid a curse over the market, this curse has caused the deaths of
+      many locals. The ancient curse has been crated by the god of death "Than". Myth
+      has it that the only way to deafeat Than is by using the god of lights power
+      "Iris". Unfortunately the location of Iris is unknown, one of the locals did
+      mention that Max the old fisherman may know the location of Iris as he has gained
+      the most knowledge due to his travels.
     congratulations: 
     sumary: 
     nextQuest: 4
@@ -852,7 +910,18 @@ MonoBehaviour:
     id: 4
     progress: 0
     description: 
-    crossedOutHint: 
+    crossedOutHint:
+    - George the market blacksmith and an old friend of mine might be able to tell
+      me what has happened to the markt.
+    - George suggested that I should talk to the remaining people in the market and
+      that they should prodive me with information of the dark presence.
+    - The remaining people in the market have told a story of an ancient evil which
+      has laid a curse over the market, this curse has caused the deaths of many locals.
+      The ancient curse has been crated by the god of death "Than". Myth has it that
+      the only way to deafeat Than is by using the god of lights power "Iris". Unfortunately
+      the location of Iris is unknown, one of the locals did mention that Max the
+      old fisherman may know the location of Iris as he has gained the most knowledge
+      due to his travels.
     hint: Max says that George the back smith is withholding information about the
       darkness that is plaguing the market. The scroll that Max has given me should
       persuade George to help
@@ -868,7 +937,11 @@ MonoBehaviour:
     id: 5
     progress: 0
     description: 
-    crossedOutHint: 
+    crossedOutHint:
+    - 
+    - 
+    - 
+    - 
     hint: The book says that Iris is found where the river meets the seahich has her
       location noted inside. The diary says that Iris is found where the river meets
       the sea
@@ -884,7 +957,12 @@ MonoBehaviour:
     id: 6
     progress: 0
     description: 
-    crossedOutHint: 
+    crossedOutHint:
+    - 
+    - 
+    - 
+    - 
+    - 
     hint: Iris told me that the only way to defeat Than is by using her ancient sword,
       unfotunately the sword has been lost for decades in the caverns bellow the the
       land, I will have to find the sword if I want to put an end to Thans curse
@@ -900,7 +978,13 @@ MonoBehaviour:
     id: 7
     progress: 0
     description: 
-    crossedOutHint: 
+    crossedOutHint:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
     hint: I have found the sword of Iris, she wanted to see it before I faced Than
     congratulations: 
     sumary: 
@@ -914,7 +998,14 @@ MonoBehaviour:
     id: 8
     progress: 0
     description: 
-    crossedOutHint: 
+    crossedOutHint:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
     hint: Iris has embued her sword with the remainder of her powers, she said that
       I'm not ready to face Than
     congratulations: 
@@ -929,7 +1020,15 @@ MonoBehaviour:
     id: 9
     progress: 0
     description: 
-    crossedOutHint: 
+    crossedOutHint:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
     hint: Than has been defeated, you should tell Iris the good news. A portal has
       opened up by the rift.
     congratulations: The curse has been lifted from the maket. Constratulations you
@@ -955,6 +1054,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questID: 0
   questTitle: {fileID: 114758520905059666}
+--- !u!114 &114173927165284650
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1734235337813150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
 --- !u!114 &114181333276158654
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1212,7 +1338,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114784790043283356}
   m_HandleRect: {fileID: 224994198832040202}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1274,6 +1400,52 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114496043641566964
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1646635500115326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2061169968, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 114173927165284650}
+  m_HandleRect: {fileID: 224037012686308794}
+  m_Direction: 2
+  m_Value: 0
+  m_Size: 0.2
+  m_NumberOfSteps: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Scrollbar+ScrollEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114497060569099328
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1856,6 +2028,33 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114845003127909314
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1646635500115326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
 --- !u!114 &114859823736832388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2081,6 +2280,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1400415480277138}
+--- !u!222 &222396966542373760
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1734235337813150}
 --- !u!222 &222439532480092706
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -2183,6 +2388,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1556713499184824}
+--- !u!222 &222976037813081870
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1646635500115326}
 --- !u!223 &223062141589873334
 Canvas:
   m_ObjectHideFlags: 1
@@ -2203,6 +2414,24 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!224 &224037012686308794
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1734235337813150}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224511410176518854}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.2}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224037646989146604
 RectTransform:
   m_ObjectHideFlags: 1
@@ -2405,8 +2634,27 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 333.83002, y: -27.3}
+  m_AnchoredPosition: {x: 241.195, y: -27.3}
   m_SizeDelta: {x: 184.63, y: 54.6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224511410176518854
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1914186700251588}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224037012686308794}
+  m_Father: {fileID: 224559238904144700}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224544599819857274
 RectTransform:
@@ -2443,6 +2691,25 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 0.8096216}
   m_AnchoredPosition: {x: -0.000038385093, y: -0.37353516}
   m_SizeDelta: {x: 0.000045776, y: -0.75}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224559238904144700
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1646635500115326}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224511410176518854}
+  m_Father: {fileID: 224740614561663264}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.93014234, y: 0}
+  m_AnchorMax: {x: 0.97485876, y: 1}
+  m_AnchoredPosition: {x: 0.41299438, y: 1.0775213}
+  m_SizeDelta: {x: 4, y: -2.1550007}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224560017984820110
 RectTransform:
@@ -2554,8 +2821,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.039}
   m_AnchorMin: {x: 0.025214657, y: 0}
   m_AnchorMax: {x: 0.919, y: 1}
-  m_AnchoredPosition: {x: 1.0100021, y: -0.086364746}
-  m_SizeDelta: {x: -44.24, y: -104.25478}
+  m_AnchoredPosition: {x: 1.0100021, y: -0.08633423}
+  m_SizeDelta: {x: -44.24, y: -104.9737}
   m_Pivot: {x: 0.5, y: 0.96}
 --- !u!224 &224685208440045484
 RectTransform:
@@ -2589,6 +2856,7 @@ RectTransform:
   m_Children:
   - {fileID: 224677023175330638}
   - {fileID: 224124288128257018}
+  - {fileID: 224559238904144700}
   m_Father: {fileID: 224974540372312708}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2633,7 +2901,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 90.85, y: -27.3}
+  m_AnchoredPosition: {x: 241.195, y: -27.3}
   m_SizeDelta: {x: 181.7, y: 54.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224859900484581478
@@ -2807,6 +3075,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.3199992, y: 295.6805}
-  m_SizeDelta: {x: 20, y: -121.22}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
