@@ -1603,7 +1603,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1054239260
 Transform:
   m_ObjectHideFlags: 0
@@ -1918,15 +1918,15 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1362628759}
-  - component: {fileID: 1362628761}
   - component: {fileID: 1362628760}
+  - component: {fileID: 1362628761}
   m_Layer: 8
   m_Name: BIT Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1362628759
 Transform:
   m_ObjectHideFlags: 0
@@ -1976,11 +1976,10 @@ MonoBehaviour:
   typeSound: {fileID: 0}
   dialogue:
   - You have found the missing sword of Iris! Might be worth showing her your find
---- !u!58 &1362628761
-CircleCollider2D:
+--- !u!61 &1362628761
+BoxCollider2D:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5811978, guid: 20825aaa16377154e8cd3a96232c4f51,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1362628758}
   m_Enabled: 1
@@ -1989,9 +1988,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.19806588, y: -0.031439066}
+  m_Offset: {x: 0.20402479, y: 0.0059986115}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.41728675
+  m_Size: {x: 0.66395855, y: 0.07588577}
+  m_EdgeRadius: 0
 --- !u!1 &1366786897
 GameObject:
   m_ObjectHideFlags: 0
