@@ -552,8 +552,7 @@ MonoBehaviour:
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - I know you told me to deliver the key to your house for your weapon chest but
-    I lost it due to the terrible winds to the north... and winter is here.
+  - "\t\t\tMax\nLeave my house now, I didn't buy my own place to share it with others!"
 --- !u!58 &463499850
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1347,8 +1346,16 @@ MonoBehaviour:
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - I know you told me to deliver the key to your house for your weapon chest but
-    I lost it due to the terrible winds to the north... and winter is here.
+  - "\t\t\tMax\nWhat are you doing in my house? I brought this place to have quiet!"
+  - "\t\t\tYou\nAre you Max?"
+  - "\t\t\tMax\nYes. What is it to you."
+  - "\t\t\tYou\nI was told by the locals at the market that you know a story..."
+  - "\t\t\tYou\nAbout the Battle of Iris and Than."
+  - "\t\t\tMax\nWhat are you doing in my house? I brought this place to have quiet!"
+  - "\t\t\tMax\nWhat are you doing in my house? I brought this place to have quiet!"
+  - "\t\t\tMax\nWhat are you doing in my house? I brought this place to have quiet!"
+  - "\t\t\tMax\nWhat are you doing in my house? I brought this place to have quiet!"
+  - "\t\t\tMax\nWhat are you doing in my house? I brought this place to have quiet!"
 --- !u!58 &1553318139
 CircleCollider2D:
   m_ObjectHideFlags: 0

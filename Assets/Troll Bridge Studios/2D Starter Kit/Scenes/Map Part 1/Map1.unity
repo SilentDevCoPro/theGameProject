@@ -1104,7 +1104,8 @@ MonoBehaviour:
   dialogueTextPause: 0.05
   typeSound: {fileID: 0}
   dialogue:
-  - My friendly reminder to always walk up to signs and read them for clues!
+  - '[The shop keeper avoids your eye contact, she clearly doesn''t want anything
+    to do with you]'
 --- !u!58 &108656834
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2428,6 +2429,41 @@ Prefab:
       propertyPath: dialoguesToChangeState.Array.data[9]
       value: 
       objectReference: {fileID: 746158492}
+    - target: {fileID: 114439842938705186, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
+        type: 2}
+      propertyPath: isInstantDialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114439842938705186, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
+        type: 2}
+      propertyPath: isFadeDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114439842938705186, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
+        type: 2}
+      propertyPath: instantText
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114439842938705186, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
+        type: 2}
+      propertyPath: fadeText
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114859664882922892, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
+        type: 2}
+      propertyPath: isInstantDialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114859664882922892, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
+        type: 2}
+      propertyPath: isFadeDialogue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114859664882922892, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
+        type: 2}
+      propertyPath: instantText
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2972cd28e6edac44fba5b39c84c6f7c7, type: 2}
   m_IsPrefabParent: 0
@@ -2785,8 +2821,8 @@ MonoBehaviour:
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\t\tScared Citizen\nTheres people following me in the night, small flickers
-    and shadows. I don't need you following me as well!"
+  - '[The old man avoids your eye contact, he clearly doesn''t want anything to do
+    with you]'
 --- !u!58 &531218366
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3348,7 +3384,19 @@ MonoBehaviour:
   dialogueTextPause: 0.05
   typeSound: {fileID: 0}
   dialogue:
+  - "\t\t\tYou\nExcuse me! I have a few questions I would like to ask you.\n"
   - "\t\t\tAlice\nPlease leave me alone, this place... something about this place.\n"
+  - "\t\t\tYou\nI can feel it as well. Draining at my soul.\n"
+  - "\t\t\tYou\nThis used to be a busy area where the locals would trade thier goods,
+    now it is dead.\n"
+  - "\t\t\tYou\nI'm trying to work out why this is, do you know anything that could
+    help me?"
+  - "\t\t\tAlice\nThe only thing that could possibly help this place is Iis, the god
+    of light."
+  - "\t\t\tAlice\nShe has powers beyond this realm that could help, but....\n"
+  - "\t\t\tAlice\nPlease leave me alone, this place... something about this place.\n"
+  - "\t\t\tAlice\nNo one has seen her in decades.\n"
+  - "\t\t\tYou\nThank you.\n"
 --- !u!58 &746158495
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3484,8 +3532,23 @@ MonoBehaviour:
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - I know you told me to deliver the key to your house for your weapon chest but
-    I lost it due to the terrible winds to the north... and winter is here.
+  - "\t\t\tYou\nExcuse me there sir! I have a few questions I would like to ask you."
+  - "\t\t\tOld Man\nPlease leave me alone, I'm not looking for trouble."
+  - "\t\t\tYou\nI'm an old friend of George's and he said that you may be able to
+    assist me."
+  - "\t\t\tOld Man\nA friend of George's is a friend of mine, how can I help you?"
+  - "\t\t\tYou\nSomething is wrong with the market place.."
+  - "\t\t\tYou\nThis used to be a busy area where the locals would trade thier goods,
+    now it is dead."
+  - "\t\t\tYou\r\nGeorge wouldn't tell me what is happeneing here...\n"
+  - "\t\t\tYou\nHowever he said that you might be able to offer some information.\r"
+  - "\t\t\tOld Man\nA curse has laid waist to the market, created by the god of death
+    Than."
+  - "\t\t\tOld Man\nThe curse has been driving the locals away... "
+  - "\t\t\tOld Man\nTheir supplies go rancid and rotten as soon as they enter the
+    gates."
+  - "\t\t\tOld Man\nUnfortunately this is all I know about, good luck with your enquiries."
+  - "\t\t\tYou\nThank you."
 --- !u!58 &757723239
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4735,7 +4798,10 @@ MonoBehaviour:
   dialogueTextPause: 0.05
   typeSound: {fileID: 0}
   dialogue:
-  - My friendly reminder to always walk up to signs and read them for clues!
+  - "\t\t\tYou\nExcuse me! I have a few questions I would like to ask you."
+  - "\t\t\tShop Keeper\nJust go away, I have no interest in talking to you."
+  - "\t\t\tYou\nExcuse me! I have a few questions I would like to ask you."
+  - "\t\t\tShop Keeper\nI don't ow George anything, GO...AWAY!"
 --- !u!58 &1166948444
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6100,7 +6166,8 @@ MonoBehaviour:
   dialogueTextPause: 0.05
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\t\tAlice\nPlease leave me alone, this place... something about this place.\n"
+  - "\t\t\tAlice\nPlease leave me alone, this place... something about this place
+    scares me.\n"
 --- !u!58 &1587876213
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6887,8 +6954,24 @@ MonoBehaviour:
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - I know you told me to deliver the key to your house for your weapon chest but
-    I lost it due to the terrible winds to the north... and winter is here.
+  - "\t\t\tYou\nExcuse me there sir! I have a few questions I would like to ask you."
+  - "\t\t\tScared Citizen\nW..w...what do you want?"
+  - "\t\t\tYou\nSomething is wrong with the market place.."
+  - "\t\t\tYou\nThis used to be a busy area where the locals would trade thier goods,
+    now it is dead."
+  - "\t\t\tYou\nDo you know anything about the situation?"
+  - "\t\t\tScared Citizen\nI d..dd.do, however they are only stories, so take them
+    as you will."
+  - "\t\t\tScared Citizen\nThere is an old fisherman called Max who lives in a village
+    close by."
+  - "\t\t\tScared Citizen\nHe is not one for company so you wont find him around other
+    people."
+  - "\t\t\tScared Citizen\nMax tells the tales of the Battle of Iris and Than"
+  - "\t\t\tScared Citizen\nHe says that during his travels, he discovered the existance
+    of these gods."
+  - "\t\t\tScared Citizen\nI think that you should hear the story first hand from
+    him as my meory is terrible."
+  - "\t\t\tYou\nThank you very much! You have been very helpful."
 --- !u!58 &1777682772
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7146,14 +7229,14 @@ MonoBehaviour:
   rangeCollider: {fileID: 0}
   areaColor: {r: 0, g: 0, b: 0, a: 1}
   dialogueBox: {fileID: 1565260231}
-  dialogueColor: {r: 1, g: 1, b: 1, a: 1}
+  dialogueColor: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
   multipleTransitions: 0
   isInstantDialogue: 0
   isFadeDialogue: 1
   fadeTime: 0.7
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85
-  dialogueTextColor: {r: 1, g: 1, b: 1, a: 1}
+  dialogueTextColor: {r: 0.5882353, g: 0.15686275, b: 0, a: 1}
   instantText: 1
   fadeText: 0
   textFadeTime: 0.6
@@ -7161,7 +7244,11 @@ MonoBehaviour:
   dialogueTextPause: 0.05
   typeSound: {fileID: 0}
   dialogue:
-  - My friendly reminder to always walk up to signs and read them for clues!
+  - "\t\t\tYou\nExcuse me there sir! I have a few questions I would like to ask you."
+  - '[The person stears directly at you, but does not respond]'
+  - "\t\t\tYou\nWel...I'm and old friend of...."
+  - '[The person turns their back to you and continues sifting through the rotting
+    food]'
 --- !u!58 &1817861296
 CircleCollider2D:
   m_ObjectHideFlags: 0

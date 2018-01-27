@@ -48,7 +48,8 @@ namespace TrollBridge {
 		public AudioClip typeSound;
 		[Tooltip("The text that is displayed in the Dialogue UI.")]
 		[Multiline]
-		public string[] dialogue;
+        [TextArea]
+        public string[] dialogue;
 
 		// The index in the dialogue.
 		private int dialogueIndex= 0;
