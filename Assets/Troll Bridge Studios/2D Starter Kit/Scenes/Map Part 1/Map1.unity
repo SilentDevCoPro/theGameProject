@@ -1097,10 +1097,10 @@ MonoBehaviour:
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85
   dialogueTextColor: {r: 0.5882353, g: 0.15686275, b: 0, a: 1}
-  instantText: 0
+  instantText: 1
   fadeText: 0
   textFadeTime: 0.6
-  typedText: 1
+  typedText: 0
   dialogueTextPause: 0.05
   typeSound: {fileID: 0}
   dialogue:
@@ -1481,8 +1481,8 @@ MonoBehaviour:
   dialogueBox: {fileID: 158630908}
   dialogueColor: {r: 0.7647059, g: 0.7647059, b: 0.7647059, a: 1}
   multipleTransitions: 0
-  isInstantDialogue: 1
-  isFadeDialogue: 0
+  isInstantDialogue: 0
+  isFadeDialogue: 1
   fadeTime: 0.7
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85
@@ -1494,7 +1494,9 @@ MonoBehaviour:
   dialogueTextPause: 0.05
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\t\tShopper\nLet me do my shopping in piece!"
+  - 'Shopper
+
+    Let me do my shopping in piece!'
 --- !u!58 &158630911
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2423,14 +2425,14 @@ Prefab:
       propertyPath: dialoguesToChangeState.Array.data[9]
       value: 
       objectReference: {fileID: 746158492}
-    - target: {fileID: 114188295039007582, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
-        type: 2}
-      propertyPath: gameObjectsToChangeState.Array.data[1]
-      value: 
-      objectReference: {fileID: 437912631}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2972cd28e6edac44fba5b39c84c6f7c7, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &447923227 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1938990534269556, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
+    type: 2}
+  m_PrefabInternal: {fileID: 447923226}
 --- !u!1 &461164811
 GameObject:
   m_ObjectHideFlags: 0
@@ -2526,8 +2528,8 @@ MonoBehaviour:
   dialogueBox: {fileID: 829799898}
   dialogueColor: {r: 1, g: 1, b: 1, a: 1}
   multipleTransitions: 0
-  isInstantDialogue: 1
-  isFadeDialogue: 0
+  isInstantDialogue: 0
+  isFadeDialogue: 1
   fadeTime: 0.7
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85
@@ -2539,13 +2541,21 @@ MonoBehaviour:
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\tYou\nThan has been defeated, but I could not kill him."
-  - "\t\tIris\nWell done! Than will never die, it is an unfortunate part of having
-    balance."
-  - "\t\tIris\nThe would cannot exist without Than, just as it cannot exist without
-    me."
-  - "\t\tIris\nThe curse has now been lifted on the market."
-  - "\t\tIris\nYou can keep my sword as a token of my gratitude."
+  - 'You
+
+    Than has been defeated, but I could not kill him.'
+  - 'Iris
+
+    Well done! Than will never die, it is an unfortunate part of having balance.'
+  - 'Iris
+
+    The would cannot exist without Than, just as it cannot exist without me.'
+  - 'Iris
+
+    The curse has now been lifted on the market.'
+  - 'Iris
+
+    You can keep my sword as a token of my gratitude.'
 --- !u!58 &462678530
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2783,10 +2793,10 @@ MonoBehaviour:
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85
   dialogueTextColor: {r: 0.5882353, g: 0.15686275, b: 0, a: 1}
-  instantText: 0
+  instantText: 1
   fadeText: 0
   textFadeTime: 0.6
-  typedText: 1
+  typedText: 0
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
@@ -3353,19 +3363,53 @@ MonoBehaviour:
   dialogueTextPause: 0.05
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\t\tYou\nExcuse me! I have a few questions I would like to ask you.\n"
-  - "\t\t\tAlice\nPlease leave me alone, this place... something about this place.\n"
-  - "\t\t\tYou\nI can feel it as well. Draining at my soul.\n"
-  - "\t\t\tYou\nThis used to be a busy area where the locals would trade thier goods,
-    now it is dead.\n"
-  - "\t\t\tYou\nI'm trying to work out why this is, do you know anything that could
-    help me?"
-  - "\t\t\tAlice\nThe only thing that could possibly help this place is Iis, the god
-    of light."
-  - "\t\t\tAlice\nShe has powers beyond this realm that could help, but....\n"
-  - "\t\t\tAlice\nPlease leave me alone, this place... something about this place.\n"
-  - "\t\t\tAlice\nNo one has seen her in decades.\n"
-  - "\t\t\tYou\nThank you.\n"
+  - 'You
+
+    Excuse me! I have a few questions I would like to ask you.
+
+'
+  - 'Alice
+
+    Please leave me alone, this place... something about this place.
+
+'
+  - 'You
+
+    I can feel it as well. Draining at my soul.
+
+'
+  - 'You
+
+    This used to be a busy area where the locals would trade thier goods, now it is
+    dead.
+
+'
+  - 'You
+
+    I''m trying to work out why this is, do you know anything that could help me?'
+  - 'Alice
+
+    The only thing that could possibly help this place is Iis, the god of light.'
+  - 'Alice
+
+    She has powers beyond this realm that could help, but....
+
+'
+  - 'Alice
+
+    Please leave me alone, this place... something about this place.
+
+'
+  - 'Alice
+
+    No one has seen her in decades.
+
+'
+  - 'You
+
+    Thank you.
+
+'
 --- !u!58 &746158495
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3487,8 +3531,8 @@ MonoBehaviour:
   dialogueBox: {fileID: 784176161}
   dialogueColor: {r: 1, g: 1, b: 1, a: 1}
   multipleTransitions: 0
-  isInstantDialogue: 1
-  isFadeDialogue: 0
+  isInstantDialogue: 0
+  isFadeDialogue: 1
   fadeTime: 0.7
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85
@@ -3500,23 +3544,42 @@ MonoBehaviour:
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\t\tYou\nExcuse me there sir! I have a few questions I would like to ask you."
-  - "\t\t\tOld Man\nPlease leave me alone, I'm not looking for trouble."
-  - "\t\t\tYou\nI'm an old friend of George's and he said that you may be able to
-    assist me."
-  - "\t\t\tOld Man\nA friend of George's is a friend of mine, how can I help you?"
-  - "\t\t\tYou\nSomething is wrong with the market place.."
-  - "\t\t\tYou\nThis used to be a busy area where the locals would trade thier goods,
-    now it is dead."
-  - "\t\t\tYou\r\nGeorge wouldn't tell me what is happeneing here...\n"
-  - "\t\t\tYou\nHowever he said that you might be able to offer some information.\r"
-  - "\t\t\tOld Man\nA curse has laid waist to the market, created by the god of death
-    Than."
-  - "\t\t\tOld Man\nThe curse has been driving the locals away... "
-  - "\t\t\tOld Man\nTheir supplies go rancid and rotten as soon as they enter the
-    gates."
-  - "\t\t\tOld Man\nUnfortunately this is all I know about, good luck with your enquiries."
-  - "\t\t\tYou\nThank you."
+  - 'You
+
+    Excuse me there sir! I have a few questions I would like to ask you.'
+  - 'Old Man
+
+    Please leave me alone, I''m not looking for trouble.'
+  - 'You
+
+    I''m an old friend of George''s and he said that you may be able to assist me.'
+  - 'Old Man
+
+    A friend of George''s is a friend of mine, how can I help you?'
+  - 'You
+
+    Something is wrong with the market place..'
+  - 'You
+
+    This used to be a busy area where the locals would trade thier goods, now it is
+    dead.'
+  - "You\r\nGeorge wouldn't tell me what is happeneing here...\n"
+  - "You\nHowever he said that you might be able to offer some information.\r"
+  - 'Old Man
+
+    A curse has laid waist to the market, created by the god of death Than.'
+  - 'Old Man
+
+    The curse has been driving the locals away... '
+  - 'Old Man
+
+    Their supplies go rancid and rotten as soon as they enter the gates.'
+  - 'Old Man
+
+    Unfortunately this is all I know about, good luck with your enquiries.'
+  - 'You
+
+    Thank you.'
 --- !u!58 &757723239
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4085,8 +4148,8 @@ MonoBehaviour:
   dialogueBox: {fileID: 859526040}
   dialogueColor: {r: 1, g: 1, b: 1, a: 1}
   multipleTransitions: 0
-  isInstantDialogue: 1
-  isFadeDialogue: 0
+  isInstantDialogue: 0
+  isFadeDialogue: 1
   fadeTime: 0.7
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85
@@ -4098,15 +4161,31 @@ MonoBehaviour:
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\t\tYou\nIris I have retieved your sword from the cavern bellow!"
-  - "\t\t\tIris\nThank you, it has been a very long time since I've held it."
-  - "\t\t\tIris\n I will enchant the sword with the remaining of my powers for you."
-  - "\t\t\tIris\nThis should give you a better chance at fightig Than."
-  - "\t\t\tIris\nPrepair for the fight, it will not be an easy one."
-  - "\t\t\tIris\nThan is located down in the caverns where you found the sword."
-  - "\t\t\tIris\nHe is a trickster and will not be showing his true skin."
-  - "\t\t\tIris\nInfact, you may have already met him."
-  - "\t\t\tYou\nThank you Iris, I will begin preperations for the battle."
+  - 'You
+
+    Iris I have retieved your sword from the cavern bellow!'
+  - 'Iris
+
+    Thank you, it has been a very long time since I''ve held it.'
+  - "Iris\n I will enchant the sword with the remaining of my powers for you."
+  - 'Iris
+
+    This should give you a better chance at fightig Than.'
+  - 'Iris
+
+    Prepair for the fight, it will not be an easy one.'
+  - 'Iris
+
+    Than is located down in the caverns where you found the sword.'
+  - 'Iris
+
+    He is a trickster and will not be showing his true skin.'
+  - 'Iris
+
+    Infact, you may have already met him.'
+  - 'You
+
+    Thank you Iris, I will begin preperations for the battle.'
 --- !u!58 &865757399
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4772,10 +4851,18 @@ MonoBehaviour:
   dialogueTextPause: 0.05
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\t\tYou\nExcuse me! I have a few questions I would like to ask you."
-  - "\t\t\tShop Keeper\nJust go away, I have no interest in talking to you."
-  - "\t\t\tYou\nExcuse me! I have a few questions I would like to ask you."
-  - "\t\t\tShop Keeper\nI don't ow George anything, GO...AWAY!"
+  - 'You
+
+    Excuse me! I have a few questions I would like to ask you.'
+  - 'Shop Keeper
+
+    Just go away, I have no interest in talking to you.'
+  - 'You
+
+    Excuse me! I have a few questions I would like to ask you.'
+  - 'Shop Keeper
+
+    I don''t ow George anything, GO...AWAY!'
 --- !u!58 &1166948444
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4960,8 +5047,8 @@ MonoBehaviour:
   dialogueBox: {fileID: 594476363}
   dialogueColor: {r: 1, g: 1, b: 1, a: 1}
   multipleTransitions: 0
-  isInstantDialogue: 1
-  isFadeDialogue: 0
+  isInstantDialogue: 0
+  isFadeDialogue: 1
   fadeTime: 0.7
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85
@@ -4973,28 +5060,64 @@ MonoBehaviour:
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\t\tGlenda\nHello there young traveller, my names Glenda, what brings you to
-    these parts?"
-  - "\t\t\tYou\nI'm searching fo someone called Iris, the god of light."
-  - "\t\t\tGlenda\nThat's a name I havn't herd in a very long time."
-  - "\t\t\tGlenda\nHow did you know to come here?"
-  - "\t\t\tYou\nMy old friend George passed away, I found this on him."
+  - 'Glenda
+
+    Hello there young traveller, my names Glenda, what brings you to these parts?'
+  - 'You
+
+    I''m searching fo someone called Iris, the god of light.'
+  - 'Glenda
+
+    That''s a name I havn''t herd in a very long time.'
+  - 'Glenda
+
+    How did you know to come here?'
+  - 'You
+
+    My old friend George passed away, I found this on him.'
   - '[You hand Glenda the scroll]'
-  - "\t\t\tGlenda\nGeorge was a very good friend of mine."
-  - "\t\t\tGlenda\nI am Iris."
-  - "\t\t\tIris\nWho did this to George?"
-  - "\t\t\tYou\nThan has placed a curse apon the market."
-  - "\t\t\tYou\nAnd I believe that it was this that killed George."
-  - "\t\t\tIris\nTHan! I should have known."
-  - "\t\t\tIris\nWhen I decided to take this human form I lleft behind most of my
-    powers."
-  - "\t\t\tIris\nHowever I can channel whats left of them through my sword."
-  - "\t\t\tIris\nMany years ago I lost the sword in the caverns bellow."
-  - "\t\t\tIris\nIf you can retrieve it we have a chance to defeat Than!"
-  - "\t\t\tYou\nI'll give it a shot."
-  - "\t\t\tIris\nI'll open up the rift next to us so that you can go down."
-  - "\t\t\tIris\nBe careful down there, there are a lot of dangerous creatures!"
-  - "\t\t\tYou\nI'll keep that in mind thank you."
+  - 'Glenda
+
+    George was a very good friend of mine.'
+  - 'Glenda
+
+    I am Iris.'
+  - 'Iris
+
+    Who did this to George?'
+  - 'You
+
+    Than has placed a curse apon the market.'
+  - 'You
+
+    And I believe that it was this that killed George.'
+  - 'Iris
+
+    THan! I should have known.'
+  - 'Iris
+
+    When I decided to take this human form I lleft behind most of my powers.'
+  - 'Iris
+
+    However I can channel whats left of them through my sword.'
+  - 'Iris
+
+    Many years ago I lost the sword in the caverns bellow.'
+  - 'Iris
+
+    If you can retrieve it we have a chance to defeat Than!'
+  - 'You
+
+    I''ll give it a shot.'
+  - 'Iris
+
+    I''ll open up the rift next to us so that you can go down.'
+  - 'Iris
+
+    Be careful down there, there are a lot of dangerous creatures!'
+  - 'You
+
+    I''ll keep that in mind thank you.'
 --- !u!58 &1214873203
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5442,6 +5565,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1378487043}
+  - component: {fileID: 1378487044}
   m_Layer: 0
   m_Name: NPCs
   m_TagString: Untagged
@@ -5470,6 +5594,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1378487044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1378487042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 288a00118c7df094e8689e11c8556597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questID: 4
+  gameObjectsToActivate:
+  - {fileID: 437912631}
+  gameObjectsToDeactivate:
+  - {fileID: 447923227}
 --- !u!1001 &1448741568
 Prefab:
   m_ObjectHideFlags: 0
@@ -6154,15 +6294,18 @@ MonoBehaviour:
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85
   dialogueTextColor: {r: 0.5882353, g: 0.15686275, b: 0, a: 1}
-  instantText: 0
+  instantText: 1
   fadeText: 0
   textFadeTime: 0.6
-  typedText: 1
+  typedText: 0
   dialogueTextPause: 0.05
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\t\tAlice\nPlease leave me alone, this place... something about this place
-    scares me.\n"
+  - 'Alice
+
+    Please leave me alone, this place... something about this place scares me.
+
+'
 --- !u!58 &1587876213
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6949,24 +7092,43 @@ MonoBehaviour:
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\t\tYou\nExcuse me there sir! I have a few questions I would like to ask you."
-  - "\t\t\tScared Citizen\nW..w...what do you want?"
-  - "\t\t\tYou\nSomething is wrong with the market place.."
-  - "\t\t\tYou\nThis used to be a busy area where the locals would trade thier goods,
-    now it is dead."
-  - "\t\t\tYou\nDo you know anything about the situation?"
-  - "\t\t\tScared Citizen\nI d..dd.do, however they are only stories, so take them
-    as you will."
-  - "\t\t\tScared Citizen\nThere is an old fisherman called Max who lives in a village
-    close by."
-  - "\t\t\tScared Citizen\nHe is not one for company so you wont find him around other
-    people."
-  - "\t\t\tScared Citizen\nMax tells the tales of the Battle of Iris and Than"
-  - "\t\t\tScared Citizen\nHe says that during his travels, he discovered the existance
-    of these gods."
-  - "\t\t\tScared Citizen\nI think that you should hear the story first hand from
-    him as my meory is terrible."
-  - "\t\t\tYou\nThank you very much! You have been very helpful."
+  - 'You
+
+    Excuse me there sir! I have a few questions I would like to ask you.'
+  - 'Scared Citizen
+
+    W..w...what do you want?'
+  - 'You
+
+    Something is wrong with the market place..'
+  - 'You
+
+    This used to be a busy area where the locals would trade thier goods, now it is
+    dead.'
+  - 'You
+
+    Do you know anything about the situation?'
+  - 'Scared Citizen
+
+    I d..dd.do, however they are only stories, so take them as you will.'
+  - 'Scared Citizen
+
+    There is an old fisherman called Max who lives in a village close by.'
+  - 'Scared Citizen
+
+    He is not one for company so you wont find him around other people.'
+  - 'Scared Citizen
+
+    Max tells the tales of the Battle of Iris and Than'
+  - 'Scared Citizen
+
+    He says that during his travels, he discovered the existance of these gods.'
+  - 'Scared Citizen
+
+    I think that you should hear the story first hand from him as my meory is terrible.'
+  - 'You
+
+    Thank you very much! You have been very helpful.'
 --- !u!58 &1777682772
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7239,9 +7401,13 @@ MonoBehaviour:
   dialogueTextPause: 0.05
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\t\tYou\nExcuse me there sir! I have a few questions I would like to ask you."
+  - 'You
+
+    Excuse me there sir! I have a few questions I would like to ask you.'
   - '[The person stears directly at you, but does not respond]'
-  - "\t\t\tYou\nWel...I'm and old friend of...."
+  - 'You
+
+    Wel...I''m and old friend of....'
   - '[The person turns their back to you and continues sifting through the rotting
     food]'
 --- !u!58 &1817861296
@@ -7352,6 +7518,43 @@ Transform:
   m_PrefabParentObject: {fileID: 4000011513399748, guid: e9a17e72f8b2a2441b102eb1dfe5502a,
     type: 2}
   m_PrefabInternal: {fileID: 1827456115}
+--- !u!1 &1827456118 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 136328, guid: e9a17e72f8b2a2441b102eb1dfe5502a, type: 2}
+  m_PrefabInternal: {fileID: 1827456115}
+--- !u!114 &1827456119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1827456118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c4ad9827d91b8e47bcf84ae032d1b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterType: 2
+  characterEntity: {fileID: 1827456118}
+  CanMove: 1
+  AlterSpeed: 1
+  CanAttack: 1
+  ImmuneToSlow: 0
+  ImmuneToStun: 0
+  ImmuneToSilence: 0
+  Interactable: 0
+  CharacterAnimator: {fileID: 0}
+  FourDirAnim: 0
+  EightDirAnim: 0
+  isActionKeyDialogueRunning: 0
+  actionKeyFocusTarget: {fileID: 0}
+  CanBeJolted: 0
+  currentlyJolted: 0
+  HitAnimationTime: 0.2
+  GetHitSound: {fileID: 0}
+  DieSound: {fileID: 0}
+  afterDeathVisual: {fileID: 0}
+  dead: 0
+  objectsToChangeState: []
 --- !u!1 &1871621062
 GameObject:
   m_ObjectHideFlags: 0
@@ -7962,15 +8165,17 @@ MonoBehaviour:
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85
   dialogueTextColor: {r: 0.5882353, g: 0.15686275, b: 0, a: 1}
-  instantText: 0
+  instantText: 1
   fadeText: 0
   textFadeTime: 0.6
-  typedText: 1
+  typedText: 0
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\t\tScared Citizen\nTheres people following me in the night, small flickers
-    and shadows. I don't need you following me as well!"
+  - 'Scared Citizen
+
+    Theres people following me in the night, small flickers and shadows. I don''t
+    need you following me as well!'
 --- !u!58 &2023283809
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8496,8 +8701,8 @@ MonoBehaviour:
   dialogueBox: {fileID: 1985253675}
   dialogueColor: {r: 1, g: 1, b: 1, a: 1}
   multipleTransitions: 0
-  isInstantDialogue: 1
-  isFadeDialogue: 0
+  isInstantDialogue: 0
+  isFadeDialogue: 1
   fadeTime: 0.7
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85

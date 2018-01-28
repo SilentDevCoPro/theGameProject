@@ -331,8 +331,8 @@ MonoBehaviour:
   dialogueBox: {fileID: 600058819}
   dialogueColor: {r: 1, g: 1, b: 1, a: 1}
   multipleTransitions: 0
-  isInstantDialogue: 1
-  isFadeDialogue: 0
+  isInstantDialogue: 0
+  isFadeDialogue: 1
   fadeTime: 0.7
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85
@@ -344,9 +344,15 @@ MonoBehaviour:
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\tThan\nMy power is fading but I shall return!"
-  - "\t\tYou\nIf a mear mortal can defeat you, then you are nothing!"
-  - "\t\tThan\nWe shall see, we shall see."
+  - 'Than
+
+    My power is fading but I shall return!'
+  - 'You
+
+    If a mear mortal can defeat you, then you are nothing!'
+  - 'Than
+
+    We shall see, we shall see.'
 --- !u!58 &242858686
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1964,8 +1970,8 @@ MonoBehaviour:
   inactiveTime: 60
   multipleTransitions: 0
   chatDuration: 4.2
-  isInstantDialogue: 1
-  isFadeDialogue: 0
+  isInstantDialogue: 0
+  isFadeDialogue: 1
   fadeTime: 0.5
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.6
@@ -2055,8 +2061,8 @@ MonoBehaviour:
   dialogueBox: {fileID: 915208262}
   dialogueColor: {r: 1, g: 1, b: 1, a: 1}
   multipleTransitions: 0
-  isInstantDialogue: 1
-  isFadeDialogue: 0
+  isInstantDialogue: 0
+  isFadeDialogue: 1
   fadeTime: 0.7
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85
@@ -2068,16 +2074,29 @@ MonoBehaviour:
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\t\tYou\nHello there! What are you doing in this cavern?"
-  - "\t\t\tRobert\nOh nothing nothing, just wondering around."
-  - "\t\t\tYou\nWho are you?"
-  - "\t\t\tRobert\nMy names Robert, that is all you need to know."
+  - 'You
+
+    Hello there! What are you doing in this cavern?'
+  - 'Robert
+
+    Oh nothing nothing, just wondering around.'
+  - 'You
+
+    Who are you?'
+  - 'Robert
+
+    My names Robert, that is all you need to know.'
   - '[A strange feeling creeps over you as if... that is all you need to know]'
   - '[The sword begins to burn your hand bringing you back to reality]'
-  - "\t\t\tYou\nYou are Than. You Monster."
-  - "\t\t\tThan\nMawhahahahahahahaha, that is a dangerous thing to say."
-  - "\t\t\tThan\nBut know as you know my true identity, I can't let you leave this
-    place alive."
+  - 'You
+
+    You are Than. You Monster.'
+  - 'Than
+
+    Mawhahahahahahahaha, that is a dangerous thing to say.'
+  - 'Than
+
+    But know as you know my true identity, I can''t let you leave this place alive.'
   - '[Than begins to transform into something grotesk]'
 --- !u!58 &1366786900
 CircleCollider2D:
@@ -2645,8 +2664,8 @@ MonoBehaviour:
   dialogueBox: {fileID: 1201267117}
   dialogueColor: {r: 1, g: 1, b: 1, a: 1}
   multipleTransitions: 0
-  isInstantDialogue: 1
-  isFadeDialogue: 0
+  isInstantDialogue: 0
+  isFadeDialogue: 1
   fadeTime: 0.7
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85
@@ -2658,15 +2677,33 @@ MonoBehaviour:
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\t\tYou\nHello there! What are you doing in this cavern?"
-  - "\t\t\tRobert\nOh nothing nothing, just wondering around."
-  - "\t\t\tYou\nWho are you?"
-  - "\t\t\tRobert\nMy names Robert, that is all you need to know."
-  - "\t\t\tYou\nThat is al I need to know."
-  - "\t\t\tRobert\nYou didn't see me down here."
-  - "\t\t\tYou\nI didn't see you down here."
-  - "\t\t\tRobert\nYour going."
-  - "\t\t\tYou\nI'm going... I'm going."
+  - 'You
+
+    Hello there! What are you doing in this cavern?'
+  - 'Robert
+
+    Oh nothing nothing, just wondering around.'
+  - 'You
+
+    Who are you?'
+  - 'Robert
+
+    My names Robert, that is all you need to know.'
+  - 'You
+
+    That is al I need to know.'
+  - 'Robert
+
+    You didn''t see me down here.'
+  - 'You
+
+    I didn''t see you down here.'
+  - 'Robert
+
+    Your going.'
+  - 'You
+
+    I''m going... I''m going.'
 --- !u!58 &1870590272
 CircleCollider2D:
   m_ObjectHideFlags: 0
