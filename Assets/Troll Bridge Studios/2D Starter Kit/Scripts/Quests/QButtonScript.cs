@@ -81,6 +81,7 @@ namespace TrollBridge
 
         public void AcceptQuest()
         {
+            GameObject.Find("Player Manager(Clone)").GetComponent<Player_Manager>().CanMove = true;
             QuestManager.questManager.AcceptQuest(questID);
             QuestUIManager.questUIManager.HideQuestPanel();
 

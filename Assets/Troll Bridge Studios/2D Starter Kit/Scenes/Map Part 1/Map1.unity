@@ -2425,6 +2425,16 @@ Prefab:
       propertyPath: dialoguesToChangeState.Array.data[9]
       value: 
       objectReference: {fileID: 746158492}
+    - target: {fileID: 114898201643831894, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114036977973305414, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2972cd28e6edac44fba5b39c84c6f7c7, type: 2}
   m_IsPrefabParent: 0
@@ -8282,6 +8292,11 @@ Prefab:
       propertyPath: dialogue.Array.size
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114935786774104270, guid: 94aa96c207a71c54ba9e47250e75d301,
+        type: 2}
+      propertyPath: dialoguesToChangeState.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4060803553330848, guid: 94aa96c207a71c54ba9e47250e75d301, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.13
@@ -8375,6 +8390,11 @@ Prefab:
         type: 2}
       propertyPath: inactiveTime
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114594872342832814, guid: 94aa96c207a71c54ba9e47250e75d301,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 94aa96c207a71c54ba9e47250e75d301, type: 2}
@@ -8630,6 +8650,9 @@ GameObject:
   - component: {fileID: 2110450195}
   - component: {fileID: 2110450190}
   - component: {fileID: 2110450191}
+  - component: {fileID: 2110450198}
+  - component: {fileID: 2110450197}
+  - component: {fileID: 2110450196}
   m_Layer: 0
   m_Name: Iris
   m_TagString: Untagged
@@ -8768,6 +8791,54 @@ MonoBehaviour:
   afterDeathVisual: {fileID: 0}
   dead: 0
   objectsToChangeState: []
+--- !u!114 &2110450196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110450189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 288a00118c7df094e8689e11c8556597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questID: 9
+  gameObjectsToActivate:
+  - {fileID: 462678527}
+  gameObjectsToDeactivate:
+  - {fileID: 1214873200}
+--- !u!114 &2110450197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110450189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 288a00118c7df094e8689e11c8556597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questID: 7
+  gameObjectsToActivate:
+  - {fileID: 865757396}
+  gameObjectsToDeactivate:
+  - {fileID: 2110450188}
+--- !u!114 &2110450198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110450189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 288a00118c7df094e8689e11c8556597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questID: 5
+  gameObjectsToActivate:
+  - {fileID: 1214873200}
+  gameObjectsToDeactivate:
+  - {fileID: 2110450188}
 --- !u!1 &2114352576
 GameObject:
   m_ObjectHideFlags: 0

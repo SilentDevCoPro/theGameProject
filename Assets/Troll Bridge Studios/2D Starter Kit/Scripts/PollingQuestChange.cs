@@ -17,8 +17,7 @@ namespace TrollBridge
             {
                 if (QuestManager.questManager.questList[i].id == questID)
                 {
-                    if (QuestManager.questManager.questList[i].progress == Quest.QuestProgress.ACCEPTED ||
-                        QuestManager.questManager.questList[i].progress == Quest.QuestProgress.DONE)
+                    if (QuestManager.questManager.questList[i].progress == Quest.QuestProgress.ACCEPTED)
                     {
                         foreach (GameObject obj in gameObjectsToActivate)
                         {
