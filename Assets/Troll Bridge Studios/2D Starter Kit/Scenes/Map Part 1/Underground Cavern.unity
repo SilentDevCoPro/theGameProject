@@ -345,6 +345,8 @@ MonoBehaviour:
   typeSound: {fileID: 0}
   dialogue:
   - "\t\tThan\nMy power is fading but I shall return!"
+  - "\t\tYou\nIf a mear mortal can defeat you, then you are nothing!"
+  - "\t\tThan\nWe shall see, we shall see."
 --- !u!58 &242858686
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -358,9 +360,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12537193, y: 0.7665348}
+  m_Offset: {x: 0, y: 0.24}
   serializedVersion: 2
-  m_Radius: 5.0811176
+  m_Radius: 1.27
 --- !u!4 &242858687
 Transform:
   m_ObjectHideFlags: 0
@@ -1603,7 +1605,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1054239260
 Transform:
   m_ObjectHideFlags: 0
@@ -1926,7 +1928,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1362628759
 Transform:
   m_ObjectHideFlags: 0
@@ -1975,7 +1977,7 @@ MonoBehaviour:
   dialogueTextPause: 0.01
   typeSound: {fileID: 0}
   dialogue:
-  - You have found the missing sword of Iris! Might be worth showing her your find
+  - '[You have found the missing sword of Iris!]'
 --- !u!61 &1362628761
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1988,7 +1990,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.20402479, y: 0.0059986115}
+  m_Offset: {x: 0.2209673, y: 0.006000519}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1999,7 +2001,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.66395855, y: 0.07588577}
+  m_Size: {x: 0.73446274, y: 0.12057495}
   m_EdgeRadius: 0
 --- !u!1 &1366786897
 GameObject:
@@ -2066,8 +2068,17 @@ MonoBehaviour:
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - I know you told me to deliver the key to your house for your weapon chest but
-    I lost it due to the terrible winds to the north... and winter is here.
+  - "\t\t\tYou\nHello there! What are you doing in this cavern?"
+  - "\t\t\tRobert\nOh nothing nothing, just wondering around."
+  - "\t\t\tYou\nWho are you?"
+  - "\t\t\tRobert\nMy names Robert, that is all you need to know."
+  - '[A strange feeling creeps over you as if... that is all you need to know]'
+  - '[The sword begins to burn your hand bringing you back to reality]'
+  - "\t\t\tYou\nYou are Than. You Monster."
+  - "\t\t\tThan\nMawhahahahahahahaha, that is a dangerous thing to say."
+  - "\t\t\tThan\nBut know as you know my true identity, I can't let you leave this
+    place alive."
+  - '[Than begins to transform into something grotesk]'
 --- !u!58 &1366786900
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2634,21 +2645,28 @@ MonoBehaviour:
   dialogueBox: {fileID: 1201267117}
   dialogueColor: {r: 1, g: 1, b: 1, a: 1}
   multipleTransitions: 0
-  isInstantDialogue: 0
-  isFadeDialogue: 1
+  isInstantDialogue: 1
+  isFadeDialogue: 0
   fadeTime: 0.7
   isGrowShrinkDialogue: 0
   growShrinkTime: 0.85
   dialogueTextColor: {r: 0.5882353, g: 0.15686275, b: 0, a: 1}
-  instantText: 0
+  instantText: 1
   fadeText: 0
   textFadeTime: 0.6
-  typedText: 1
+  typedText: 0
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\t\tRobert\nTheres people following me in the night, small flickers and shadows.
-    I don't need you following me as well!"
+  - "\t\t\tYou\nHello there! What are you doing in this cavern?"
+  - "\t\t\tRobert\nOh nothing nothing, just wondering around."
+  - "\t\t\tYou\nWho are you?"
+  - "\t\t\tRobert\nMy names Robert, that is all you need to know."
+  - "\t\t\tYou\nThat is al I need to know."
+  - "\t\t\tRobert\nYou didn't see me down here."
+  - "\t\t\tYou\nI didn't see you down here."
+  - "\t\t\tRobert\nYour going."
+  - "\t\t\tYou\nI'm going... I'm going."
 --- !u!58 &1870590272
 CircleCollider2D:
   m_ObjectHideFlags: 0

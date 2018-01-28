@@ -1763,7 +1763,6 @@ MonoBehaviour:
   questDialogue: {fileID: 757723236}
   dialoguesToChangeState:
   - {fileID: 2096058026}
-  - {fileID: 531218363}
 --- !u!1 &248242242
 GameObject:
   m_ObjectHideFlags: 0
@@ -2374,11 +2373,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114188295039007582, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
-        type: 2}
-      propertyPath: gameObjectsToChangeState.Array.data[1]
-      value: 
-      objectReference: {fileID: 437912631}
     - target: {fileID: 114387712111858946, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
         type: 2}
       propertyPath: dialoguesToChangeState.Array.data[0]
@@ -2429,41 +2423,11 @@ Prefab:
       propertyPath: dialoguesToChangeState.Array.data[9]
       value: 
       objectReference: {fileID: 746158492}
-    - target: {fileID: 114439842938705186, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
+    - target: {fileID: 114188295039007582, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
         type: 2}
-      propertyPath: isInstantDialogue
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114439842938705186, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
-        type: 2}
-      propertyPath: isFadeDialogue
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114439842938705186, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
-        type: 2}
-      propertyPath: instantText
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114439842938705186, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
-        type: 2}
-      propertyPath: fadeText
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114859664882922892, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
-        type: 2}
-      propertyPath: isInstantDialogue
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114859664882922892, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
-        type: 2}
-      propertyPath: isFadeDialogue
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114859664882922892, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
-        type: 2}
-      propertyPath: instantText
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: gameObjectsToChangeState.Array.data[1]
+      value: 
+      objectReference: {fileID: 437912631}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2972cd28e6edac44fba5b39c84c6f7c7, type: 2}
   m_IsPrefabParent: 0
@@ -2510,7 +2474,6 @@ MonoBehaviour:
   questDialogue: {fileID: 1817861293}
   dialoguesToChangeState:
   - {fileID: 1238698759}
-  - {fileID: 158630906}
 --- !u!1 &462678527
 GameObject:
   m_ObjectHideFlags: 0
@@ -2576,7 +2539,13 @@ MonoBehaviour:
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\tIris\nWell done on defeating Than! Check your quest"
+  - "\t\tYou\nThan has been defeated, but I could not kill him."
+  - "\t\tIris\nWell done! Than will never die, it is an unfortunate part of having
+    balance."
+  - "\t\tIris\nThe would cannot exist without Than, just as it cannot exist without
+    me."
+  - "\t\tIris\nThe curse has now been lifted on the market."
+  - "\t\tIris\nYou can keep my sword as a token of my gratitude."
 --- !u!58 &462678530
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3456,7 +3425,6 @@ MonoBehaviour:
   questDialogue: {fileID: 746158492}
   dialoguesToChangeState:
   - {fileID: 732044664}
-  - {fileID: 1587876210}
 --- !u!4 &757275023 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4607224961939014, guid: 2972cd28e6edac44fba5b39c84c6f7c7,
@@ -4130,7 +4098,15 @@ MonoBehaviour:
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\tGlenda\nThank you for the sword, I will enchant it for you"
+  - "\t\t\tYou\nIris I have retieved your sword from the cavern bellow!"
+  - "\t\t\tIris\nThank you, it has been a very long time since I've held it."
+  - "\t\t\tIris\n I will enchant the sword with the remaining of my powers for you."
+  - "\t\t\tIris\nThis should give you a better chance at fightig Than."
+  - "\t\t\tIris\nPrepair for the fight, it will not be an easy one."
+  - "\t\t\tIris\nThan is located down in the caverns where you found the sword."
+  - "\t\t\tIris\nHe is a trickster and will not be showing his true skin."
+  - "\t\t\tIris\nInfact, you may have already met him."
+  - "\t\t\tYou\nThank you Iris, I will begin preperations for the battle."
 --- !u!58 &865757399
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4468,7 +4444,6 @@ MonoBehaviour:
   questDialogue: {fileID: 1166948441}
   dialoguesToChangeState:
   - {fileID: 1169806035}
-  - {fileID: 108656831}
 --- !u!1 &1077980473
 GameObject:
   m_ObjectHideFlags: 0
@@ -4556,7 +4531,6 @@ MonoBehaviour:
   questDialogue: {fileID: 1777682769}
   dialoguesToChangeState:
   - {fileID: 706955709}
-  - {fileID: 2023283806}
 --- !u!1 &1136082165
 GameObject:
   m_ObjectHideFlags: 0
@@ -4999,7 +4973,28 @@ MonoBehaviour:
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - "\t\tGlenda\nHello there young traveller, what brings you to these parts?"
+  - "\t\t\tGlenda\nHello there young traveller, my names Glenda, what brings you to
+    these parts?"
+  - "\t\t\tYou\nI'm searching fo someone called Iris, the god of light."
+  - "\t\t\tGlenda\nThat's a name I havn't herd in a very long time."
+  - "\t\t\tGlenda\nHow did you know to come here?"
+  - "\t\t\tYou\nMy old friend George passed away, I found this on him."
+  - '[You hand Glenda the scroll]'
+  - "\t\t\tGlenda\nGeorge was a very good friend of mine."
+  - "\t\t\tGlenda\nI am Iris."
+  - "\t\t\tIris\nWho did this to George?"
+  - "\t\t\tYou\nThan has placed a curse apon the market."
+  - "\t\t\tYou\nAnd I believe that it was this that killed George."
+  - "\t\t\tIris\nTHan! I should have known."
+  - "\t\t\tIris\nWhen I decided to take this human form I lleft behind most of my
+    powers."
+  - "\t\t\tIris\nHowever I can channel whats left of them through my sword."
+  - "\t\t\tIris\nMany years ago I lost the sword in the caverns bellow."
+  - "\t\t\tIris\nIf you can retrieve it we have a chance to defeat Than!"
+  - "\t\t\tYou\nI'll give it a shot."
+  - "\t\t\tIris\nI'll open up the rift next to us so that you can go down."
+  - "\t\t\tIris\nBe careful down there, there are a lot of dangerous creatures!"
+  - "\t\t\tYou\nI'll keep that in mind thank you."
 --- !u!58 &1214873203
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8077,6 +8072,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1378487043}
     m_Modifications:
+    - target: {fileID: 114853459203499206, guid: 94aa96c207a71c54ba9e47250e75d301,
+        type: 2}
+      propertyPath: dialogue.Array.size
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4060803553330848, guid: 94aa96c207a71c54ba9e47250e75d301, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.13
@@ -8122,6 +8122,54 @@ Prefab:
     - target: {fileID: 1607345349446916, guid: 94aa96c207a71c54ba9e47250e75d301, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114853459203499206, guid: 94aa96c207a71c54ba9e47250e75d301,
+        type: 2}
+      propertyPath: dialogue.Array.data[0]
+      value: '[George is dead, he has no wounds, or any signs of a stuggle]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114853459203499206, guid: 94aa96c207a71c54ba9e47250e75d301,
+        type: 2}
+      propertyPath: dialogue.Array.data[1]
+      value: '[You see a scroll protruding from his right sleeve of his jacket]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114853459203499206, guid: 94aa96c207a71c54ba9e47250e75d301,
+        type: 2}
+      propertyPath: dialogue.Array.data[2]
+      value: '[As you get close to the scroll you can make out one word "Iris"]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114853459203499206, guid: 94aa96c207a71c54ba9e47250e75d301,
+        type: 2}
+      propertyPath: dialogue.Array.data[3]
+      value: '[You take the scroll from George, it reads]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114853459203499206, guid: 94aa96c207a71c54ba9e47250e75d301,
+        type: 2}
+      propertyPath: dialogue.Array.data[4]
+      value: '"I found Iris! After many years of searching for her I finally found
+        her.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114853459203499206, guid: 94aa96c207a71c54ba9e47250e75d301,
+        type: 2}
+      propertyPath: dialogue.Array.data[5]
+      value: '"Iris took a human form so that she can experience life as a mortal
+        being".'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114853459203499206, guid: 94aa96c207a71c54ba9e47250e75d301,
+        type: 2}
+      propertyPath: dialogue.Array.data[6]
+      value: '"She can be found where the ocean meets the mouth of the river north
+        of the market."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114853459203499206, guid: 94aa96c207a71c54ba9e47250e75d301,
+        type: 2}
+      propertyPath: chatDuration
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114853459203499206, guid: 94aa96c207a71c54ba9e47250e75d301,
+        type: 2}
+      propertyPath: inactiveTime
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 94aa96c207a71c54ba9e47250e75d301, type: 2}
@@ -8461,7 +8509,10 @@ MonoBehaviour:
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - Default
+  - "\t\t\tYou\nHello there, what are you doing all the way out here?"
+  - "\t\t\tGlenda\nI've lost something very precious to me, but I'm sure I'll find
+    it."
+  - "\t\t\tYou\nBest of luck, I hope that you find what you are looking for."
 --- !u!58 &2110450194
 CircleCollider2D:
   m_ObjectHideFlags: 0

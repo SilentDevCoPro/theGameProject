@@ -1351,11 +1351,30 @@ MonoBehaviour:
   - "\t\t\tMax\nYes. What is it to you."
   - "\t\t\tYou\nI was told by the locals at the market that you know a story..."
   - "\t\t\tYou\nAbout the Battle of Iris and Than."
-  - "\t\t\tMax\nWhat are you doing in my house? I brought this place to have quiet!"
-  - "\t\t\tMax\nWhat are you doing in my house? I brought this place to have quiet!"
-  - "\t\t\tMax\nWhat are you doing in my house? I brought this place to have quiet!"
-  - "\t\t\tMax\nWhat are you doing in my house? I brought this place to have quiet!"
-  - "\t\t\tMax\nWhat are you doing in my house? I brought this place to have quiet!"
+  - "\t\t\tMax\nSo what if I do? Its just a myth... a childs story!"
+  - "\t\t\tYou\nYou and me both know that it is more then a childs story. Look...
+    George "
+  - "\t\t\tMax\nWhat does George have to do with this?"
+  - "\t\t\tYou\nHe is an old friend of mine."
+  - "\t\t\tMax\nOhh, well that changes everything. "
+  - "\t\t\tMax\nThe Battle of Iris and Than is, as you suspected, true."
+  - "\t\t\tMax\nIt is a story about two powerful gods, one of light and one of death."
+  - "\t\t\tMax\nIris and Than..."
+  - "\t\t\tMax\nTo keep the world in order they must both exist, they must both have
+    thei influence."
+  - "\t\t\tMax\nOver thousands of years Than has fought to take control over this
+    world."
+  - "\t\t\tMax\nWhile Iris has been the only thing that has stopped him."
+  - "\t\t\tMax\nUnfortunately something went wrong not too long ago."
+  - "\t\t\tMax\nThans powers have grown beyond imagining."
+  - "\t\t\tYou\nI need to stop Than before something terrible happens to the people."
+  - "\t\t\tMax\nUnfortunately the location of Iris has been lost a long time ago."
+  - "\t\t\tMax\nBut there is one person who claims to have met her many years ago."
+  - "\t\t\tMax\nGeorge."
+  - "\t\t\tYou\nI knew he was withholding valuable infomation from me!"
+  - "\t\t\tMax\nGeorge ows me a debt. Give him this scroll, he will tell you where
+    she is."
+  - "\t\t\tYou\nThank you, good luck on your travels!"
 --- !u!58 &1553318139
 CircleCollider2D:
   m_ObjectHideFlags: 0

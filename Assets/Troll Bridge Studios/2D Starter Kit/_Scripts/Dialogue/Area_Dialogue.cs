@@ -53,6 +53,7 @@ namespace TrollBridge {
 		public AudioClip typeSound;
 		[Tooltip("The text that is displayed in the Dialogue UI.")]
 		[Multiline]
+        [TextArea]
 		public string[] dialogue;
 
         
