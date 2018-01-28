@@ -2,29 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OnQuestStart : MonoBehaviour {
+namespace TrollBridge
+{
+    public class OnQuestStart : MonoBehaviour
+    {
 
-    public int questID;
-    public GameObject[] gameObjectsToChangeState;
-	
-	// Update is called once per frame
-	void Update () {
-        for (int i = 0; i < QuestManager.questManager.currentQuestList.Count; i++)
+        public int questID;
+        public GameObject[] gameObjectsToChangeState;
+
+        // Update is called once per frame
+        void Update()
         {
-            if(QuestManager.questManager.currentQuestList[i].id == questID)
+            for (int i = 0; i < QuestManager.questManager.currentQuestList.Count; i++)
             {
-                if(QuestManager.questManager.currentQuestList[i].progress == Quest.QuestProgress.ACCEPTED)
+                if (QuestManager.questManager.currentQuestList[i].id == questID)
                 {
-                    foreach(GameObject obj in gameObjectsToChangeState)
+                    if (QuestManager.questManager.currentQuestList[i].progress == Quest.QuestProgress.ACCEPTED)
                     {
-                        if (!obj.activeSelf)
-                            obj.SetActive(true);
-                        else
-                            obj.SetActive(false);
+                        foreach (GameObject obj in gameObjectsToChangeState)
+                        {
+                            if (!obj.activeSelf)
+                                obj.SetActive(true);
+                            else
+                                obj.SetActive(false);
+                        }
+                        Destroy(this);
                     }
-                    Destroy(this);
                 }
             }
         }
-	}
+    }
 }

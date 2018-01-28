@@ -3,76 +3,82 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class QuestObject : MonoBehaviour {
-
-    private bool inTrigger = false;
-
-    public List<int> avaliableQuestIDs = new List<int>();
-    public List<int> recievableQuestIDs = new List<int>();
-
-    public GameObject questMarker;
-    public Image theImage;
-
-    public Sprite questAvaliableSprite;
-    public Sprite questReceivableSprite;
-
-    // Use this for initialization
-    void Start () {
-        SetQuestMarker();
-	}
-
-    public void SetQuestMarker()
+namespace TrollBridge
+{
+    public class QuestObject : MonoBehaviour
     {
-        if (QuestManager.questManager.CheckCompleteQuests(this))
+
+        private bool inTrigger = false;
+
+        public List<int> avaliableQuestIDs = new List<int>();
+        public List<int> recievableQuestIDs = new List<int>();
+
+        public GameObject questMarker;
+        public Image theImage;
+
+        public Sprite questAvaliableSprite;
+        public Sprite questReceivableSprite;
+
+        // Use this for initialization
+        void Start()
         {
-            questMarker.SetActive(true);
-            theImage.sprite = questReceivableSprite;
-            theImage.color = Color.blue;
+            SetQuestMarker();
         }
-        else if (QuestManager.questManager.CheckAvaliableQuests(this))
+
+        public void SetQuestMarker()
         {
-            questMarker.SetActive(true);
-            theImage.sprite = questAvaliableSprite;
-            theImage.color = Color.cyan;
+            if (QuestManager.questManager.CheckCompleteQuests(this))
+            {
+                questMarker.SetActive(true);
+                theImage.sprite = questReceivableSprite;
+                theImage.color = Color.blue;
+            }
+            else if (QuestManager.questManager.CheckAvaliableQuests(this))
+            {
+                questMarker.SetActive(true);
+                theImage.sprite = questAvaliableSprite;
+                theImage.color = Color.cyan;
+            }
+            else if (QuestManager.questManager.CheckAcceptedQuests(this))
+            {
+                questMarker.SetActive(true);
+                theImage.sprite = questReceivableSprite;
+                theImage.color = Color.gray;
+            }
+            else
+            {
+                questMarker.SetActive(false);
+            }
         }
-        else if (QuestManager.questManager.CheckAcceptedQuests(this))
+
+        // Update is called once per frame
+        void Update()
         {
-            questMarker.SetActive(true);
-            theImage.sprite = questReceivableSprite;
-            theImage.color = Color.gray;
+
+            if (inTrigger && Input.GetKeyDown(KeyCode.Space) && !QuestUIManager.questUIManager.questPanelActive)
+            {
+                QuestUIManager.questUIManager.CheckQuests(this);
+            }
         }
-        else
+
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            questMarker.SetActive(false);
+            if (collision.tag == "Player")
+            {
+                inTrigger = true;
+            }
         }
+
+        void OnTriggerExit2D(Collider2D other)
+        {
+            if (other.tag == "Player")
+            {
+                inTrigger = false;
+            }
+        }
+
+
+
+
     }
-	
-	// Update is called once per frame
-	void Update () {
-
-        if (inTrigger && Input.GetKeyDown(KeyCode.Space) && !QuestUIManager.questUIManager.questPanelActive)
-        {
-            QuestUIManager.questUIManager.CheckQuests(this);
-        }
-	}
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Player")
-        { 
-            inTrigger = true;
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.tag == "Player")
-        {
-            inTrigger = false;
-        }
-    }
-
-
-
-
 }

@@ -2,118 +2,123 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
-public class QButtonScript : MonoBehaviour {
-
-    public int questID;
-    public Text questTitle;
-
-    private GameObject findAcceptButton;
-    private GameObject findDeclineButton;
-
-    private Button acceptButton;
-    private Button declineButton;
-
-    private QButtonScript acceptButtonScript;
-    private QButtonScript declineButtonScript;
-
-    private GameObject textAccept;
-    private GameObject textDecline;
-
-    private Text textAcceptScript;
-    private Text textDeclineScript;
-
-
-    private void Start()
+namespace TrollBridge
+{
+    public class QButtonScript : MonoBehaviour
     {
-        textAccept = GameObject.Find("TextButtonAccept");
-        textAcceptScript = textAccept.GetComponent<Text>();
 
-        textDecline = GameObject.Find("TextButtonDecline");
-        textDeclineScript = textDecline.GetComponent<Text>();
+        public int questID;
+        public Text questTitle;
 
-        findAcceptButton = GameObject.Find("Accept").gameObject;
-        acceptButtonScript = findAcceptButton.GetComponent<QButtonScript>();
-        acceptButton = findAcceptButton.GetComponent<Button>();
+        private GameObject findAcceptButton;
+        private GameObject findDeclineButton;
 
-        findDeclineButton = GameObject.Find("Decline").gameObject;
-        declineButtonScript = findDeclineButton.GetComponent<QButtonScript>();
-        declineButton = findDeclineButton.GetComponent<Button>();
+        private Button acceptButton;
+        private Button declineButton;
 
-        textAcceptScript.color = Color.clear;
-        textDeclineScript.color = Color.clear;
+        private QButtonScript acceptButtonScript;
+        private QButtonScript declineButtonScript;
 
-        acceptButton.interactable = false;
-        declineButton.interactable = false;
+        private GameObject textAccept;
+        private GameObject textDecline;
 
-    }
+        private Text textAcceptScript;
+        private Text textDeclineScript;
 
-    //Show all information
-    public void ShowAllInformation()
-    {
-        QuestUIManager.questUIManager.ShowSelectedQuest(questID);
 
-        //Accept button
-        if(QuestManager.questManager.RequestAvaliableQuest(questID))
+        private void Start()
         {
-            textAcceptScript.color = Color.white;
-            textDeclineScript.color = Color.white;
-            acceptButton.interactable = true;
-            declineButton.interactable = true;
-            acceptButtonScript.questID = questID;
+            textAccept = GameObject.Find("TextButtonAccept");
+            textAcceptScript = textAccept.GetComponent<Text>();
+
+            textDecline = GameObject.Find("TextButtonDecline");
+            textDeclineScript = textDecline.GetComponent<Text>();
+
+            findAcceptButton = GameObject.Find("Accept").gameObject;
+            acceptButtonScript = findAcceptButton.GetComponent<QButtonScript>();
+            acceptButton = findAcceptButton.GetComponent<Button>();
+
+            findDeclineButton = GameObject.Find("Decline").gameObject;
+            declineButtonScript = findDeclineButton.GetComponent<QButtonScript>();
+            declineButton = findDeclineButton.GetComponent<Button>();
+
+            textAcceptScript.color = Color.clear;
+            textDeclineScript.color = Color.clear;
+
+            acceptButton.interactable = false;
+            declineButton.interactable = false;
+
         }
-        else
+
+        //Show all information
+        public void ShowAllInformation()
         {
-            //declineButton.SetActive(false);
-            //acceptButton.SetActive(false);
+            QuestUIManager.questUIManager.ShowSelectedQuest(questID);
+
+            //Accept button
+            if (QuestManager.questManager.RequestAvaliableQuest(questID))
+            {
+                textAcceptScript.color = Color.white;
+                textDeclineScript.color = Color.white;
+                acceptButton.interactable = true;
+                declineButton.interactable = true;
+                acceptButtonScript.questID = questID;
+            }
+            else
+            {
+                //declineButton.SetActive(false);
+                //acceptButton.SetActive(false);
+            }
         }
-    }
 
-    public void CloseQuestPanel()
-    {
-        QuestUIManager.questUIManager.HideQuestPanel();
-        acceptButton.interactable = false;
-        declineButton.interactable = false;
-    }
-
-    public void AcceptQuest()
-    {
-        QuestManager.questManager.AcceptQuest(questID);
-        QuestUIManager.questUIManager.HideQuestPanel();
-
-        //Update all quest Objects
-
-        QuestObject[] currentQuestObjects = FindObjectsOfType(typeof(QuestObject)) as QuestObject[];
-        foreach (QuestObject qobj in currentQuestObjects)
+        public void CloseQuestPanel()
         {
-            qobj.SetQuestMarker();
+            GameObject.Find("Player Manager(Clone)").GetComponent<Player_Manager>().CanMove = true;
+            QuestUIManager.questUIManager.HideQuestPanel();
+            acceptButton.interactable = false;
+            declineButton.interactable = false;
         }
-    }
 
-    public void DeclineQuest()
-    {
-        QuestUIManager.questUIManager.HideQuestPanel();
-
-        //Update all quest Objects
-
-        QuestObject[] currentQuestObjects = FindObjectsOfType(typeof(QuestObject)) as QuestObject[];
-        foreach(QuestObject qobj in currentQuestObjects)
+        public void AcceptQuest()
         {
-            qobj.SetQuestMarker();
+            QuestManager.questManager.AcceptQuest(questID);
+            QuestUIManager.questUIManager.HideQuestPanel();
+
+            //Update all quest Objects
+
+            QuestObject[] currentQuestObjects = FindObjectsOfType(typeof(QuestObject)) as QuestObject[];
+            foreach (QuestObject qobj in currentQuestObjects)
+            {
+                qobj.SetQuestMarker();
+            }
         }
-    }
 
-    public void CompleteQuest()
-    {
-        QuestManager.questManager.CompleteQuest(questID);
-        QuestUIManager.questUIManager.HideQuestPanel();
-
-        //Update all quest Objects
-
-        QuestObject[] currentQuestObjects = FindObjectsOfType(typeof(QuestObject)) as QuestObject[];
-        foreach (QuestObject qobj in currentQuestObjects)
+        public void DeclineQuest()
         {
-            qobj.SetQuestMarker();
+            GameObject.Find("Player Manager(Clone)").GetComponent<Player_Manager>().CanMove = true;
+            QuestUIManager.questUIManager.HideQuestPanel();
+
+            //Update all quest Objects
+
+            QuestObject[] currentQuestObjects = FindObjectsOfType(typeof(QuestObject)) as QuestObject[];
+            foreach (QuestObject qobj in currentQuestObjects)
+            {
+                qobj.SetQuestMarker();
+            }
+        }
+
+        public void CompleteQuest()
+        {
+            QuestManager.questManager.CompleteQuest(questID);
+            QuestUIManager.questUIManager.HideQuestPanel();
+
+            //Update all quest Objects
+
+            QuestObject[] currentQuestObjects = FindObjectsOfType(typeof(QuestObject)) as QuestObject[];
+            foreach (QuestObject qobj in currentQuestObjects)
+            {
+                qobj.SetQuestMarker();
+            }
         }
     }
 }

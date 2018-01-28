@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class OpenQuestInterface : MonoBehaviour {
-
-    public void Open()
+namespace TrollBridge
+{
+    public class OpenQuestInterface : MonoBehaviour
     {
-        QuestUIManager.questUIManager.questLogPanelActive = !QuestUIManager.questUIManager.questLogPanelActive;
-        QuestUIManager.questUIManager.ShowQuestLogPanel();
+
+        public void Open()
+        {
+            QuestUIManager.questUIManager.questLogPanelActive = !QuestUIManager.questUIManager.questLogPanelActive;
+            QuestUIManager.questUIManager.ShowQuestLogPanel();
+        }
     }
 }

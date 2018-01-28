@@ -1,35 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+namespace TrollBridge
+{
+    public class PollingQuestChange : MonoBehaviour
+    {
 
-public class PollingQuestChange: MonoBehaviour {
+        public int questID;
+        public GameObject[] gameObjectsToActivate;
+        public GameObject[] gameObjectsToDeactivate;
 
-    public int questID;
-    public GameObject[] gameObjectsToActivate;
-    public GameObject[] gameObjectsToDeactivate;
-
-    // Update is called once per frame
-    void Update () {
-        for (int i = 0; i < QuestManager.questManager.questList.Count; i++)
+        // Update is called once per frame
+        void Update()
         {
-            if (QuestManager.questManager.questList[i].id == questID)
+            for (int i = 0; i < QuestManager.questManager.questList.Count; i++)
             {
-                if (QuestManager.questManager.questList[i].progress == Quest.QuestProgress.ACCEPTED ||
-                    QuestManager.questManager.questList[i].progress == Quest.QuestProgress.DONE)
+                if (QuestManager.questManager.questList[i].id == questID)
                 {
-                    foreach (GameObject obj in gameObjectsToActivate)
+                    if (QuestManager.questManager.questList[i].progress == Quest.QuestProgress.ACCEPTED ||
+                        QuestManager.questManager.questList[i].progress == Quest.QuestProgress.DONE)
                     {
-                        if (!obj.activeSelf)
+                        foreach (GameObject obj in gameObjectsToActivate)
                         {
-                            Debug.Log("George IS NOW ACTIVE");
-                            obj.SetActive(true);
+                            if (!obj.activeSelf)
+                            {
+                                Debug.Log("George IS NOW ACTIVE");
+                                obj.SetActive(true);
+                            }
                         }
-                    }
 
-                    foreach (GameObject obj in gameObjectsToDeactivate)
-                    {
-                        if (obj.activeSelf)
-                            obj.SetActive(false);
+                        foreach (GameObject obj in gameObjectsToDeactivate)
+                        {
+                            if (obj.activeSelf)
+                                obj.SetActive(false);
+                        }
                     }
                 }
             }

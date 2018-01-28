@@ -2,21 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
-public class QLogButtonScipt : MonoBehaviour {
-
-    public int questID;
-    public Text questTitle;
-
-
-
-    public void ShowAllInformation()
+namespace TrollBridge
+{
+    public class QLogButtonScipt : MonoBehaviour
     {
-        QuestManager.questManager.ShowQustLog(questID);
-    }
 
-    public void ClosePanel()
-    {
-        QuestUIManager.questUIManager.HideQuestLogPanel();
+        public int questID;
+        public Text questTitle;
+
+        public void ShowAllInformation()
+        {
+            QuestManager.questManager.ShowQustLog(questID);
+        }
+
+        public void ClosePanel()
+        {
+            GameObject.Find("Player Manager(Clone)").GetComponent<Player_Manager>().CanMove = true;
+            QuestUIManager.questUIManager.HideQuestLogPanel();
+        }
     }
 }
