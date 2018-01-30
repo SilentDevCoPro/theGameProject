@@ -1976,6 +1976,70 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114160244218215208, guid: fdb1ccaa40d213b4286d251bb693ed8e,
+        type: 2}
+      propertyPath: questList.Array.data[0].hint
+      value: George, the market blacksmith and an old friend of mine, might be able
+        to tell me what happened to the market.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114160244218215208, guid: fdb1ccaa40d213b4286d251bb693ed8e,
+        type: 2}
+      propertyPath: questList.Array.data[1].hint
+      value: George suggested that I talk to the remaining people in the market. They
+        should provide me with information of the dark presence
+      objectReference: {fileID: 0}
+    - target: {fileID: 114160244218215208, guid: fdb1ccaa40d213b4286d251bb693ed8e,
+        type: 2}
+      propertyPath: questList.Array.data[0].description
+      value: I have felt a dark presence over the market. The streets are not what
+        they used to be, only a few stragglers are left.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114160244218215208, guid: fdb1ccaa40d213b4286d251bb693ed8e,
+        type: 2}
+      propertyPath: questList.Array.data[2].hint
+      value: "The remaining market folk tell a story of an ancient evil which has
+        laid a curse over the market \u2013 a curse which has caused the deaths of
+        many locals. The ancient curse was created by Than, the God of Death. Legend
+        has it that the only way to defeat Than is by using the sword of Iris, the
+        Goddess of Light. A helpful local mentioned that Max, the old fisherman, may
+        have gained knowledge of her. whereabouts through his travels."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114160244218215208, guid: fdb1ccaa40d213b4286d251bb693ed8e,
+        type: 2}
+      propertyPath: questList.Array.data[3].hint
+      value: Max told of how Iris , many decades ago, assumed a human form for she
+        wanted to experience being mortal. He also mentioned that George, the blacksmith,
+        is withholding information about the darkness plaguing the market. The scroll
+        Max gave me should persuade George to help.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114160244218215208, guid: fdb1ccaa40d213b4286d251bb693ed8e,
+        type: 2}
+      propertyPath: questList.Array.data[4].hint
+      value: George's scroll tells a story of Iris. He found her many years ago where
+        the ocean meets the market river. He swore an oath never to reveal her location.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114160244218215208, guid: fdb1ccaa40d213b4286d251bb693ed8e,
+        type: 2}
+      propertyPath: questList.Array.data[5].hint
+      value: "Iris said the only way to defeat Than is by using her ancient sword.
+        Unfortunately, the sword has been lost for many a decade in the caverns below
+        the land. Finding the sword and returning it to Iris is the only way to put
+        an end to Than\u2019s curse."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114160244218215208, guid: fdb1ccaa40d213b4286d251bb693ed8e,
+        type: 2}
+      propertyPath: questList.Array.data[6].hint
+      value: Now that I have found the sword of Iris I will take it to her before
+        I face Than.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114160244218215208, guid: fdb1ccaa40d213b4286d251bb693ed8e,
+        type: 2}
+      propertyPath: questList.Array.data[7].hint
+      value: "Iris has imbued her sword with the remainder of her powers, although
+        she believes I am not yet ready to face Than. He has been seen in the caverns
+        below \u2026 hiding in the shadows. Perhaps I should prepare some combat supplies
+        before I start looking for him."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fdb1ccaa40d213b4286d251bb693ed8e, type: 2}
   m_IsPrefabParent: 0
