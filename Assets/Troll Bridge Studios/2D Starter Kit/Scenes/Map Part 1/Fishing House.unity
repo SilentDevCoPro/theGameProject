@@ -1294,12 +1294,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1553318135}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed67d367a0ca26b45927ca4df41178f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 288a00118c7df094e8689e11c8556597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   questID: 3
-  gameObjectsToChangeState:
+  gameObjectsToActivate:
   - {fileID: 1553318134}
+  gameObjectsToDeactivate:
   - {fileID: 463499847}
 --- !u!4 &1553318137
 Transform:

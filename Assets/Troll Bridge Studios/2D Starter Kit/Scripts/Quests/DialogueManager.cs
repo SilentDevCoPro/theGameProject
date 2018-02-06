@@ -31,7 +31,7 @@ namespace TrollBridge
                         else
                             obj.SetActive(false);
                     }
-                    DestroyObject(this);
+                    this.enabled = false;
                 }
             }
         }

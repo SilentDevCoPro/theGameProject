@@ -23,7 +23,6 @@ namespace TrollBridge
                         {
                             if (!obj.activeSelf)
                             {
-                                Debug.Log("George IS NOW ACTIVE");
                                 obj.SetActive(true);
                             }
                         }
