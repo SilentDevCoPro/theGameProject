@@ -587,8 +587,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DefaultDamage: 0
   DefaultMoveSpeed: 50
-  DefaultHealth: 10
-  DefaultMaxHealth: 10
+  DefaultHealth: 5
+  DefaultMaxHealth: 5
   DefaultMana: 20
   DefaultMaxMana: 20
   CurrentDamage: 0

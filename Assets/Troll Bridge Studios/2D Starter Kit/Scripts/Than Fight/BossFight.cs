@@ -15,6 +15,11 @@ namespace TrollBridge {
         public GameObject laser1;
         public GameObject laser2;
 
+        public GameObject oblisk1;
+        public GameObject oblisk2;
+
+        public GameObject thanDialogue;
+
         public GameObject minion;
         public float minionMaxSize;
         public float minionGrowthRate;
@@ -72,7 +77,9 @@ namespace TrollBridge {
             yield return new WaitForSeconds(1f);
 
             minionTargetControl.AggroDistance = 25;
-
+            oblisk1.GetComponent<NPC_Manager>().characterType = CharacterType.Enemy;
+            oblisk2.GetComponent<NPC_Manager>().characterType = CharacterType.Enemy;
+            thanDialogue.SetActive(false);
 
             Character_Stats character_stats = minion.GetComponentInChildren<Character_Stats>();
             maxSize.x = minionHalfMaxSize;

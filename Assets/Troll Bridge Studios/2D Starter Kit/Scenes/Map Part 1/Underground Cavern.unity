@@ -863,9 +863,104 @@ Prefab:
       propertyPath: than
       value: 
       objectReference: {fileID: 1323393647}
+    - target: {fileID: 114884367104403162, guid: ecf77e4fdb16769449efbdc08539d2a8,
+        type: 2}
+      propertyPath: DefaultHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114884367104403162, guid: ecf77e4fdb16769449efbdc08539d2a8,
+        type: 2}
+      propertyPath: DefaultMaxHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114696437932938436, guid: ecf77e4fdb16769449efbdc08539d2a8,
+        type: 2}
+      propertyPath: DefaultHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114696437932938436, guid: ecf77e4fdb16769449efbdc08539d2a8,
+        type: 2}
+      propertyPath: DefaultMaxHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114434868699861374, guid: ecf77e4fdb16769449efbdc08539d2a8,
+        type: 2}
+      propertyPath: characterType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114140095774677164, guid: ecf77e4fdb16769449efbdc08539d2a8,
+        type: 2}
+      propertyPath: characterType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114741069661766484, guid: ecf77e4fdb16769449efbdc08539d2a8,
+        type: 2}
+      propertyPath: oblisk1
+      value: 
+      objectReference: {fileID: 476713796}
+    - target: {fileID: 114741069661766484, guid: ecf77e4fdb16769449efbdc08539d2a8,
+        type: 2}
+      propertyPath: oblisk2
+      value: 
+      objectReference: {fileID: 476713794}
+    - target: {fileID: 114741069661766484, guid: ecf77e4fdb16769449efbdc08539d2a8,
+        type: 2}
+      propertyPath: thanDialogue
+      value: 
+      objectReference: {fileID: 988152914}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ecf77e4fdb16769449efbdc08539d2a8, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &476713794 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1833538139299924, guid: ecf77e4fdb16769449efbdc08539d2a8,
+    type: 2}
+  m_PrefabInternal: {fileID: 476713793}
+--- !u!212 &476713795 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 212043941747763082, guid: ecf77e4fdb16769449efbdc08539d2a8,
+    type: 2}
+  m_PrefabInternal: {fileID: 476713793}
+--- !u!1 &476713796 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1852099497078138, guid: ecf77e4fdb16769449efbdc08539d2a8,
+    type: 2}
+  m_PrefabInternal: {fileID: 476713793}
+--- !u!212 &476713797 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 212216941888080776, guid: ecf77e4fdb16769449efbdc08539d2a8,
+    type: 2}
+  m_PrefabInternal: {fileID: 476713793}
+--- !u!114 &476713798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 476713794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcbc884e84f908140ba848c16dd03864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invulnerabilityTime: 2
+  flashRenderer: {fileID: 476713795}
+  flashIntervalTime: 0.05
+  showFIT: 1
+--- !u!114 &476713799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 476713796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcbc884e84f908140ba848c16dd03864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invulnerabilityTime: 2
+  flashRenderer: {fileID: 476713797}
+  flashIntervalTime: 0.05
+  showFIT: 1
 --- !u!1 &489957513
 GameObject:
   m_ObjectHideFlags: 0
@@ -1765,6 +1860,7 @@ GameObject:
   - component: {fileID: 1093837168}
   - component: {fileID: 1093837167}
   - component: {fileID: 1093837166}
+  - component: {fileID: 1093837173}
   m_Layer: 0
   m_Name: Old Man
   m_TagString: Untagged
@@ -1929,6 +2025,21 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1093837173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1093837164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcbc884e84f908140ba848c16dd03864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invulnerabilityTime: 1
+  flashRenderer: {fileID: 1093837172}
+  flashIntervalTime: 0.05
+  showFIT: 1
 --- !u!1001 &1166783431
 Prefab:
   m_ObjectHideFlags: 0
