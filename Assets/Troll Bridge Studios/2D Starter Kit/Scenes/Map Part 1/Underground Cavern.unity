@@ -779,6 +779,21 @@ Prefab:
       propertyPath: m_Name
       value: Grey Bat Manager (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].LootGameObject
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].Amount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].Percent
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
   m_IsPrefabParent: 0
@@ -908,6 +923,21 @@ Prefab:
       propertyPath: thanDialogue
       value: 
       objectReference: {fileID: 988152914}
+    - target: {fileID: 114051328711309814, guid: ecf77e4fdb16769449efbdc08539d2a8,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].LootGameObject
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114051328711309814, guid: ecf77e4fdb16769449efbdc08539d2a8,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].Amount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114051328711309814, guid: ecf77e4fdb16769449efbdc08539d2a8,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].Percent
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ecf77e4fdb16769449efbdc08539d2a8, type: 2}
   m_IsPrefabParent: 0
@@ -1522,6 +1552,21 @@ Prefab:
       propertyPath: m_Name
       value: Grey Bat Manager (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].LootGameObject
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].Amount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].Percent
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
   m_IsPrefabParent: 0
@@ -1659,6 +1704,21 @@ Prefab:
     - target: {fileID: 167804, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
       propertyPath: m_Name
       value: Grey Bat Manager (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].LootGameObject
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].Amount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].Percent
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
@@ -2604,6 +2664,21 @@ Prefab:
       propertyPath: m_Name
       value: Grey Bat Manager (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].LootGameObject
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].Amount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].Percent
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
   m_IsPrefabParent: 0
@@ -2653,6 +2728,21 @@ Prefab:
     - target: {fileID: 167804, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
       propertyPath: m_Name
       value: Grey Bat Manager (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].LootGameObject
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].Amount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].Percent
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
@@ -2811,6 +2901,21 @@ Prefab:
     - target: {fileID: 167804, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
       propertyPath: m_Name
       value: Grey Bat Manager (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].LootGameObject
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].Amount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].Percent
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
@@ -2992,6 +3097,21 @@ Prefab:
       propertyPath: m_Name
       value: Grey Bat Manager (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].LootGameObject
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].Amount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].Percent
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
   m_IsPrefabParent: 0
@@ -3106,6 +3226,21 @@ Prefab:
     - target: {fileID: 167804, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
       propertyPath: m_Name
       value: Grey Bat Manager (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].LootGameObject
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].Amount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010751447210, guid: 631a30bb3b06390439376cfe6e2a6672,
+        type: 2}
+      propertyPath: LootDropped.Array.data[0].Percent
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 631a30bb3b06390439376cfe6e2a6672, type: 2}
