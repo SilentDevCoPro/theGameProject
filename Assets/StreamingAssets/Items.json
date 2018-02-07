@@ -1,9 +1,9 @@
 [
 	{
 		"id": 0,
-		"title": "Dragon Sword",
+		"title": "Stone Sword",
 		"value": 100,
-		"rarity": "Rare",
+		"rarity": "Common",
 		"type": "Weapon",
 		"color": {
 			"r": 255,
@@ -23,7 +23,7 @@
 		"usage": {
 			"restorehp": 0		
 		},
-		"description": "Crafted from the scales of the last dragon",
+		"description": "A sword made of stone... I guess its good for smashing things!",
 		"stackable": false,
 		"pickupsound": "SharpWeaponPickup",
 		"usedsound": "SharpWeaponEquip",
@@ -32,7 +32,7 @@
 
 	{
 		"id": 1,
-		"title": "Ember Sword",
+		"title": "Sword of Iris",
 		"value": 500,
 		"rarity": "Legendary",
 		"type": "Weapon",
@@ -43,7 +43,7 @@
 			"a": 255
 		},
 		"stats": {
-			"damage": 2,
+			"damage": 5,
 			"armour": 0,
 			"magicarmour": 0,
 			"movespeed": 0,
@@ -54,7 +54,7 @@
 		"usage": {
 			"restorehp": 0		
 		},
-		"description": "The burning anger from betrayed fallen heroes linger deep within the blade of this sword",
+		"description": "The lost sword of Iris, this sword holds the power of a god!",
 		"stackable": false,
 		"pickupsound": "SharpWeaponPickup",
 		"usedsound": "SharpWeaponEquip",
