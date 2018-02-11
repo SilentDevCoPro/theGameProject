@@ -286,9 +286,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DefaultDamage: 1
-  DefaultMoveSpeed: 1
-  DefaultHealth: 15
-  DefaultMaxHealth: 15
+  DefaultMoveSpeed: 3
+  DefaultHealth: 40
+  DefaultMaxHealth: 40
   DefaultMana: 0
   DefaultMaxMana: 0
   CurrentDamage: 0
@@ -938,6 +938,16 @@ Prefab:
       propertyPath: LootDropped.Array.data[0].Percent
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114189092070615934, guid: ecf77e4fdb16769449efbdc08539d2a8,
+        type: 2}
+      propertyPath: DefaultHealth
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114189092070615934, guid: ecf77e4fdb16769449efbdc08539d2a8,
+        type: 2}
+      propertyPath: DefaultMaxHealth
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ecf77e4fdb16769449efbdc08539d2a8, type: 2}
   m_IsPrefabParent: 0
@@ -989,6 +999,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invulnerabilityTime: 2
   flashRenderer: {fileID: 476713797}
+  flashIntervalTime: 0.05
+  showFIT: 1
+--- !u!1 &476713800 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1075389429711518, guid: ecf77e4fdb16769449efbdc08539d2a8,
+    type: 2}
+  m_PrefabInternal: {fileID: 476713793}
+--- !u!212 &476713801 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 212310081923809220, guid: ecf77e4fdb16769449efbdc08539d2a8,
+    type: 2}
+  m_PrefabInternal: {fileID: 476713793}
+--- !u!114 &476713802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 476713800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcbc884e84f908140ba848c16dd03864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invulnerabilityTime: 1
+  flashRenderer: {fileID: 476713801}
   flashIntervalTime: 0.05
   showFIT: 1
 --- !u!1 &489957513
@@ -2157,12 +2192,17 @@ Prefab:
     - target: {fileID: 114085940745576818, guid: 43295048cfa39d94b8fad14dc9f6c29a,
         type: 2}
       propertyPath: DefaultHealth
-      value: 15
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 114085940745576818, guid: 43295048cfa39d94b8fad14dc9f6c29a,
         type: 2}
       propertyPath: DefaultMaxHealth
-      value: 15
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 114085940745576818, guid: 43295048cfa39d94b8fad14dc9f6c29a,
+        type: 2}
+      propertyPath: DefaultMoveSpeed
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 43295048cfa39d94b8fad14dc9f6c29a, type: 2}
