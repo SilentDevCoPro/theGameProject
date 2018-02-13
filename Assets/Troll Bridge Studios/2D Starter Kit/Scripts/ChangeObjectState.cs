@@ -8,6 +8,9 @@ public class ChangeObjectState : MonoBehaviour {
 
     public void ChangeState()
     {
-        goToChangeState.SetActive(false);
+        if(goToChangeState.activeSelf)
+            goToChangeState.SetActive(false);
+        else
+            goToChangeState.SetActive(true);
     }
 }

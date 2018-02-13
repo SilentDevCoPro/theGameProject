@@ -62,6 +62,8 @@ MonoBehaviour:
   GetHitSound: {fileID: 8300000, guid: 0cf3adef0ae7089448782082783a4446, type: 3}
   DieSound: {fileID: 8300000, guid: 0cf3adef0ae7089448782082783a4446, type: 3}
   afterDeathVisual: {fileID: 199050, guid: e3958d7af447faa4483da05e759fe41c, type: 2}
+  dead: 0
+  objectsToChangeState: []
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -377,8 +379,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1501050255
-  m_SortingLayer: 8
+  m_SortingLayerID: -170768469
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a7b34309562732946b653b9e8942980a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

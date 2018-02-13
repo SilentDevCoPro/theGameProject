@@ -207,6 +207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4251307139386444}
   - component: {fileID: 114387712111858946}
+  - component: {fileID: 114081440887545548}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -446,7 +447,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -455,6 +456,30 @@ MonoBehaviour:
   m_Text: 'Test
 
 '
+--- !u!114 &114081440887545548
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1959876175309508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 288a00118c7df094e8689e11c8556597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questID: 2
+  gameObjectsToActivate:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  gameObjectsToDeactivate:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &114206110191530022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -500,16 +525,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questDialogue: {fileID: 1934929147901336}
   dialoguesToChangeState:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 1982411723992120}
 --- !u!114 &114412509532864446
 MonoBehaviour:
@@ -575,21 +590,15 @@ MonoBehaviour:
   dialogue:
   - 'GEORGE
 
-    Hello my old friend, it has been too long.'
-  - 'YOU
-
-    George my old pal, it has been. Look George, something doesn''t feel right about
-    this place.'
-  - 'GEORGE
-
-    Hushhhh..... [George checks to make sure that no one is listening]'
-  - 'GEORGE
-
-    Sales have been horrible this year and I don''t want any unwante attetion. '
+    Hello, my old friend. It has been too long'
+  - "YOU\nHello, my old chum! Yes, it has been! Look, George, something doesn\u2019t
+    feel right about this place \u2026"
+  - "GEORGE\nShhhh! [Checks to make sure no one is listening \u2026]"
+  - "GEORGE\nSales have been downright terrible this year and I don\u2019t want to
+    attract any attention"
   - 'George
 
-    Talk to some of the locals in the market they might be more open about whats been
-    happeneing.'
+    I suggest you talk to the locals around the market. They might have more information'
 --- !u!114 &114472786794122532
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -809,7 +818,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0

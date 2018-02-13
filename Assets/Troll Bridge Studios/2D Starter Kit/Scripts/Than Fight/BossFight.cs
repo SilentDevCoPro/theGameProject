@@ -57,7 +57,6 @@ namespace TrollBridge {
 
             yield return new WaitForSeconds(2f);
             minion.GetComponentInChildren<Immunity_Time>().flashIntervalTime = 0f;
-            Debug.Log(GetComponentInChildren<Immunity_Time>().flashIntervalTime);
             minion.SetActive(true);
             laser1.SetActive(true);
             laser2.SetActive(true);
