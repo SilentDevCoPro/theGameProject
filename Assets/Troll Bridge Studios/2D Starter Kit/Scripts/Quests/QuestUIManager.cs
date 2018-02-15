@@ -182,7 +182,7 @@ namespace TrollBridge
 
             //Clear all text fields
             questTitle.text = "Quest Menu";
-            questDescription.text = "Select an avaliable or running quest from the left hand side panel to get started!";
+            questDescription.text = "Select an avaliable quest from the left hand side panel to get started! \n\nThe quest log will update with each new objective, this information will help you with your quest.";
             //questSummary.text = "";
             //questRewards.text = "";
 
