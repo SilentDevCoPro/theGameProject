@@ -2204,6 +2204,81 @@ Prefab:
       propertyPath: DefaultMoveSpeed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114087655114855214, guid: 43295048cfa39d94b8fad14dc9f6c29a,
+        type: 2}
+      propertyPath: dialogue.Array.data[0]
+      value: 'You
+
+        Hello there! What might you be up to in this cavern?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114087655114855214, guid: 43295048cfa39d94b8fad14dc9f6c29a,
+        type: 2}
+      propertyPath: dialogue.Array.data[1]
+      value: "Robert\nOh, nothing \u2026 nothing, just poking around "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114087655114855214, guid: 43295048cfa39d94b8fad14dc9f6c29a,
+        type: 2}
+      propertyPath: dialogue.Array.data[3]
+      value: "Robert\nMy name\u2019s Robert. That\u2019s all you need to know"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114087655114855214, guid: 43295048cfa39d94b8fad14dc9f6c29a,
+        type: 2}
+      propertyPath: dialogue.Array.data[4]
+      value: "\n[A strange feeling creeps over you \u2026 as if that really is all
+        you need to know]"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114087655114855214, guid: 43295048cfa39d94b8fad14dc9f6c29a,
+        type: 2}
+      propertyPath: dialogue.Array.data[5]
+      value: '
+
+        [The rainbow blade begins to glow, burning your hand and jolting you back
+        to reality]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114087655114855214, guid: 43295048cfa39d94b8fad14dc9f6c29a,
+        type: 2}
+      propertyPath: dialogue.Array.data[6]
+      value: "You\nYou\u2019re Than?! You monster!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114087655114855214, guid: 43295048cfa39d94b8fad14dc9f6c29a,
+        type: 2}
+      propertyPath: dialogue.Array.data[7]
+      value: "Than\nCareful now! That\u2019s a very dangerous thing to say!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114087655114855214, guid: 43295048cfa39d94b8fad14dc9f6c29a,
+        type: 2}
+      propertyPath: dialogue.Array.data[8]
+      value: "Than\nBut now you\u2019ve seen the truth, I can\u2019t let you leave.
+        Alive that is \u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114086541969591196, guid: 43295048cfa39d94b8fad14dc9f6c29a,
+        type: 2}
+      propertyPath: dialogue.Array.data[0]
+      value: 'Than
+
+        My power is fading but I shall return! '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114086541969591196, guid: 43295048cfa39d94b8fad14dc9f6c29a,
+        type: 2}
+      propertyPath: dialogue.Array.data[1]
+      value: 'You
+
+        We shall see, we shall see.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114086541969591196, guid: 43295048cfa39d94b8fad14dc9f6c29a,
+        type: 2}
+      propertyPath: dialogue.Array.data[2]
+      value: 'Than
+
+        Where there are mortals there will always be Death'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114087655114855214, guid: 43295048cfa39d94b8fad14dc9f6c29a,
+        type: 2}
+      propertyPath: dialogue.Array.data[9]
+      value: '
+
+        [Than begins to transform into something grotesk]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 43295048cfa39d94b8fad14dc9f6c29a, type: 2}
   m_IsPrefabParent: 0
@@ -2341,28 +2416,24 @@ MonoBehaviour:
   dialogue:
   - 'You
 
-    Hello there! What are you doing in this cavern?'
-  - 'Robert
-
-    Oh nothing nothing, just wondering around.'
+    Hello there! What might you be up to in this cavern?'
+  - "Robert\nOh, nothing \u2026 nothing, just poking around "
   - 'You
 
     Who are you?'
-  - 'Robert
+  - "Robert\nMy name\u2019s Robert. That\u2019s all you need to know"
+  - "\n[A strange feeling creeps over you \u2026 as if that really is all you need
+    to know]"
+  - '
 
-    My names Robert, that is all you need to know.'
-  - '[A strange feeling creeps over you as if... that is all you need to know]'
-  - '[The sword begins to burn your hand bringing you back to reality]'
-  - 'You
+    [The rainbow blade begins to glow, burning your hand and jolting you back to reality]'
+  - "You\nYou\u2019re Than?! You monster!"
+  - "Than\nCareful now! That\u2019s a very dangerous thing to say!"
+  - "Than\nBut now you\u2019ve seen the truth, I can\u2019t let you leave. Alive that
+    is \u2026"
+  - '
 
-    You are Than. You Monster.'
-  - 'Than
-
-    Mawhahahahahahahaha, that is a dangerous thing to say.'
-  - 'Than
-
-    But know as you know my true identity, I can''t let you leave this place alive.'
-  - '[Than begins to transform into something grotesk]'
+    [Than begins to transform into something grotesk]'
 --- !u!58 &1200523338
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2572,13 +2643,13 @@ MonoBehaviour:
   dialogue:
   - 'Than
 
-    My power is fading but I shall return!'
+    My power is fading but I shall return! '
   - 'You
 
-    If a mear mortal can defeat you, then you are nothing!'
+    We shall see, we shall see.'
   - 'Than
 
-    We shall see, we shall see.'
+    Where there are mortals there will always be Death'
 --- !u!58 &1342175378
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2675,7 +2746,9 @@ MonoBehaviour:
   dialogueTextPause: 0.01
   typeSound: {fileID: 0}
   dialogue:
-  - '[You have found the missing sword of Iris!]'
+  - '
+
+    [You have found the missing Rainbow Blade!]'
 --- !u!61 &1362628761
 BoxCollider2D:
   m_ObjectHideFlags: 0

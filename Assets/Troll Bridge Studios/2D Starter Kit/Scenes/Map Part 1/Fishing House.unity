@@ -1354,27 +1354,19 @@ MonoBehaviour:
   dialogueTextPause: 0.015
   typeSound: {fileID: 0}
   dialogue:
-  - 'Max
-
-    What are you doing in my house? I brought this place to have quiet!'
+  - "Max\nWhat are you doing in my house? I don\u2019t take kindly to strangers!"
   - 'You
 
     Are you Max?'
   - 'Max
 
     Yes. What is it to you.'
-  - 'You
-
-    I was told by the locals at the market that you know a story...'
+  - "You\nI heard from the locals that you may know a story \u2026"
   - 'You
 
     About the Battle of Iris and Than.'
-  - 'Max
-
-    So what if I do? Its just a myth... a childs story!'
-  - 'You
-
-    You and me both know that it is more then a childs story. Look... George '
+  - "Max\nSo what if I do? It\u2019s just a myth \u2026 a mere childrens\u2019 story!"
+  - "You\nWe both know there\u2019s more to it than that. Look, George \u2026."
   - 'Max
 
     What does George have to do with this?'
@@ -1383,52 +1375,53 @@ MonoBehaviour:
     He is an old friend of mine.'
   - 'Max
 
-    Ohh, well that changes everything. '
+    Ohh, well I guess that changes everything.'
   - 'Max
 
-    The Battle of Iris and Than is, as you suspected, true.'
+    As you suspected, The Battle of Iris and Than is more than a tale told around
+    the campfire'
   - 'Max
 
-    It is a story about two powerful gods, one of light and one of death.'
+    It is a tale of gods with unworldly power. A tale of Light and Death'
   - 'Max
 
     Iris and Than...'
   - 'Max
 
-    To keep the world in order they must both exist, they must both have thei influence.'
+    The order of our world depends on their powers. One cannot exist without the other'
   - 'Max
 
-    Over thousands of years Than has fought to take control over this world.'
+    For many thousands of years, Than has fought for dominance over the living'
   - 'Max
 
-    While Iris has been the only thing that has stopped him.'
+    Our only savior from his reign of tyranny has been Iris'
   - 'Max
 
     Unfortunately something went wrong not too long ago.'
   - 'Max
 
-    Thans powers have grown beyond imagining.'
+    However, not too long ago the balance of power tipped'
   - 'You
 
-    I need to stop Than before something terrible happens to the people.'
+    Than must be stopped before his dominance spells doom for us all'
   - 'Max
 
-    Unfortunately the location of Iris has been lost a long time ago.'
+    Unfortunately, the location of Iris has long been a mystery'
   - 'Max
 
-    But there is one person who claims to have met her many years ago.'
+    But there is a man who claims to have happened upon her many years ago'
   - 'Max
 
-    George.'
+    ...George.'
   - 'You
 
-    I knew he was withholding valuable infomation from me!'
+    So my suspicions were true! He does know more than he let on!'
   - 'Max
 
-    George ows me a debt. Give him this scroll, he will tell you where she is.'
+    George owes me a favour. Give him this scroll and he should start talking'
   - 'You
 
-    Thank you, good luck on your travels!'
+    Many thanks and safe travels!'
 --- !u!58 &1553318139
 CircleCollider2D:
   m_ObjectHideFlags: 0

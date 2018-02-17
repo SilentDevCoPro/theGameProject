@@ -1474,42 +1474,37 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4890090903597076, guid: c76632413922c3247a94f0f6d11a505e, type: 2}
+    - target: {fileID: 4114274998192392, guid: c76632413922c3247a94f0f6d11a505e, type: 2}
       propertyPath: m_LocalPosition.x
       value: 25.67
       objectReference: {fileID: 0}
-    - target: {fileID: 4890090903597076, guid: c76632413922c3247a94f0f6d11a505e, type: 2}
+    - target: {fileID: 4114274998192392, guid: c76632413922c3247a94f0f6d11a505e, type: 2}
       propertyPath: m_LocalPosition.y
       value: -66.2
       objectReference: {fileID: 0}
-    - target: {fileID: 4890090903597076, guid: c76632413922c3247a94f0f6d11a505e, type: 2}
+    - target: {fileID: 4114274998192392, guid: c76632413922c3247a94f0f6d11a505e, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4890090903597076, guid: c76632413922c3247a94f0f6d11a505e, type: 2}
+    - target: {fileID: 4114274998192392, guid: c76632413922c3247a94f0f6d11a505e, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4890090903597076, guid: c76632413922c3247a94f0f6d11a505e, type: 2}
+    - target: {fileID: 4114274998192392, guid: c76632413922c3247a94f0f6d11a505e, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4890090903597076, guid: c76632413922c3247a94f0f6d11a505e, type: 2}
+    - target: {fileID: 4114274998192392, guid: c76632413922c3247a94f0f6d11a505e, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4890090903597076, guid: c76632413922c3247a94f0f6d11a505e, type: 2}
+    - target: {fileID: 4114274998192392, guid: c76632413922c3247a94f0f6d11a505e, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4890090903597076, guid: c76632413922c3247a94f0f6d11a505e, type: 2}
+    - target: {fileID: 4114274998192392, guid: c76632413922c3247a94f0f6d11a505e, type: 2}
       propertyPath: m_RootOrder
       value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114221292837163070, guid: c76632413922c3247a94f0f6d11a505e,
-        type: 2}
-      propertyPath: onAwakeFlash
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c76632413922c3247a94f0f6d11a505e, type: 2}
@@ -3087,18 +3082,17 @@ MonoBehaviour:
   - 'You
 
     Than has been defeated, but I could not kill him.'
+  - "Iris\nWhat amazing news! Than can never truly perish \u2013 it is the intricate
+    balance of Light and Death"
   - 'Iris
 
-    Well done! Than will never die, it is an unfortunate part of having balance.'
+    This world cannot exist without Than, just as he cannot exist without me'
   - 'Iris
 
-    The would cannot exist without Than, just as it cannot exist without me.'
+    The dreadful curse has been lifted from the market'
   - 'Iris
 
-    The curse has now been lifted on the market.'
-  - 'Iris
-
-    You can keep my sword as a token of my gratitude.'
+    Please keep the blade as a token of my gratitude'
 --- !u!58 &462678530
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4054,49 +4048,38 @@ MonoBehaviour:
   dialogue:
   - 'You
 
-    Excuse me! I have a few questions I would like to ask you.
-
-'
+    Excuse me, there! I have a few questions if you are willing.'
   - 'Alice
 
-    Please leave me alone, this place... something about this place.
+    Please, leave me alone. There is something deeply troubling about this place
 
 '
   - 'You
 
-    I can feel it as well. Draining at my soul.
+    I feel it as well. Like something is draining my soul.
 
 '
   - 'You
 
-    This used to be a busy area where the locals would trade thier goods, now it is
-    dead.
+    There was a time when this area was bustling with merchants but now, now it is
+    dead
 
 '
-  - 'You
-
-    I''m trying to work out why this is, do you know anything that could help me?'
+  - "You\nI\u2019m trying to work out why this is. Do you know anything that could
+    help me?"
   - 'Alice
 
-    The only thing that could possibly help this place is Iis, the god of light.'
+    The only thing that could possibly help this place is Iris, the God of Light'
+  - "Alice\nIris has power beyond this realm. She could help, but \u2026\n"
   - 'Alice
 
-    She has powers beyond this realm that could help, but....
-
-'
-  - 'Alice
-
-    Please leave me alone, this place... something about this place.
-
-'
-  - 'Alice
-
-    No one has seen her in decades.
+    She has not been seen for decades
 
 '
   - 'You
 
     Thank you.
+
 
 '
 --- !u!58 &746158495
@@ -4905,29 +4888,31 @@ MonoBehaviour:
   dialogue:
   - 'You
 
-    Iris I have retieved your sword from the cavern bellow!'
+    Iris, I have been to the depths of the caverns and retrieved your sword'
   - 'Iris
 
-    Thank you, it has been a very long time since I''ve held it.'
-  - "Iris\n I will enchant the sword with the remaining of my powers for you."
+    Thank you. Long has it been since I felt the hum of its energy'
   - 'Iris
 
-    This should give you a better chance at fightig Than.'
+    Now I shall enchant the blade and imbue it with my remaining powers'
   - 'Iris
 
-    Prepair for the fight, it will not be an easy one.'
+    Now you shall have a fighting chance at defeating Than'
   - 'Iris
 
-    Than is located down in the caverns where you found the sword.'
+    It will be a bitter and arduous battle, so you must prepare'
   - 'Iris
 
-    He is a trickster and will not be showing his true skin.'
+    Than lurks in the caverns below not far from where you found my sword'
   - 'Iris
 
-    Infact, you may have already met him.'
+    He is a trickster and will take the form of another to deceive'
+  - 'Iris
+
+    You may even have already met him'
   - 'You
 
-    Thank you Iris, I will begin preperations for the battle.'
+    Thank you, Iris. I will prepare myself for the battle'
 --- !u!58 &865757399
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5090,50 +5075,11 @@ Transform:
   m_Father: {fileID: 2016466232}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &914426829
+--- !u!1 &914426829 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 914426831}
-  - component: {fileID: 914426830}
-  m_Layer: 0
-  m_Name: QuestIconFlash
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &914426830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 914426829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e57a95692aaaab4a908014b3b5f687f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startFlash: 1
-  endFlash: 0
-  onAwakeFlash: 1
-  flashIndex: 1
---- !u!4 &914426831
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 914426829}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -30.22, y: -54.09, z: 0.3515625}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_PrefabParentObject: {fileID: 1404513059128766, guid: cc49d05f29a78594b93edcee4cf6145c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1470336739}
 --- !u!1 &996457949
 GameObject:
   m_ObjectHideFlags: 0
@@ -5809,12 +5755,6 @@ MonoBehaviour:
   - 'Shop Keeper
 
     Just go away, I have no interest in talking to you.'
-  - 'You
-
-    Excuse me! I have a few questions I would like to ask you.'
-  - 'Shop Keeper
-
-    I don''t ow George anything, GO...AWAY!'
 --- !u!58 &1166948444
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6014,62 +5954,52 @@ MonoBehaviour:
   dialogue:
   - 'Glenda
 
-    Hello there young traveller, my names Glenda, what brings you to these parts?'
-  - 'You
-
-    I''m searching fo someone called Iris, the god of light.'
-  - 'Glenda
-
-    That''s a name I havn''t herd in a very long time.'
+    Hello there, young traveler. My name is Glenda. And what brings you to these parts?'
+  - "You\nI\u2019m searching for Iris, the Goddess of Light"
+  - "Glenda\nIt\u2019s been many a decade since I heard that name"
   - 'Glenda
 
     How did you know to come here?'
   - 'You
 
-    My old friend George passed away, I found this on him.'
-  - '[You hand Glenda the scroll]'
+    My old friend George passed away. I found this on him.'
+  - '
+
+    [You hand Glenda the scroll]'
   - 'Glenda
 
-    George was a very good friend of mine.'
+    George was a dear friend of mine.'
   - 'Glenda
 
-    I am Iris.'
-  - 'Iris
-
-    Who did this to George?'
+    I am known in my mortal form as Glenda, but I am also known as Iris'
+  - "Iris\nWho is responsible for George\u2019s death?"
   - 'You
 
-    Than has placed a curse apon the market.'
-  - 'You
-
-    And I believe that it was this that killed George.'
+    Than placed a wicked curse upon the market'
+  - "You\nThis curse was responsible for George\u2019s death"
   - 'Iris
 
-    THan! I should have known.'
+    Than! Of course! Who else could be so cruel?'
   - 'Iris
 
-    When I decided to take this human form I lleft behind most of my powers.'
+    Assuming a mortal form has stripped me of but few of my powers'
   - 'Iris
 
-    However I can channel whats left of them through my sword.'
+    But still I can summon might through my sword of rainbow crystal'
   - 'Iris
 
-    Many years ago I lost the sword in the caverns bellow.'
+    The Rainbow Blade was lost many years ago in the depths of the caverns'
   - 'Iris
 
-    If you can retrieve it we have a chance to defeat Than!'
+    Retrieve the sword and you will defeat Than'
   - 'You
 
     I''ll give it a shot.'
   - 'Iris
 
-    I''ll open up the rift next to us so that you can go down.'
-  - 'Iris
-
-    Be careful down there, there are a lot of dangerous creatures!'
-  - 'You
-
-    I''ll keep that in mind thank you.'
+    Stand aside while I open a rift to the caverns'
+  - "Iris\nWatch your step \u2013 many a careless soul has been swallowed by the darkness"
+  - "You\n*Gulp* I\u2019ll watch my step!"
 --- !u!58 &1214873203
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6834,6 +6764,48 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &1470336739
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4341260242524830, guid: cc49d05f29a78594b93edcee4cf6145c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -30.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341260242524830, guid: cc49d05f29a78594b93edcee4cf6145c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -54.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341260242524830, guid: cc49d05f29a78594b93edcee4cf6145c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.3515625
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341260242524830, guid: cc49d05f29a78594b93edcee4cf6145c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341260242524830, guid: cc49d05f29a78594b93edcee4cf6145c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341260242524830, guid: cc49d05f29a78594b93edcee4cf6145c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341260242524830, guid: cc49d05f29a78594b93edcee4cf6145c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341260242524830, guid: cc49d05f29a78594b93edcee4cf6145c, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: cc49d05f29a78594b93edcee4cf6145c, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1473053158
 GameObject:
   m_ObjectHideFlags: 0
@@ -8123,38 +8095,31 @@ MonoBehaviour:
   dialogue:
   - 'You
 
-    Excuse me there sir! I have a few questions I would like to ask you.'
+    Excuse me there, sir! May I ask you a few questions?'
   - 'Scared Citizen
 
-    W..w...what do you want?'
+    Wh..wh..what do you want?'
   - 'You
 
-    Something is wrong with the market place..'
+    An invisible darkness shrouds this marketplace.'
   - 'You
 
     This used to be a busy area where the locals would trade thier goods, now it is
     dead.'
   - 'You
 
-    Do you know anything about the situation?'
+    Do you know why this is happening?'
+  - "Scared Citizen\n\u2026 I do \u2026 however they\u2019re only stories \u2013 so
+    take them as you will."
+  - "Scared Citizen\nThere\u2019s an old fisherman, Max, who lives in a nearby village"
+  - "Scared Citizen\nHe\u2019s not one company but he won\u2019t be difficult to spot"
   - 'Scared Citizen
 
-    I d..dd.do, however they are only stories, so take them as you will.'
-  - 'Scared Citizen
-
-    There is an old fisherman called Max who lives in a village close by.'
-  - 'Scared Citizen
-
-    He is not one for company so you wont find him around other people.'
-  - 'Scared Citizen
-
-    Max tells the tales of the Battle of Iris and Than'
-  - 'Scared Citizen
-
-    He says that during his travels, he discovered the existance of these gods.'
-  - 'Scared Citizen
-
-    I think that you should hear the story first hand from him as my meory is terrible.'
+    Max often speaks of the Battle of Iris and Than'
+  - "Scared Citizen\nHe told us that while he was travelling, he happened upon proof
+    of the gods\u2019 existence"
+  - "Scared Citizen\nIf you want to hear the story you should find him \u2026 I get\u2026n..n..nervous
+    telling stories"
   - 'You
 
     Thank you very much! You have been very helpful.'
@@ -9323,40 +9288,48 @@ Prefab:
     - target: {fileID: 114853459203499206, guid: 94aa96c207a71c54ba9e47250e75d301,
         type: 2}
       propertyPath: dialogue.Array.data[0]
-      value: '[George is dead, he has no wounds, or any signs of a stuggle]'
+      value: '
+
+        [George is dead! Though I see no wounds or signs of a struggle]
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 114853459203499206, guid: 94aa96c207a71c54ba9e47250e75d301,
         type: 2}
       propertyPath: dialogue.Array.data[1]
-      value: '[You see a scroll protruding from his right sleeve of his jacket]'
+      value: '
+
+        [You see a scroll protruding from the right sleeve of his jacket]'
       objectReference: {fileID: 0}
     - target: {fileID: 114853459203499206, guid: 94aa96c207a71c54ba9e47250e75d301,
         type: 2}
       propertyPath: dialogue.Array.data[2]
-      value: '[As you get close to the scroll you can make out one word "Iris"]'
+      value: '
+
+        [You look closer and see a name you recognize: Iris]'
       objectReference: {fileID: 0}
     - target: {fileID: 114853459203499206, guid: 94aa96c207a71c54ba9e47250e75d301,
         type: 2}
       propertyPath: dialogue.Array.data[3]
-      value: '[You take the scroll from George, it reads]'
+      value: "\n[You take the scroll from George\u2019s jacket. It reads:]"
       objectReference: {fileID: 0}
     - target: {fileID: 114853459203499206, guid: 94aa96c207a71c54ba9e47250e75d301,
         type: 2}
       propertyPath: dialogue.Array.data[4]
-      value: '"I found Iris! After many years of searching for her I finally found
-        her.'
+      value: "\n\u201CAfter many years of searching I have found her. I have found
+        Iris\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 114853459203499206, guid: 94aa96c207a71c54ba9e47250e75d301,
         type: 2}
       propertyPath: dialogue.Array.data[5]
-      value: '"Iris took a human form so that she can experience life as a mortal
-        being".'
+      value: "\n\u201CIris assumed a human form \u2013 she now experiences the transience
+        of mortality\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 114853459203499206, guid: 94aa96c207a71c54ba9e47250e75d301,
         type: 2}
       propertyPath: dialogue.Array.data[6]
-      value: '"She can be found where the ocean meets the mouth of the river north
-        of the market."'
+      value: "\n\u201CWhere the mouth of the river meets the northern market, she
+        will be found\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 114853459203499206, guid: 94aa96c207a71c54ba9e47250e75d301,
         type: 2}

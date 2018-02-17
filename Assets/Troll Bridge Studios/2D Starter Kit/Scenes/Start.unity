@@ -2187,45 +2187,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 1831105162248584, guid: fdb1ccaa40d213b4286d251bb693ed8e, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224677023175330638, guid: fdb1ccaa40d213b4286d251bb693ed8e,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.08634949
-      objectReference: {fileID: 0}
-    - target: {fileID: 224677023175330638, guid: fdb1ccaa40d213b4286d251bb693ed8e,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: -119.716255
-      objectReference: {fileID: 0}
-    - target: {fileID: 224994198832040202, guid: fdb1ccaa40d213b4286d251bb693ed8e,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114744857967157932, guid: fdb1ccaa40d213b4286d251bb693ed8e,
-        type: 2}
-      propertyPath: m_Text
-      value: 'This is a test description to see how the fonts
-
-        Perform during this test of lines
-
-
-        Lines lines LinesSS'
-      objectReference: {fileID: 0}
-    - target: {fileID: 224994198832040202, guid: fdb1ccaa40d213b4286d251bb693ed8e,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224994198832040202, guid: fdb1ccaa40d213b4286d251bb693ed8e,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fdb1ccaa40d213b4286d251bb693ed8e, type: 2}
   m_IsPrefabParent: 0

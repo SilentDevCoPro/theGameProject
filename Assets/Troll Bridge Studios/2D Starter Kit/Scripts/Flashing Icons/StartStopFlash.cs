@@ -19,7 +19,7 @@ namespace TrollBridge
                 Debug.Log("Flash Started");
                 ObjectsToFlash.objToFlash.indexToFlash = flashIndex;
                 ObjectsToFlash.objToFlash.StartUIFlash();
-                //gameObject.SetActive(false);
+                gameObject.SetActive(false);
             }
         }
 
