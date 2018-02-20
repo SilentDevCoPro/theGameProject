@@ -1274,6 +1274,81 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.5, y: 108.94}
   m_EdgeRadius: 0
+--- !u!61 &81213350
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 81213345}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 39.28, y: -28.6}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 42.81, y: 2.8}
+  m_EdgeRadius: 0
+--- !u!61 &81213351
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 81213345}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 74, y: -60.9}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 19.98, y: 2}
+  m_EdgeRadius: 0
+--- !u!61 &81213352
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 81213345}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 84.9, y: -61.14}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.12, y: 2.2}
+  m_EdgeRadius: 0
 --- !u!1 &84800915
 GameObject:
   m_ObjectHideFlags: 0
@@ -1593,8 +1668,10 @@ MonoBehaviour:
   dialogueTextPause: 0.05
   typeSound: {fileID: 0}
   dialogue:
-  - '[The shop keeper avoids your eye contact, she clearly doesn''t want anything
-    to do with you]'
+  - '
+
+    [The shop keeper avoids your eye contact, she clearly doesn''t want anything to
+    do with you]'
 --- !u!58 &108656834
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1707,6 +1784,10 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1770718424074370, guid: 195bf62c4474fe64d96ea043d181e5ea, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 195bf62c4474fe64d96ea043d181e5ea, type: 2}
@@ -5028,7 +5109,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1776482201686556, guid: 195bf62c4474fe64d96ea043d181e5ea, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1770718424074370, guid: 195bf62c4474fe64d96ea043d181e5ea, type: 2}
       propertyPath: m_IsActive
