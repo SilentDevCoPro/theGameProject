@@ -54,7 +54,7 @@
 		"usage": {
 			"restorehp": 0		
 		},
-		"description": "The lost sword of Iris, this sword holds the power of a god!",
+		"description": "The lost rainbow sword, it holds the power of a god!",
 		"stackable": false,
 		"pickupsound": "SharpWeaponPickup",
 		"usedsound": "SharpWeaponEquip",

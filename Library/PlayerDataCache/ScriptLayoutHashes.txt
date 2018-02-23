@@ -336,3 +336,5 @@ c96aa5b48ff4a9ac97c7e4c0dffad3b1 Assembly-CSharp.dll:.ChangeObjectState
 2b31c1cab7233df8c4895400bf09054c Assembly-CSharp.dll:TrollBridge.Camera_Static_Slide
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
+e88f8ca85b6dec1383898451d75a51f6 Assembly-CSharp.dll:.ExternalLink
+650c1e412dac0323d37ae3023565f947 Assembly-CSharp.dll:.PopUpText

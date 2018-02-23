@@ -2748,7 +2748,7 @@ MonoBehaviour:
   dialogue:
   - '
 
-    [You have found the missing Rainbow Blade!]'
+    [You have found the missing rainbow sword!]'
 --- !u!61 &1362628761
 BoxCollider2D:
   m_ObjectHideFlags: 0

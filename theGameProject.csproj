@@ -471,10 +471,12 @@
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\_Scripts\UI\Quit_Game.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\_Scripts\UI\Start_Game.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\ChangeObjectState.cs" />
+    <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\ExternalLink.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Firebase Script.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Flashing Icons\ObjectsToFlash.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Flashing Icons\StartStopFlash.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\PollingQuestChange.cs" />
+    <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\PopUpText.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Quests\AreaDialogueManager.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Quests\DialogueManager.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\Scripts\Quests\OnDeath.cs" />

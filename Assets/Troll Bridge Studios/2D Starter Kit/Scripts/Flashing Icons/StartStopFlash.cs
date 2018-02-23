@@ -13,10 +13,8 @@ namespace TrollBridge
 
         private void Awake()
         {
-            Debug.Log("Object Awoken");
             if (onAwakeFlash)
             {
-                Debug.Log("Flash Started");
                 ObjectsToFlash.objToFlash.indexToFlash = flashIndex;
                 ObjectsToFlash.objToFlash.StartUIFlash();
                 gameObject.SetActive(false);
